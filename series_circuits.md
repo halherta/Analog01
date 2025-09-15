@@ -468,7 +468,8 @@ An electrical motor rated for 1HP (horsepower) power output requires a power inp
 
 #### Solution
 
-$$ \eta = \frac{P_{OUT}}{P_{IN}} \cdot 100\% = \frac{1HP}{1000W} \cdot 100\% = \frac{745.7W}{1000W} \cdot 100\% = 74.570 \%$$
+$$\eta = \frac{P_{OUT}}{P_{IN}} \cdot 100\% = \frac{1HP}{1000W} \cdot 100\% = \frac{745.7W}{1000W} \cdot 100\% = 74.570 \%$$
+
 This electrical motor has an efficiency of 74.570%
 
 ## Resistor Ratings and Values
@@ -619,10 +620,14 @@ width="40.0%"} -->
 #### Solution
 
 1. Since $V_{R_L}= 5V$ and $R_L= 1\Omega$, Power dissipated in the resistor becomes:
-      $$ P = \frac{V^2_{R_L}}{R_L} = \frac{5^2}{1} = 25W$$
+   
+      $$P = \frac{V^2_{R_L}}{R_L} = \frac{5^2}{1} = 25W$$
+   
     Since the resistor rating is only 0.25W, this resistor is definitely dissipating more power than its rating and will almost instantly get damaged.
-2. The smallest resistance that will dissipate 0.25W in this circuit is:
-      $$ R_L = \frac{V^2_{R_L}}{P} = \frac{5^2}{0.25W} = 100\Omega $$
+3. The smallest resistance that will dissipate 0.25W in this circuit is:
+   
+      $$R_L = \frac{V^2_{R_L}}{P} = \frac{5^2}{0.25W} = 100\Omega$$
+   
    Ideally the resistor should be about 10% larger ( i.e. 110Ω ) to provide a safety margin
 
 A resistor\'s power rating can usually be deduced by observing its
