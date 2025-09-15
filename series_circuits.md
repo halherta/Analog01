@@ -204,8 +204,8 @@ The total current $I_T$ can be easily calculated by applying Ohm's law to the si
     
 Therefore KVL is indeed verified!
 
-<iframe src="static/circuit-sandbox/index.html" height="630" width="740" frameBorder="0"></iframe>
-
+<!-- <iframe src="static/circuit-sandbox/index.html" height="630" width="740" frameBorder="0"></iframe> -->
+[online circuit simulator]([https://example.com](https://github.com/halherta/Analog01/static/circuit-sandbox/index.html)
 
 
 ### Example 5
