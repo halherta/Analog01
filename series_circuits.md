@@ -42,9 +42,9 @@ In the series circuit shown above:
 3. assume that $I_T = 3.3mA$ and $R_L=1.47k\Omega$. Solve for $V_S$
 
 #### Solution
-1. $$ I_T = \frac{V_S}{R_L}= \frac{6V}{2.2k\Omega} = 2.727mA $$
-2. $$ R_L = \frac{V_S}{I_T}= \frac{6V}{1mA} =6k\Omega $$
-3. $$ V_S = I_T \cdot R_L = \frac{3.3mA}{1.47k\Omega} = 4.851V $$
+1. $I_T = \frac{V_S}{R_L}= \frac{6V}{2.2k\Omega} = 2.727mA$
+2. $R_L = \frac{V_S}{I_T}= \frac{6V}{1mA} =6k\Omega$
+3. $V_S = I_T \cdot R_L = \frac{3.3mA}{1.47k\Omega} = 4.851V$
 
 
 ## Equivalent Resistance of Series Resistors / Resistive components
