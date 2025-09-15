@@ -137,11 +137,11 @@ Consider the schematic shown in the figure above. Calculate:
 #### Solution
 
  
-1. $ R_T = R_S + R_L = 100\Omega + 220\Omega = 320\Omega $
-2. $ V_{R_L} = V_S \cdot \frac{R_L}{R_T} = 10V \cdot \frac{220}{320} = 6.875V $ 
+1. $R_T = R_S + R_L = 100\Omega + 220\Omega = 320\Omega$
+2. $V_{R_L} = V_S \cdot \frac{R_L}{R_T} = 10V \cdot \frac{220}{320} = 6.875V$ 
    
-   $ V_{R_S} = V_S \cdot \frac{R_S}{R_T} = 10V \cdot \frac{100}{320} = 3.125V $
-3. $ V_S = V_{R_S} + V_{R_L} = 3.125V + 6.875 = 10V \equiv V_S = 10V $ 
+   $V_{R_S} = V_S \cdot \frac{R_S}{R_T} = 10V \cdot \frac{100}{320} = 3.125V$
+3. $V_S = V_{R_S} + V_{R_L} = 3.125V + 6.875 = 10V \equiv V_S = 10V$ 
 
 Therefore KVL is indeed verified!
 ## Analysis of Series circuits
@@ -182,22 +182,22 @@ and will draw the same current since it has the same equivalent resistance as th
 
 The total current $I_T$ can be easily calculated by applying Ohm's law to the simplified circuit. Once the total current $I_T$ is calculated, go back to the original circuit and use $I_T$ to further analyze the circuit.
  
- 1. $ R_T = R_S + R_L = 330\Omega + 470\Omega = 800\Omega $ 
- 2. Using Ohm's Law: $ I_T = \frac{V_S}{R_L} = \frac{10}{800} = 12.500mA $
+ 1. $R_T = R_S + R_L = 330\Omega + 470\Omega = 800\Omega$ 
+ 2. Using Ohm's Law: $I_T = \frac{V_S}{R_L} = \frac{10}{800} = 12.500mA$
  3. Two approaches exist to calculate $V_{R_S}$ and $V_{R_L}$:
     1. Voltage Divider rule:
         
-        $ V_{R_L} = V_S \cdot \frac{R_L}{R_T} = 10V \cdot \frac{470}{800} = 5.875V  $
+        $V_{R_L} = V_S \cdot \frac{R_L}{R_T} = 10V \cdot \frac{470}{800} = 5.875V$
 
-        $ V_{R_S} = V_S \cdot \frac{R_S}{R_T} = 10V \cdot \frac{330}{800} = 4.125V  $
+        $V_{R_S} = V_S \cdot \frac{R_S}{R_T} = 10V \cdot \frac{330}{800} = 4.125V$
     2.  Ohm's Law:
       
-        $ V_{R_L} = I_T \cdot R_L = 12.500mA \cdot 470 = 5.875V $
+        $V_{R_L} = I_T \cdot R_L = 12.500mA \cdot 470 = 5.875V$
 
-        $ V_{R_S} = I_T \cdot R_S = 12.500mA \cdot 330 = 4.125V  $
+        $V_{R_S} = I_T \cdot R_S = 12.500mA \cdot 330 = 4.125V$
 
    Notice how the voltage divider rule is just a special case of Ohm's law (in series circuits) as shown below:
-   $$  V_{R_X} = V_S \cdot \frac{R_X}{R_T} = \frac{V_S}{R_T} \cdot {R_X} = I_T \cdot R_X $$
+   $$V_{R_X} = V_S \cdot \frac{R_X}{R_T} = \frac{V_S}{R_T} \cdot {R_X} = I_T \cdot R_X$$
    The Ohm's law approach is easier if you already know the current. If the current hasn't been calculated, use the voltage divider rule instead.
 
   4. $V_S = V_{R_S} + V_{R_L} = 5.875V + 4.125V = 10V \equiv V_S = 10V $
@@ -229,26 +229,26 @@ Consider the schematic shown in the figure above. Calculate:
 
 #### Solution
 
-1. $ R_T = R_1 + R_2 + R_3 = 560\Omega + 1200\Omega + 2200\Omega = 3.960k\Omega $ </p>
-2. Using Ohm's Law: $ I_T = \frac{V_S}{R_L} = \frac{6V}{3.96k\Omega} = 1.515mA $</p>
+1. $R_T = R_1 + R_2 + R_3 = 560\Omega + 1200\Omega + 2200\Omega = 3.960k\Omega$ </p>
+2. Using Ohm's Law: $I_T = \frac{V_S}{R_L} = \frac{6V}{3.96k\Omega} = 1.515mA$</p>
 3. Two approaches exist to calculate $V_{R1}$, $V_{R2}$ and $V_{R3}$
     1. Voltage Divider rule:
 
-       $ V_{R_1} = V_S \cdot \frac{R_1}{R_T} = 6V \cdot \frac{560}{3960} = 0.848V $
+       $V_{R_1} = V_S \cdot \frac{R_1}{R_T} = 6V \cdot \frac{560}{3960} = 0.848V$
 
-       $ V_{R_2} = V_S \cdot \frac{R_2}{R_T} = 6V \cdot \frac{1200}{3960} = 1.818V $
+       $V_{R_2} = V_S \cdot \frac{R_2}{R_T} = 6V \cdot \frac{1200}{3960} = 1.818V$
 
-       $ V_{R_3} = V_S \cdot \frac{R_3}{R_T} = 6V \cdot \frac{2200}{3960} = 3.333V $ 
+       $V_{R_3} = V_S \cdot \frac{R_3}{R_T} = 6V \cdot \frac{2200}{3960} = 3.333V$ 
        
     2. Ohm's Law:
 
-       $ V_{R_1} = I_T \cdot R_1 = 1.515mA \cdot 560 = 0.848V  $
+       $V_{R_1} = I_T \cdot R_1 = 1.515mA \cdot 560 = 0.848V$
 
-       $ V_{R_2} = I_T \cdot R_2 = 1.515mA \cdot 1200 = 1.818V $
+       $V_{R_2} = I_T \cdot R_2 = 1.515mA \cdot 1200 = 1.818V$
 
-       $ V_{R_3} = I_T \cdot R_3 = 1.515mA \cdot 2200 = 3.333V $
+       $V_{R_3} = I_T \cdot R_3 = 1.515mA \cdot 2200 = 3.333V$
 
-4. $V_S = V_{R_1} + V_{R_2} + V_{R_3} = 0.848V + 1.818V + 3.333V = 5.999V \simeq V_S = 6V $
+4. $V_S = V_{R_1} + V_{R_2} + V_{R_3} = 0.848V + 1.818V + 3.333V = 5.999V \simeq V_S = 6V$
   
 Therefore KVL is indeed verified!
 
@@ -289,19 +289,19 @@ $$P_{V_S} = P_{R_S} + P_{R_L}$$
 
 #### Solution
 
-1. $ P_{V_S} = V_S \cdot I_T = 10V * 12.500mA = 125.000 mW $
-2. $ P_{R_S} = V_{R_S} * I_{T} = 4.125V * 12.5mA = 51.563mW $ or
+1. $P_{V_S} = V_S \cdot I_T = 10V * 12.500mA = 125.000 mW$
+2. $P_{R_S} = V_{R_S} * I_{T} = 4.125V * 12.5mA = 51.563mW$ or
 
-      $ P_{R_S} = \frac{V^2_{R_S}}{R_S} = \frac{{4.125V}^2}{330} = 51.563mW $ or
+      $P_{R_S} = \frac{V^2_{R_S}}{R_S} = \frac{{4.125V}^2}{330} = 51.563mW$ or
 
-      $ P_{R_S} =  I^2_{T} \cdot R_S =  {12.5mA}^2 \cdot 330  = 51.563mW $ 
-3. $ P_{R_L} = V_{R_L} * I_{T} = 5.875V * 12.5mA = 73.438mW  $ or
+      $P_{R_S} =  I^2_{T} \cdot R_S =  {12.5mA}^2 \cdot 330  = 51.563mW$ 
+3. $P_{R_L} = V_{R_L} * I_{T} = 5.875V * 12.5mA = 73.438mW$ or
 
-      $ P_{R_L} = \frac{V^2_{R_L}}{R_L} = \frac{{5.875V}^2}{470} = 73.438mW $ or
+      $P_{R_L} = \frac{V^2_{R_L}}{R_L} = \frac{{5.875V}^2}{470} = 73.438mW$ or
 
-      $ P_{R_L} =  I^2_{T} \cdot R_L =  {12.5mA}^2 \cdot 470  = 73.438mW $ 
+      $P_{R_L} =  I^2_{T} \cdot R_L =  {12.5mA}^2 \cdot 470  = 73.438mW$ 
 
-4. $ P_{R_S} + P_{R_L} = 51.563mW + 73.438mW = 125.001mW \simeq P_{V_S} $ 
+4. $P_{R_S} + P_{R_L} = 51.563mW + 73.438mW = 125.001mW \simeq P_{V_S}$ 
 
 Therefore law of conservation of energy is verified!!
 
@@ -349,17 +349,17 @@ practical voltage source $R_S=2\Omega$.
 #### Solution
 
 
-1. In this case $ I_T = \frac{V_S}{R_T} = \frac{V_S}{0} = \infty A $
-2. $ I_T = \frac{V_S}{R_T} = \frac{V_S}{R_S + 0} = \frac{12}{2} = 6A $
-3. $ I_{R_L} = \frac{V_S}{R_L} = \frac{12}{330} =  36.364mA $ 
+1. In this case $ I_T = \frac{V_S}{R_T} = \frac{V_S}{0} = \infty A$
+2. $I_T = \frac{V_S}{R_T} = \frac{V_S}{R_S + 0} = \frac{12}{2} = 6A$
+3. $I_{R_L} = \frac{V_S}{R_L} = \frac{12}{330} =  36.364mA$ 
 
    $V_{R_L} = 12V \equiv V_S $
-4. $ I_{R_L} = \frac{V_S}{R_L} = \frac{12}{330 + 2 } =  36.145mA $ 
+4. $I_{R_L} = \frac{V_S}{R_L} = \frac{12}{330 + 2 } =  36.145mA$ 
 
-   $V_{R_L} = I_{R_L} \cdot R_L = 36.145mA \cdot 330\Omega = 11.928V $
-5. $ I_{R_L} = \frac{V_S}{R_L} = \frac{12}{33 + 2 } =  342.857mA $ 
+   $V_{R_L} = I_{R_L} \cdot R_L = 36.145mA \cdot 330\Omega = 11.928V$
+5. $I_{R_L} = \frac{V_S}{R_L} = \frac{12}{33 + 2 } =  342.857mA$ 
 
-   $V_{R_L} = I_{R_L} \cdot R_L = 342.857mA \cdot 33\Omega = 11.314V $
+   $V_{R_L} = I_{R_L} \cdot R_L = 342.857mA \cdot 33\Omega = 11.314V$
 
 Notice how as the resistance of the load resistor $R_L$ decreases, the actual load voltage  $V_{R_L}$ deviates further from the rated 12V.
 
@@ -406,7 +406,7 @@ complex-circuits.
 
 In a single source circuit:
 
-$$ P_{V_S} = P_{R_1} + P_{R_2} + P_{R_3} + \cdots + P_{R_N}$$
+$$P_{V_S} = P_{R_1} + P_{R_2} + P_{R_3} + \cdots + P_{R_N}$$
 
 And in a multiple source circuit:
 
@@ -431,7 +431,7 @@ First let's calculate $R_T$ and $I_T$:
 
 $$R_T = R_1 + R_2 + R_3 = 100 + 220 + 330 = 650\Omega$$
 
-$$ I_T = \frac{V_S}{R_T} = \frac{6}{650} = 9.231mA $$
+$$I_T = \frac{V_S}{R_T} = \frac{6}{650} = 9.231mA$$
 
 Power dissipated in the supply $V_S$ : 
 
@@ -568,27 +568,27 @@ resistor with a rated tolerance of:
 
 1. with a 10% rated tolerance: 
     
-    $ R_{min} = 470 \cdot \frac{100-10}{100} = 423.000 \Omega $ 
+    $R_{min} = 470 \cdot \frac{100-10}{100} = 423.000 \Omega$ 
     
-    $ R_{max} = 470 \cdot \frac{100+10}{100} = 517.000 \Omega $ 
+    $R_{max} = 470 \cdot \frac{100+10}{100} = 517.000 \Omega$ 
 
 2. with a 5% rated tolerance: 
 
-    $ R_{min} = 470 \cdot \frac{100-5}{100} = 446.600 \Omega $ 
+    $R_{min} = 470 \cdot \frac{100-5}{100} = 446.600 \Omega$ 
     
-    $ R_{max} = 470 \cdot \frac{100+5}{100} = 493.500 \Omega $
+    $R_{max} = 470 \cdot \frac{100+5}{100} = 493.500 \Omega$
 
 3. with a 1% rated tolerance: 
 
-    $ R_{min} = 470 \cdot \frac{100-1}{100} = 465.300 \Omega $ 
+    $R_{min} = 470 \cdot \frac{100-1}{100} = 465.300 \Omega$ 
     
-    $ R_{max} = 470 \cdot \frac{100+1}{100} = 474.700 \Omega $
+    $R_{max} = 470 \cdot \frac{100+1}{100} = 474.700 \Omega$
 
 4. with a 0.1% rated tolerance: 
 
-    $ R_{min} = 470 \cdot \frac{100-0.1}{100} = 469.530 \Omega $ 
+    $R_{min} = 470 \cdot \frac{100-0.1}{100} = 469.530 \Omega$ 
 
-    $ R_{max} = 470 \cdot \frac{100+0.1}{100} = 470.470 \Omega $
+    $R_{max} = 470 \cdot \frac{100+0.1}{100} = 470.470 \Omega$
 
 ### Resistor Power Ratings
 
