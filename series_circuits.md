@@ -438,8 +438,11 @@ Power dissipated in the supply $V_S$ :
 $$ P_{V_S} = V_S \cdot I_T = 6V \cdot 9.231mA = 55.386mW $$
 
 Power dissipated in the resistors: 
+
 $$P_{R_1} = I^2_T \cdot R_1 = {9.231mA}^2 \cdot 100 = 8.521mW$$
+
 $$P_{R_2} = I^2_T \cdot R_2 = {9.231mA}^2 \cdot 220 = 18.746mW$$
+
 $$P_{R_3} = I^2_T \cdot R_3 = {9.231mA}^2 \cdot 330 = 28.120mW$$
 
 Total power dissipated in the three resistors: $$P_{R_1} + P_{R_2} + P_{R_3} = 28.120mW + 18.746mW + 8.521mW = 55.387mW \approxeq = P_{V_S} $$
