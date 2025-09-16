@@ -93,48 +93,39 @@ When calculating the equivalent resistance of a very small resistor and a very l
 
 ### Example 5
 
-a.  Calculate the parallel equivalent resistance of two resistors;
-    $10\Omega$ and $1k\Omega$ in parallel.
-b.  Calculate the parallel equivalent resistance of two resistors;
-    $10\Omega$ and $10k\Omega$ in parallel.
+1.  Calculate the parallel equivalent resistance of two resistors; $10\Omega$ and $1k\Omega$ in parallel.
+2.  Calculate the parallel equivalent resistance of two resistors; 10\Omega$ and $10k\Omega$ in parallel.
 
-```{=html}
-<button onclick="toggle_element('ex35')">Solution</button>
+#### Solution
 
-<div id="ex35" style="display: none;"><br>
-    <p> a. $$   R_T = \frac{ 1 }{ \frac{1}{R_1} +  \frac{1}{R_2}  } = \frac{ 1 }{ \frac{1}{10} +  \frac{1}{1000}  } = 9.9\Omega $$</p>
-    <p> b. $$   R_T = \frac{ 1 }{ \frac{1}{R_1} +  \frac{1}{R_2}  } = \frac{ 1 }{ \frac{1}{10} +  \frac{1}{10000}  } = 9.99\Omega $$</p>
-</div>
-<br><br>
-```
-When $N$ resistors of the same value $R$ are placed in parallel, their
-equivalent resistance will always equal:
+1. $R_T = \frac{ 1 }{ \frac{1}{R_1} +  \frac{1}{R_2}  } = \frac{ 1 }{ \frac{1}{10} +  \frac{1}{1000}  } = 9.9\Omega$
+2. $R_T = \frac{ 1 }{ \frac{1}{R_1} +  \frac{1}{R_2}  } = \frac{ 1 }{ \frac{1}{10} +  \frac{1}{10000}  } = 9.99\Omega$
+
+When $N$ resistors of the same value $R$ are placed in parallel, their equivalent resistance will always equal:
 
 $$R_T = \frac{R}{N}$$
 
 ### Example 6
 
-a.  Calculate the equivalent resistance of 2 $600\Omega$ resistors in
-    parallel.
-b.  Calculate the equivalent resistance of 3 $600\Omega$ resistors in
-    parallel.
+1.  Calculate the equivalent resistance of 2 $600\Omega$ resistors in parallel.
+2.  Calculate the equivalent resistance of 3 $600\Omega$ resistors in parallel.
 
-```{=html}
-<button onclick="toggle_element('ex36')">Solution</button>
+#### Solution
 
-<div id="ex36" style="display: none;"><br>
-    <p> a. $$   R_T = \frac{ 1 }{ \frac{1}{R_1} +  \frac{1}{R_2}  } = \frac{ 1 }{ \frac{1}{600} +  \frac{1}{600}  } = 300\Omega \equiv \frac{600}{2} $$</p>
-    <p> b. $$   R_T = \frac{ 1 }{ \frac{1}{R_1} +  \frac{1}{R_2} +  \frac{1}{R_3}  } = \frac{ 1 }{ \frac{1}{600} +  \frac{1}{600} +  \frac{1}{600}  } =  200\Omega \equiv \frac{600}{3} $$</p>
-</div>
-<br><br>
-```
+1. $$R_T = \frac{ 1 }{ \frac{1}{R_1} +  \frac{1}{R_2}  } = \frac{ 1 }{ \frac{1}{600} +  \frac{1}{600}  } = 300\Omega \equiv \frac{600}{2}$$
+2. $$R_T = \frac{ 1 }{ \frac{1}{R_1} +  \frac{1}{R_2} +  \frac{1}{R_3}  } = \frac{ 1 }{ \frac{1}{600} +  \frac{1}{600} +  \frac{1}{600}  } =  200\Omega \equiv \frac{600}{3}$$
+
 ## Kirchhoff\'s Current Law
 
-Kirchhoff\'s current law (KCL) states that **the sum of all currents
-entering or leaving a node has to equal zero**.
+Kirchhoff\'s current law (KCL) states that **the sum of all currents entering or leaving a node has to equal zero**.
 
-![](../_static/images/parallel_circuits/kcl01.png){.align-center
-width="60.0%"}
+<!-- ![](../_static/images/parallel_circuits/kcl01.png){.align-center
+width="60.0%"} -->
+
+ <figure style="text-align:center">
+  <img src="images/parallel_circuits/kcl01.png" alt="Figure 4- KCL" style="width:50%">
+  <figcaption>Figure 4 - KCL</figcaption>
+</figure> 
 
 KCL can be written as:
 
@@ -144,62 +135,65 @@ A more general case:
 
 $$I_T + I_1 + I_2 + \cdots + I_N = 0$$
 
-In a single current supply circuit as the one shown below, notice that
-the supply current moves into the node whereas the current moving
-through the resistors are moving out of the node.
+In a single current supply circuit as the one shown below, notice that the supply current moves into the node whereas the current moving through the resistors are moving out of the node.
 
-![](../_static/images/parallel_circuits/kcl02.png){.align-center
-width="60.0%"}
+<!-- ![](../_static/images/parallel_circuits/kcl02.png){.align-center
+width="60.0%"} -->
 
-Assuming that that the supply current direction is +ve and the currents
-flowing through the two resistors are negative:
+ <figure style="text-align:center">
+  <img src="images/parallel_circuits/kcl02.png" alt="Figure 5- KCL" style="width:50%">
+  <figcaption>Figure 5 - KCL</figcaption>
+</figure> 
 
-$$I_S - I_1 - I_2 = 0
-I_S = I_1 + I_2$$
+Assuming that that the supply current direction is +ve and the currents flowing through the two resistors are negative:
 
-In otherwords, KCL can also be defined as **the sum of all currents
-entering a node must equal the sum of all currents leaving the same
+$$I_S - I_1 - I_2 = 0$$ 
+$$I_S = I_1 + I_2$$
+
+In otherwords, KCL can also be defined as **the sum of all currents entering a node must equal the sum of all currents leaving the same
 node**
 
 ### Example 7
 
 In the circuit below calculate:
 
-![](../_static/images/parallel_circuits/parallel_ex01.png){.align-center
-width="60.0%"}
+<!-- ![](../_static/images/parallel_circuits/parallel_ex01.png){.align-center
+width="60.0%"} -->
 
-a.  The total equivalent resistance $R_T$
-b.  The voltage $V_A$
-c.  The currents $I_1$ & $I_2$
-d.  Verify KCL i.e. verify that $I_S = I_1 + I_2$
-e.  Verify the law of conservation of energy. i.e.
+<figure style="text-align:center">
+  <img src="images/parallel_circuits/parallel_ex01.png" alt="Figure 6- Example 7" style="width:50%">
+  <figcaption>Figure 6 - Example 7</figcaption>
+</figure> 
+
+1.  The total equivalent resistance $R_T$
+2.  The voltage $V_A$
+3.  The currents $I_1$ & $I_2$
+4.  Verify KCL i.e. verify that $I_S = I_1 + I_2$
+5.  Verify the law of conservation of energy. i.e.
     $P_{I_S} = P_{R_1} + P_{R_2}$
 
-```{=html}
-<button onclick="toggle_element('ex37')">Solution</button>
+#### Solution
 
-<div id="ex37" style="display: none;"><br>
-   <p> The trick to analyzing this circuit is to transform it first into a series circuit by calculating R<sub>T</sub>. Then use Ohm's law to solve for V<sub>A</sub>. Since the
-       voltage across R<sub>T</sub> in the transformed circuit is equivalent to the voltage across all components in the original circuit, we can then use it along with Ohm's law
-       to calculate the currents I<sub>1</sub> and I<sub>2</sub>.
-   </p>
+The trick to analyzing this circuit is to transform it first into a series circuit by calculating $R_T$. Then use Ohm's law to solve for $V_A$. Since the voltage across $R_T$ in the transformed circuit is equivalent to the voltage across all components in the original circuit, we can then use it along with Ohm's law to calculate the currents $I_1$ and $I_2$.
 
-   <img src=../_static/images/parallel_circuits/parallel_ex07exp.png>
+   <!-- <img src=../_static/images/parallel_circuits/parallel_ex07exp.png> -->
 
-   <p>a. From examples 1 or 3 R<sub>T</sub> = 767.442 Ω </p>
-   <p>b. $$ V_A = I_S \cdot R_T = 0.2A \cdot 767.442\Omega = 153.488 V$$</p>
-   <p>c. $$ I_1 = \frac{V_A}{R_1} = \frac{153.488 V}{1000\Omega} = 0.153A = 153mA $$
-         $$ I_2 = \frac{V_A}{R_2} = \frac{153.488 V}{3300\Omega} = 0.047A = 47mA $$ </p>
-   <p>d. $$ I_1 + I_2 = 153mA + 47mA = 200mA = 0.2A \equiv I_S $$ Therefore KCL is verified!!!</p>
-   <p>e. Power delivered by the current source: $$P_{I_S} = I_S \cdot V_A = 0.2A * 153.488V = 30.698W$$
-         Power dissipated in resistor R<sub>1</sub>: $$P_{R_1} = I^2_1 \cdot R_1 = {153mA}^2 \cdot 1000 \Omega= 23.409W $$
-         Power dissipated in resistor R<sub>2</sub>: $$P_{R_2} = I^2_2 \cdot R_2 = {47mA}^2 \cdot 3300 \Omega= 7.290W $$
-         Total power dissipated in resistors:  $$P_{R_1} + P_{R_2} = 23.409W + 7.290W = 30.699W \equiv P_{I_S} $$
-         Therefore law of conservation of energy is verified!!!</p>
+<figure style="text-align:center">
+  <img src="images/parallel_circuits/parallel_ex07exp.png" alt="Figure 7- Example 7 soln" style="width:50%">
+  <figcaption>Figure 7 - Example 7 soln</figcaption>
+</figure> 
 
-</div>
-<br><br>
-```
+1. From examples 1 or $R_T = 767.442 Ω$ 
+2. $V_A = I_S \cdot R_T = 0.2A \cdot 767.442\Omega = 153.488 V$
+3. $I_1 = \frac{V_A}{R_1} = \frac{153.488 V}{1000\Omega} = 0.153A = 153mA$$
+   $I_2 = \frac{V_A}{R_2} = \frac{153.488 V}{3300\Omega} = 0.047A = 47mA$ 
+4. $I_1 + I_2 = 153mA + 47mA = 200mA = 0.2A \equiv I_S $ Therefore KCL is verified!!!
+5. Power delivered by the current source: $P_{I_S} = I_S \cdot V_A = 0.2A * 153.488V = 30.698W$
+   Power dissipated in resistor R<sub>1</sub>: $P_{R_1} = I^2_1 \cdot R_1 = {153mA}^2 \cdot 1000 \Omega= 23.409W$
+   Power dissipated in resistor R<sub>2</sub>: $P_{R_2} = I^2_2 \cdot R_2 = {47mA}^2 \cdot 3300 \Omega= 7.290W$
+   Total power dissipated in resistors:  $P_{R_1} + P_{R_2} = 23.409W + 7.290W = 30.699W \equiv P_{I_S}$
+   Therefore law of conservation of energy is verified!!!
+         
 ## Current Divider rule
 
 The current divider rule states that the current $I_{R_X}$ flowing
