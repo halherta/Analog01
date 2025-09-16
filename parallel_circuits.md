@@ -294,7 +294,7 @@ Consider the schematic of an ideal and practical current source shown above. Ass
      
 3. $V_A = I_S \cdot R_T = 50mA \cdot 330 \Omega = 16.5V$
 
-   $I_{R_L} =50mA$$
+   $I_{R_L} =50mA$
     
 4. $R_T = \frac{1}{ \frac{1}{100 K\Omega} + \frac{1}{330}}  = 328.915 \Omega$
 
@@ -351,7 +351,7 @@ width="40.0%"} -->
 #### Solution
 
 1. The source resistance in the current source will be the same as the source resistance in the voltage source i.e. 4Ω but in parallel.
-   The value of the current source will be: $$I_S = \frac{V_S}{R_S} = \frac{6V}{4\Omega} = 1.5A $$ </p>
+   The value of the current source will be: $I_S = \frac{V_S}{R_S} = \frac{6V}{4\Omega} = 1.5A$ </p>
  
  <figure style="text-align:center">
   <img src="images/parallel_circuits/practicalsourcetransformation.png" alt="Figure 12- Example 10.1" style="width:50%">
@@ -359,11 +359,17 @@ width="40.0%"} -->
 </figure> 
 
 3. In the original circuit (with voltage source):
+   
    $$ I_{R_L} = \frac{V_S}{R_T} = \frac{6V}{104\Omega} = 57.692mA $$
+   
    $$ V_{R_L} = I_{R_L} \cdot R_L = 57.692mA \cdot 100\Omega = 5.769V $$
+   
    In the transformed circuit (with current source):
+   
    $$ R_T = \frac{1 }{ \frac{1}{4} + \frac{1}{100} } = 3.846\Omega $$
+   
    $$ V_{R_L} = I_S \cdot R_T = 1.5A \cdot 3.846\Omega = 5.769V $$
+   
    $$ I_{R_L} = \frac{ V_{R_L} }{R_L} = \frac{5.769V}{100} =  57.690mA $$ </p>
 
 ### Example 11
@@ -393,11 +399,17 @@ width="40.0%"} -->
 </figure> 
 
 2. In the original circuit (with practical current source):
+   
      $$R_T = \frac{1 }{ \frac{1}{100k\Omega} + \frac{1}{1k\Omega} } = 990.099\Omega$$
+   
      $$V_{R_L} = I_S \cdot R_T = 0.2mA \cdot 990.099\Omega = 0.198V$$
+   
      $$I_{R_L} = \frac{ V_{R_L} }{R_L} = \frac{0.198V}{1k\Omega} =  0.198mA$$
+   
      In the transformed circuit (with practical voltage source):
+   
      $$I_{R_L} = \frac{V_S}{R_T} = \frac{20V}{100k\Omega + 1k\Omega} = 0.198mA$$
+   
      $$V_{R_L} = I_{R_L} \cdot R_L = 0.198mA \cdot 1k\Omega = 0.198V$$
      
 ## Maximum Power Transfer
