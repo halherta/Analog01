@@ -189,8 +189,8 @@ The trick to analyzing this circuit is to transform it first into a series circu
    
    $I_2 = \frac{V_A}{R_2} = \frac{153.488 V}{3300\Omega} = 0.047A = 47mA$
     
-5. $I_1 + I_2 = 153mA + 47mA = 200mA = 0.2A \equiv I_S $ Therefore KCL is verified!!!
-6. Power delivered by the current source: $P_{I_S} = I_S \cdot V_A = 0.2A * 153.488V = 30.698W$
+4. $I_1 + I_2 = 153mA + 47mA = 200mA = 0.2A \equiv I_S$ Therefore KCL is verified!!!
+5. Power delivered by the current source: $P_{I_S} = I_S \cdot V_A = 0.2A * 153.488V = 30.698W$
    Power dissipated in resistor R<sub>1</sub>: $P_{R_1} = I^2_1 \cdot R_1 = {153mA}^2 \cdot 1000 \Omega= 23.409W$
    Power dissipated in resistor R<sub>2</sub>: $P_{R_2} = I^2_2 \cdot R_2 = {47mA}^2 \cdot 3300 \Omega= 7.290W$
    Total power dissipated in resistors:  $P_{R_1} + P_{R_2} = 23.409W + 7.290W = 30.699W \equiv P_{I_S}$
