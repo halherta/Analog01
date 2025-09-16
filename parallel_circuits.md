@@ -360,17 +360,17 @@ width="40.0%"} -->
 
 3. In the original circuit (with voltage source):
    
-   $$ I_{R_L} = \frac{V_S}{R_T} = \frac{6V}{104\Omega} = 57.692mA $$
+   $$I_{R_L} = \frac{V_S}{R_T} = \frac{6V}{104\Omega} = 57.692mA$$
    
-   $$ V_{R_L} = I_{R_L} \cdot R_L = 57.692mA \cdot 100\Omega = 5.769V $$
+   $$V_{R_L} = I_{R_L} \cdot R_L = 57.692mA \cdot 100\Omega = 5.769V$$
    
    In the transformed circuit (with current source):
    
-   $$ R_T = \frac{1 }{ \frac{1}{4} + \frac{1}{100} } = 3.846\Omega $$
+   $$R_T = \frac{1 }{ \frac{1}{4} + \frac{1}{100} } = 3.846\Omega$$
    
-   $$ V_{R_L} = I_S \cdot R_T = 1.5A \cdot 3.846\Omega = 5.769V $$
+   $$V_{R_L} = I_S \cdot R_T = 1.5A \cdot 3.846\Omega = 5.769V$$
    
-   $$ I_{R_L} = \frac{ V_{R_L} }{R_L} = \frac{5.769V}{100} =  57.690mA $$ </p>
+   $$I_{R_L} = \frac{ V_{R_L} }{R_L} = \frac{5.769V}{100} =  57.690mA$$ </p>
 
 ### Example 11
 
