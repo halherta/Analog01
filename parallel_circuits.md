@@ -202,10 +202,8 @@ The trick to analyzing this circuit is to transform it first into a series circu
          
 ## Current Divider rule
 
-The current divider rule states that the current $I_{R_X}$ flowing
-through a resistor $R_X$ is equivalent to the product of the supply
-current $I_S$ and the ratio of total resistance $R_T$ to the resistor
-$R_X$ i.e.
+The current divider rule states that the current $I_{R_X}$ flowing through a resistor $R_X$ is equivalent to the product of the supply
+current $I_S$ and the ratio of total resistance $R_T$ to the resistor $R_X$ i.e.
 
 $$I_{R_X} = I_S \cdot \frac{R_T}{R_X}$$
 
@@ -213,154 +211,154 @@ Note that this is a special case of Ohm\'s law.
 
 $$I_{R_X} = I_S \cdot \frac{R_T}{R_X} \equiv \frac{I_S \cdot R_T}{R_X} = \frac{V_A}{R_X}$$
 
-where V_A is the voltage across all components in the parallel circuit.
+where $V_A$ is the voltage across all components in the parallel circuit.
 
 ### Example 8
 
 In the circuit below calculate:
 
-![](../_static/images/parallel_circuits/parallel_ex02.png){.align-center
-width="60.0%"}
+<!-- ![](../_static/images/parallel_circuits/parallel_ex02.png){.align-center
+width="60.0%"} -->
 
-a.  The total equivalent resistance $R_T$
-b.  The voltage $V_A$
-c.  The currents $I_1$, $I_2$ & $I_3$ using the current divider rule
-d.  The currents $I_1$, $I_2$ & $I_3$ using Ohm\'s law
-e.  Verify KCL i.e. verify that $I_S = I_1 + I_2 + I_3$
+<figure style="text-align:center">
+  <img src="images/parallel_circuits/parallel_ex02.png" alt="Figure 8- Example 8" style="width:50%">
+  <figcaption>Figure 8 - Example 8</figcaption>
+</figure> 
 
-```{=html}
-<button onclick="toggle_element('ex38')">Solution</button>
+1.  The total equivalent resistance $R_T$
+2.  The voltage $V_A$
+3.  The currents $I_1$, $I_2$ & $I_3$ using the current divider rule
+4.  The currents $I_1$, $I_2$ & $I_3$ using Ohm\'s law
+5.  Verify KCL i.e. verify that $I_S = I_1 + I_2 + I_3$
 
-<div id="ex38" style="display: none;"><br>
+### Solution
 
-   <p>a. $$ R_T = \frac{1}{\frac{1}{470} + \frac{1}{560} + \frac{1}{680}   } = 185.737 \Omega$$  </p>
-   <p>b. $$ V_A = I_S * R_T = 0.2A \cdot 185.737 \Omega = 37.147V $$ </p>
-   <p>c. $$ I_1 = I_S \cdot \frac{R_T}{R_1} = 0.2A \cdot \frac{185.737 \Omega}{470 \Omega} = 79.037mA $$
-         $$ I_2 = I_S \cdot \frac{R_T}{R_2} = 0.2A \cdot \frac{185.737 \Omega}{560 \Omega} = 66.335mA $$
-         $$ I_3 = I_S \cdot \frac{R_T}{R_3} = 0.2A \cdot \frac{185.737 \Omega}{680 \Omega} = 54.629mA $$ </p>
-   <p>d. $$ I_1 = \frac{V_A}{R_1} = \frac{37.147V}{470\Omega} = 79.036 mA$$
-         $$ I_2 = \frac{V_A}{R_2} = \frac{37.147V}{560\Omega} = 66.334 mA$$
-         $$ I_3 = \frac{V_A}{R_3} = \frac{37.147V}{680\Omega} = 54.628 mA$$ </p>
-   <p>e. $$ I_1 + I_2 + I_3 =  79.037mA +  66.335mA + 54.629mA = 200.001mA \equiv I_S $$ </p>
-</div>
-<br><br>
-```
+1. $R_T = \frac{1}{\frac{1}{470} + \frac{1}{560} + \frac{1}{680}   } = 185.737 \Omega$
+2. $V_A = I_S * R_T = 0.2A \cdot 185.737 \Omega = 37.147V$
+3. $I_1 = I_S \cdot \frac{R_T}{R_1} = 0.2A \cdot \frac{185.737 \Omega}{470 \Omega} = 79.037mA$
+         
+   $I_2 = I_S \cdot \frac{R_T}{R_2} = 0.2A \cdot \frac{185.737 \Omega}{560 \Omega} = 66.335mA$
+         
+   $I_3 = I_S \cdot \frac{R_T}{R_3} = 0.2A \cdot \frac{185.737 \Omega}{680 \Omega} = 54.629mA$
+
+4. $I_1 = \frac{V_A}{R_1} = \frac{37.147V}{470\Omega} = 79.036 mA$
+        
+   $I_2 = \frac{V_A}{R_2} = \frac{37.147V}{560\Omega} = 66.334 mA$
+   
+   $I_3 = \frac{V_A}{R_3} = \frac{37.147V}{680\Omega} = 54.628 mA$
+
+5. $I_1 + I_2 + I_3 =  79.037mA +  66.335mA + 54.629mA = 200.001mA \equiv I_S$
+
 ## Ideal & Practical Current Sources
 
-Just like ideal voltage sources, ideal current sources are great for
-theoretical analysis but fall short when doing realistic modeling. The
-practical current source model exhibits a large resistance in parallel
-with the currents source as shown in the figure below:
+Just like ideal voltage sources, ideal current sources are great for theoretical analysis but fall short when doing realistic modeling. The practical current source model exhibits a large resistance in parallel with the currents source as shown in the figure below:
 
-![](../_static/images/parallel_circuits/currentsources.png){.align-center
-width="80.0%"}
+<!-- ![](../_static/images/parallel_circuits/currentsources.png){.align-center
+width="80.0%"} -->
 
-::: note
-::: title
-Note
-:::
+<figure style="text-align:center">
+  <img src="images/parallel_circuits/currentsources.png" alt="Figure 9- Current Sources" style="width:50%">
+  <figcaption>Figure 9- Current Sources</figcaption>
+</figure> 
 
-An ideal voltage source has zero series resistance, whereas an ideal
-current source has infinite parallel resistances
-:::
+**An ideal voltage source has zero series resistance, whereas an ideal current source has infinite parallel resistances**
+
 
 There are two main implications to the practical current source:
 
--   **It limits the maximum voltage drop across the output terminals**.
-    In the case of the ideal current source , the voltage across the
-    terminals is determined primarily by the load. If the load is an
-    open circuit, The voltage is theoretically infinite or very large.
-    The practical current source\'s parallel resistor limits the
-    effective load resistance and therefore reduces maximum voltage drop
-    across the load
--   **The current flowing across across the load is reduced from the the
-    current source rating**. Since some current flows through the
-    current source\'s parallel resistance, the load resistance does not
-    exhibit the rated current from the current source in its entirety.
+-   **It limits the maximum voltage drop across the output terminals**. In the case of the ideal current source , the voltage across the
+    terminals is determined primarily by the load. If the load is an open circuit, The voltage is theoretically infinite or very large.
+    The practical current source\'s parallel resistor limits the effective load resistance and therefore reduces maximum voltage drop
+    across the load.
+-   **The current flowing across across the load is reduced from the current source rating**. Since some current flows through the
+    current source\'s parallel resistance, the load resistance does not exhibit the rated current from the current source in its
+    entirety.
 
 ### Example 9
 
-Consider the schematic of an ideal and practical current source shown
-above. Assume that both current sources have a $I_S = 50mA$ and for the
-practical current source $R_P=100 k\Omega$.
+Consider the schematic of an ideal and practical current source shown above. Assume that both current sources have a $I_S = 50mA$ and for the practical current source $R_P=100 k\Omega$.
 
-a.  If the ideal current source terminals are opened, how much voltage
-    will the power supply have across its terminals?
-b.  If the practical current source terminal are opened, how much
-    voltage will the power supply have across its terminals?
-c.  A 330Ω load resistor $R_L$ is placed between the terminals of the
-    ideal current source. Find the voltage across the load resistor and
+1.  If the ideal current source terminals are opened, how much voltage will the power supply have across its terminals?
+2.  If the practical current source terminal are opened, how much voltage will the power supply have across its terminals?
+3.  A 330Ω load resistor $R_L$ is placed between the terminals of the ideal current source. Find the voltage across the load resistor and
     the current going through it.
-d.  A 330Ω load resistor $R_L$ is placed between the terminals of the
-    practical current source. Find the voltage across the load resistor
+4.  A 330Ω load resistor $R_L$ is placed between the terminals of the practical current source. Find the voltage across the load resistor
     and the current going through it.
-e.  A 33Ω load resistor $R_L$ is placed between the terminals of the
-    practical current source. Find the voltage across the load resistor
-    and the current going through it.
+5.  A 33Ω load resistor $R_L$ is placed between the terminals of the practical current source. Find the voltage across the load resistor     and the current going through it.
 
-```{=html}
-<button onclick="toggle_element('ex39')">Solution</button>
+#### Solution
+1. $V_A = I_S \cdot R_T = 50mA \cdot \infty = \infty V$  
+2. $R_T = \frac{1}{ \frac{1}{100 K\Omega} + \frac{1}{\infty}}  = 100K\Omega$
+   
+   $V_A = I_S \cdot R_T = 50mA \cdot 100K\Omega = 5000 V$
+     
+3. $V_A = I_S \cdot R_T = 50mA \cdot 330 \Omega = 16.5V$
 
-<div id="ex39" style="display: none;"><br>
+   $I_{R_L} =50mA$$
+    
+4. $R_T = \frac{1}{ \frac{1}{100 K\Omega} + \frac{1}{330}}  = 328.915 \Omega$
 
-   <p>a. $$V_A = I_S \cdot R_T = 50mA \cdot \infty = \infty V$$  </p>
-   <p>b. $$R_T = \frac{1}{ \frac{1}{100 K\Omega} + \frac{1}{\infty}}  = 100K\Omega $$
-         $$V_A = I_S \cdot R_T = 50mA \cdot 100K\Omega = 5000 V$$  </p>
-   <p>c. $$V_A = I_S \cdot R_T = 50mA \cdot 330 \Omega = 16.5V$$
-         $$I_{R_L} =50mA $$ </p>
-   <p>d. $$R_T = \frac{1}{ \frac{1}{100 K\Omega} + \frac{1}{330}}  = 328.915 \Omega $$
-         $$V_A = I_S \cdot R_T = 50mA \cdot 328.915\Omega = 16.44V$$
-         $$I_{R_L} = I_S \cdot \frac{R_T}{R_L} =  50mA \cdot \frac{328.915}{330} = 49.836mA $$   </p>
-   <p>e. $$R_T = \frac{1}{ \frac{1}{100 K\Omega} + \frac{1}{33}}  = 32.989 \Omega $$
-         $$V_A = I_S \cdot R_T = 50mA \cdot 32.989 \Omega = 1.649V$$
-         $$I_{R_L} = I_S \cdot \frac{R_T}{R_L} =  50mA \cdot \frac{32.989}{33} = 49.983mA$$   </p>
-</div>
-<br><br>
-```
+   $V_A = I_S \cdot R_T = 50mA \cdot 328.915\Omega = 16.44V$
+
+   $I_{R_L} = I_S \cdot \frac{R_T}{R_L} =  50mA \cdot \frac{328.915}{330} = 49.836mA$
+      
+5. $R_T = \frac{1}{ \frac{1}{100 K\Omega} + \frac{1}{33}}  = 32.989 \Omega$
+   
+   $V_A = I_S \cdot R_T = 50mA \cdot 32.989 \Omega = 1.649V$
+
+   $I_{R_L} = I_S \cdot \frac{R_T}{R_L} =  50mA \cdot \frac{32.989}{33} = 49.983mA$
+      
 ## Voltage and current source transformations
 
-Practical voltage and current sources are interchangeable. In fact one
-can be *transformed* into the other.
+Practical voltage and current sources are interchangeable. In fact one can be *transformed* into the other.
 
-When transforming a practical voltage source into a practical current
-source, the source resistance stays the same, and the current $I_S$
+When transforming a practical voltage source into a practical current source, the source resistance stays the same, and the current $I_S$
 becomes:
 
 $$I_S = \frac{V_S}{R_S}$$
 
-When transforming a practical current source into a practical voltage
-source, the source resistance stays the same, and the voltage $V_S$
-becomes:
+When transforming a practical current source into a practical voltage source, the source resistance stays the same, and the voltage $V_S$ becomes:
 
 $$V_S = I_S \cdot R_S$$
 
 Both transformations are captured in the figure below:
 
-![](../_static/images/parallel_circuits/practicalsourcetransformation.png){.align-center
-width="80.0%"}
+<!-- ![](../_static/images/parallel_circuits/practicalsourcetransformation.png){.align-center
+width="80.0%"} -->
+
+<figure style="text-align:center">
+  <img src="images/parallel_circuits/practicalsourcetransformation.png" alt="Figure 10- Practical source transformation" style="width:50%">
+  <figcaption>Figure 10- Practical source transformation</figcaption>
+</figure> 
 
 ### Example 10
 
 Consider the schematic shown below:
 
-![](../_static/images/parallel_circuits/ex10_01.png){.align-center
-width="40.0%"}
+<!-- ![](../_static/images/parallel_circuits/ex10_01.png){.align-center
+width="40.0%"} -->
 
-a.  Transform the practical voltage source (in the box) into a practical
-    current source. Redraw the circuit with the practical current
+<figure style="text-align:center">
+  <img src="images/parallel_circuits/practicalsourcetransformation.png" alt="Figure 11- Example 10" style="width:50%">
+  <figcaption>Figure 11- Example 10</figcaption>
+</figure> 
+
+1.  Transform the practical voltage source (in the box) into a practical current source. Redraw the circuit with the practical current
     source.
-b.  Calculate the current $I_{R_L}$ and the voltage $V_{R_L}$ in both
-    the original circuit with the practical voltage source and in the
+2.  Calculate the current $I_{R_L}$ and the voltage $V_{R_L}$ in both the original circuit with the practical voltage source and in the
     transformed circuit with the practical current source.
+    
+#### Solution
 
-```{=html}
-<button onclick="toggle_element('ex310')">Solution</button>
+1. The source resistance in the current source will be the same as the source resistance in the voltage source i.e. 4Ω but in parallel.
+   The value of the current source will be: $$I_S = \frac{V_S}{R_S} = \frac{6V}{4\Omega} = 1.5A $$ </p>
+ 
+ <figure style="text-align:center">
+  <img src="images/parallel_circuits/practicalsourcetransformation.png" alt="Figure 12- Example 10.1" style="width:50%">
+  <figcaption>Figure 12- Example 10.1</figcaption>
+</figure> 
 
-
-<div id="ex310" style="display: none;"><br>
- <p>a. The source resistance in the current source will be the same as the source resistance in the voltage source i.e. 4Ω but in parallel. The value of the current source will be: $$I_S = \frac{V_S}{R_S} = \frac{6V}{4\Omega} = 1.5A $$ </p>
- <img src=../_static/images/parallel_circuits/ex10_02.png>
- <p>b. In the original circuit (with voltage source):
+3. In the original circuit (with voltage source):
    $$ I_{R_L} = \frac{V_S}{R_T} = \frac{6V}{104\Omega} = 57.692mA $$
    $$ V_{R_L} = I_{R_L} \cdot R_L = 57.692mA \cdot 100\Omega = 5.769V $$
    In the transformed circuit (with current source):
@@ -368,102 +366,78 @@ b.  Calculate the current $I_{R_L}$ and the voltage $V_{R_L}$ in both
    $$ V_{R_L} = I_S \cdot R_T = 1.5A \cdot 3.846\Omega = 5.769V $$
    $$ I_{R_L} = \frac{ V_{R_L} }{R_L} = \frac{5.769V}{100} =  57.690mA $$ </p>
 
-</div>
-<br><br>
-```
 ### Example 11
 
 Consider the schematic shown below:
 
-![](../_static/images/parallel_circuits/ex11_01.png){.align-center
-width="40.0%"}
+<!-- ![](../_static/images/parallel_circuits/ex11_01.png){.align-center
+width="40.0%"} -->
 
-a.  Transform the practical current source (in the box) in to a
-    practical voltage source. Redraw the circuit with the practical
-    voltage source.
-b.  Calculate the current $I_{R_L}$ and the voltage $V_{R_L}$ in both
-    the original circuit with the practical current source and in the
-    transformed circuit with the practical voltage source.
+<figure style="text-align:center">
+  <img src="images/parallel_circuits/ex11_01.png" alt="Figure 13- Example 11" style="width:50%">
+  <figcaption>Figure 13- Example 11</figcaption>
+</figure> 
 
-```{=html}
-<button onclick="toggle_element('ex311')">Solution</button>
+1.  Transform the practical current source (in the box) in to a practical voltage source. Redraw the circuit with the practical voltage      source.
+2.  Calculate the current $I_{R_L}$ and the voltage $V_{R_L}$ in both the original circuit with the practical current source and in the      transformed circuit with the practical voltage source.
 
+#### Solution
 
-<div id="ex311" style="display: none;"><br>
-  <p>a. The source resistance in the voltage source will be the same as the source resistance in the current source i.e. 100kΩ but in series. The value of the voltage source will be: $$V_S = I_S \cdot R_S = 0.2mA \cdot 100k\Omega= 20V $$ </p>
-  <img src=../_static/images/parallel_circuits/ex11_02.png>
-  <p>b. In the original circuit (with practical current source):
-     $$ R_T = \frac{1 }{ \frac{1}{100k\Omega} + \frac{1}{1k\Omega} } = 990.099\Omega $$
-     $$ V_{R_L} = I_S \cdot R_T = 0.2mA \cdot 990.099\Omega = 0.198V $$
-     $$ I_{R_L} = \frac{ V_{R_L} }{R_L} = \frac{0.198V}{1k\Omega} =  0.198mA $$
+1. The source resistance in the voltage source will be the same as the source resistance in the current source i.e. 100kΩ but in series. The value of the voltage source will be: $$V_S = I_S \cdot R_S = 0.2mA \cdot 100k\Omega= 20V $$ </p>
+
+ <!--  <img src=../_static/images/parallel_circuits/ex11_02.png> -->
+
+<figure style="text-align:center">
+  <img src="images/parallel_circuits/ex11_02.png" alt="Figure 14- Example 11.1" style="width:50%">
+  <figcaption>Figure 14- Example 11.1</figcaption>
+</figure> 
+
+2. In the original circuit (with practical current source):
+     $$R_T = \frac{1 }{ \frac{1}{100k\Omega} + \frac{1}{1k\Omega} } = 990.099\Omega$$
+     $$V_{R_L} = I_S \cdot R_T = 0.2mA \cdot 990.099\Omega = 0.198V$$
+     $$I_{R_L} = \frac{ V_{R_L} }{R_L} = \frac{0.198V}{1k\Omega} =  0.198mA$$
      In the transformed circuit (with practical voltage source):
-     $$ I_{R_L} = \frac{V_S}{R_T} = \frac{20V}{100k\Omega + 1k\Omega} = 0.198mA $$
-     $$ V_{R_L} = I_{R_L} \cdot R_L = 0.198mA \cdot 1k\Omega = 0.198V $$
-  </p>
-
-</div>
-<br><br>
-```
+     $$I_{R_L} = \frac{V_S}{R_T} = \frac{20V}{100k\Omega + 1k\Omega} = 0.198mA$$
+     $$V_{R_L} = I_{R_L} \cdot R_L = 0.198mA \cdot 1k\Omega = 0.198V$$
+     
 ## Maximum Power Transfer
 
-The Maximum Power transfer theorem states that in order to ensure that
-maximum power is delivered to a load resistor $R_L$, **the resistance of
-the load resistor must be identical to the resistance of the source
-resistance**. Where $R_S$ is the internal parallel source resistance of
-the practical current source
+The Maximum Power transfer theorem states that in order to ensure that maximum power is delivered to a load resistor $R_L$, **the resistance of the load resistor must be identical to the resistance of the source resistance**. Where $R_S$ is the internal parallel source resistance of the practical current source
 
-![](../_static/images/parallel_circuits/mpt.png){.align-center
-width="40.0%"}
+<!-- ![](../_static/images/parallel_circuits/mpt.png){.align-center
+width="40.0%"} -->
 
-In otherwords, maximum power is delivered to the load when
-$R_L \equiv R_S$
+<figure style="text-align:center">
+  <img src="images/parallel_circuits/mpt.png" alt="Figure 15- Maximum Power Transfer" style="width:50%">
+  <figcaption>Figure 15- Maximum Power Transfer</figcaption>
+</figure> 
+
+In otherwords, maximum power is delivered to the load when $R_L \equiv R_S$
 
 ### Example 12
 
-Consider the figure shown above. Assume that $I_S=1mA$ and
-$R_S=100k\Omega$. Calculate the current across the load resistor
-$I_{R_L}$ and the power dissipated in $R_L$; $P_{R_L}$, for each value
-of $R_L$ provided in the table below. Plot $P_{R_L}$ vs $R_L$ using a
-spreadsheet program such as LibreOffice Calc. Discuss your findings.
+Consider the figure shown above. Assume that $I_S=1mA$ and $R_S=100k\Omega$. Calculate the current across the load resistor
+$I_{R_L}$ and the power dissipated in $R_L$; $P_{R_L}$, for each value of $R_L$ provided in the table below. Plot $P_{R_L}$ vs $R_L$ using a spreadsheet program such as LibreOffice Calc. Discuss your findings.
 
-> +-------------+--------------+------------------+--------------------+
-> | RL(kΩ)      | RT(kΩ)       | IRL(mA)          | PRL(mW)            |
-> +=============+==============+==================+====================+
-> | > 25        |              |                  |                    |
-> +-------------+--------------+------------------+--------------------+
-> | > 50        |              |                  |                    |
-> +-------------+--------------+------------------+--------------------+
-> | > 75        |              |                  |                    |
-> +-------------+--------------+------------------+--------------------+
-> | > 100       |              |                  |                    |
-> +-------------+--------------+------------------+--------------------+
-> | > 125       |              |                  |                    |
-> +-------------+--------------+------------------+--------------------+
-> | > 150       |              |                  |                    |
-> +-------------+--------------+------------------+--------------------+
-> | > 175       |              |                  |                    |
-> +-------------+--------------+------------------+--------------------+
-> | > 200       |              |                  |                    |
-> +-------------+--------------+------------------+--------------------+
+| RL(kΩ)      | RT(kΩ)       | IRL(mA)          | PRL(mW)            |
+|-------------|--------------|------------------|--------------------| 
+| 25          |              |                  |                    |
+| 50          |              |                  |                    |
+| 75          |              |                  |                    |
+| 100         |              |                  |                    |
+| 125         |              |                  |                    |
+| 150         |              |                  |                    |
+| 175         |              |                  |                    |
+| 200         |              |                  |                    |
+
 
 ## The Law of conservation of Energy
 
-The Law of convservation of Energy states that energy cannot be created
-nor destroyed. In other words:
+The Law of convservation of Energy states that energy cannot be created nor destroyed. In other words:
 
-::: note
-::: title
-Note
-:::
+**The power delivered by the source(s) in the circuit must always be equivalent to the sum of power dissipated by all the resistors in the same circuit.**
 
-The power delivered by the source(s) in the circuit must always be
-equivalent to the sum of power dissipated by all the resistors in the
-same circuit.
-:::
-
-This is true regardless of circuit topology i.e. it applies to series
-circuits, parallel circuits, series-parallel circuits and
-complex-circuits.
+This is true regardless of circuit topology i.e. it applies to series circuits, parallel circuits, series-parallel circuits and complex-circuits.
 
 In a single source circuit:
 
