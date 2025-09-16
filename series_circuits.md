@@ -314,7 +314,7 @@ world power supplies very accurately. For starters, all real world power supplie
 width="70.0%"} -->
 
 <figure style="text-align:center">
-  <img src="images/series_circuits/voltsource.png" alt="Figure 11 - Voltage Sources" style="width:40%">
+  <img src="images/series_circuits/voltsource.png" alt="Figure 11 - Voltage Sources" style="width:55%">
   <figcaption>Figure 11 - Voltage / Current Sources</figcaption>
 </figure>
 
@@ -349,7 +349,7 @@ practical voltage source $R_S=2\Omega$.
 #### Solution
 
 
-1. In this case $ I_T = \frac{V_S}{R_T} = \frac{V_S}{0} = \infty A$
+1. In this case $I_T = \frac{V_S}{R_T} = \frac{V_S}{0} = \infty A$
 2. $I_T = \frac{V_S}{R_T} = \frac{V_S}{R_S + 0} = \frac{12}{2} = 6A$
 3. $I_{R_L} = \frac{V_S}{R_L} = \frac{12}{330} =  36.364mA$ 
 
