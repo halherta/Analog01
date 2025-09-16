@@ -1,26 +1,23 @@
 # Lesson 04 - Parallel Circuits
 
-A Parallel circuit is a circuit whose components (current source and
-resistors) are all placed in parallel as shown in the figure below.
+A Parallel circuit is a circuit whose components (current source and resistors) are all placed in parallel as shown in the figure below.
 
-![](../_static/images/parallel_circuits/parallelbasic.png){.align-center
-width="60.0%"}
+<!-- ![](../_static/images/parallel_circuits/parallelbasic.png){.align-center
+width="60.0%"} -->
 
-In parallel circuits the voltage rise/drop across all components is the
-same. Also power sources are typically represented as **current
-sources** as shown above. In order to further analyze parallel circuits,
-some basic rules of electrical circuits will have to be covered. These
-include, calculating equivalent resistances of resistors in parallel,
-Kirchhoff\'s current law, and the current divider rule.
+ <figure style="text-align:center">
+  <img src="images/parallel_circuits/parallelbasic.png" alt="Figure 1 - Parallel Circuits" style="width:50%">
+  <figcaption>Figure 1 - Parallel Circuits</figcaption>
+</figure> 
+
+In parallel circuits the voltage rise/drop across all components is the same. Also power sources are typically represented as **current
+sources** as shown above. In order to further analyze parallel circuits, some basic rules of electrical circuits will have to be covered. These include, calculating equivalent resistances of resistors in parallel, Kirchhoff\'s current law, and the current divider rule.
 
 ## Equivalent resistances in parallel
 
-The equivalent resistance of two or more resistors in parallel can be
-calculated using two approaches; **product over sum rule** and the
-**inverse rule**.
+The equivalent resistance of two or more resistors in parallel can be calculated using two approaches; **product over sum rule** and the **inverse rule**.
 
-The product over sum rule can calculate the equivalent parallel
-resistance of a maximum of two resistors at a time. The formula for it
+The product over sum rule can calculate the equivalent parallel resistance of a maximum of two resistors at a time. The formula for it
 is:
 
 $$R_T = \frac{R_1 \cdot R_2 }{ R_1 + R_2 }$$
@@ -30,83 +27,69 @@ $$R_T = \frac{R_1 \cdot R_2 }{ R_1 + R_2 }$$
 Calculate the total equivalent resistance of the circuit shown in the
 schematic below using the product over sum rule
 
-![](../_static/images/parallel_circuits/parallel_ex01.png){.align-center
-width="60.0%"}
+<!-- ![](../_static/images/parallel_circuits/parallel_ex01.png){.align-center
+width="60.0%"} -->
 
-```{=html}
-<button onclick="toggle_element('ex31')">Solution</button>
 
-<div id="ex31" style="display: none;"><br>
-<p> $$ R_T = \frac{R_1 \cdot R_2 }{ R_1 + R_2 } = \frac{1000*3300}{1000+3300} = \frac{3300000}{4300} = 767.442\Omega$$</p>
-</div>
-<br><br>
-```
+ <figure style="text-align:center">
+  <img src="images/parallel_circuits/parallel_ex01.png" alt="Figure 2 - Example 1" style="width:50%">
+  <figcaption>Figure 2 - Example 1</figcaption>
+</figure> 
+
+#### Solution
+
+$$R_T = \frac{R_1 \cdot R_2 }{ R_1 + R_2 } = \frac{1000*3300}{1000+3300} = \frac{3300000}{4300} = 767.442\Omega$$
+
+
 ### Example 2
 
 Calculate the total equivalent resistance of the circuit shown in the
 schematic below using the product over sum rule
 
-![](../_static/images/parallel_circuits/parallel_ex02.png){.align-center
-width="60.0%"}
+<!-- ![](../_static/images/parallel_circuits/parallel_ex02.png){.align-center
+width="60.0%"} -->
 
-```{=html}
-<button onclick="toggle_element('ex32')">Solution</button>
+ <figure style="text-align:center">
+  <img src="images/parallel_circuits/parallel_ex02.png" alt="Figure 3- Example 2" style="width:50%">
+  <figcaption>Figure 3 - Example 2</figcaption>
+</figure> 
 
-<div id="ex32" style="display: none;"><br>
-   <p> first apply the product over sum rule to any two of the three resistors:
-       $$ R_{T_{12}} = \frac{R_1 \cdot R_2 }{ R_1 + R_2 } = \frac{470*560}{470+560} = \frac{263200}{1030} = 255.534\Omega$$
-   </p>
-   <p> Now re-apply the product over sum rule on the result of the first operation and the third resistor:
-       $$ R_{T} = \frac{ R_{T_{12}} \cdot R_3 }{ R_{T_{12}} + R_3 } = \frac{255.534*680}{255.534+680} = \frac{173763.120}{935.534} = 185.737\Omega$$</p>
-</div>
-<br><br>
-```
-The inverse rule for calculating equivalent resistance of resistors in
-parallel is provided below:
+#### Solution
+
+First apply the product over sum rule to any two of the three resistors:
+       
+$$R_{T_{12}} = \frac{R_1 \cdot R_2 }{ R_1 + R_2 } = \frac{470*560}{470+560} = \frac{263200}{1030} = 255.534\Omega$$
+   
+Now re-apply the product over sum rule on the result of the first operation and the third resistor:
+       
+$$R_{T} = \frac{ R_{T_{12}} \cdot R_3 }{ R_{T_{12}} + R_3 } = \frac{255.534*680}{255.534+680} = \frac{173763.120}{935.534} = 185.737\Omega$$
+
+The inverse rule for calculating equivalent resistance of resistors in parallel is provided below:
 
 $$R_T = \frac{ 1 }{ \frac{1}{R_1} +  \frac{1}{R_2} +  \frac{1}{R_3} + \cdots + \frac{1}{R_N} }$$
 
-Unlike the product over sum rule, which can only be applied to two
-resistors in parallel at a time, the inverse rule can be applied to
-multiple resistors. Use either the product over sum rule or the inverse
-rule if you want to calculate the equivalent resistance of two resistors
-in parallel. If you want to calculate the equivalent resistance of more
-resistors in parallel always go for the inverse rule.
+Unlike the product over sum rule, which can only be applied to two resistors in parallel at a time, the inverse rule can be applied to
+multiple resistors. Use either the product over sum rule or the inverse rule if you want to calculate the equivalent resistance of two resistors in parallel. If you want to calculate the equivalent resistance of more resistors in parallel always go for the inverse rule.
 
 ### Example 3
 
-Calculate the total equivalent resistance of the circuit shown in the
-schematic in Example 1 using the inverse rule
+Calculate the total equivalent resistance of the circuit shown in the schematic in Example 1 using the inverse rule
 
-```{=html}
-<button onclick="toggle_element('ex33')">Solution</button>
+#### Solution
 
-<div id="ex33" style="display: none;"><br>
-<p> $$ R_T = \frac{ 1 }{ \frac{1}{R_1} +  \frac{1}{R_2}  } = \frac{ 1 }{ \frac{1}{1000} +  \frac{1}{3300} } = 767.442\Omega $$</p>
-</div>
-<br><br>
-```
+$$R_T = \frac{ 1 }{ \frac{1}{R_1} +  \frac{1}{R_2}  } = \frac{ 1 }{ \frac{1}{1000} +  \frac{1}{3300} } = 767.442\Omega$$
+
 ### Example 4
 
-Calculate the total equivalent resistance of the circuit shown in the
-schematic in Example 2 using the inverse rule
+Calculate the total equivalent resistance of the circuit shown in the schematic in Example 2 using the inverse rule
 
-```{=html}
-<button onclick="toggle_element('ex34')">Solution</button>
+#### Solution
 
-<div id="ex34" style="display: none;"><br>
-    <p> $$   R_T = \frac{ 1 }{ \frac{1}{R_1} +  \frac{1}{R_2} + +  \frac{1}{R_3} } = \frac{ 1 }{ \frac{1}{470} +  \frac{1}{560} +  \frac{1}{680} } = 185.737\Omega $$</p>
-</div>
-<br><br>
-```
-Notice how **the parallel equivalent resistance is always smaller than
-the smallest resistor in the parallel combination**.
+$$R_T = \frac{ 1 }{ \frac{1}{R_1} +  \frac{1}{R_2} + +  \frac{1}{R_3} } = \frac{ 1 }{ \frac{1}{470} +  \frac{1}{560} +  \frac{1}{680} } = 185.737\Omega$$
 
-When calculating the equivalent resistance of a very small resistor and
-a very large resistor (say 100 times larger than the smaller resistor),
-the equivalent resistance will always be approximately the same as the
-smaller resistor (a tiny bit smaller actually). This is because the vast
-majority of the current will end up flowing across the smaller resistor.
+Notice how **the parallel equivalent resistance is always smaller than the smallest resistor in the parallel combination**.
+
+When calculating the equivalent resistance of a very small resistor and a very large resistor (say 100 times larger than the smaller resistor), the equivalent resistance will always be approximately the same as the smaller resistor (a tiny bit smaller actually). This is because the vast majority of the current will end up flowing across the smaller resistor.
 
 ### Example 5
 
