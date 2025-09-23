@@ -1,54 +1,46 @@
 # Lesson 05 - Series-Parallel Circuits
 
-Series-parallel circuits are a slightly more complicated circuit
-topology than the pure parallel and series circuit examined in these
-notes. As its name implies, the series-parallel circuit topology
-consists of combinations of series and parallel circuits.
+Series-parallel circuits are a slightly more complicated circuit topology than the pure parallel and series circuit examined in these
+notes. As its name implies, the series-parallel circuit topology consists of combinations of series and parallel circuits.
 
-![](../_static/images/parallel_series_circuits/ps.png){.align-center
-width="100.0%"}
+<!-- ![](../_static/images/parallel_series_circuits/ps.png){.align-center
+width="100.0%"} -->
 
-In the figure above, the circuit on the left (a) consists of two series
-circuits/branches connected in parallel. Whereas the circuit on the
-right (b), consists of two parallel circuits connected in series. Both
-circuits have a series-parallel topology.
+ <figure style="text-align:center">
+  <img src="images/images/parallel_series_circuits/ps.png" alt="Figure 1 - Series-Parallel Circuits" style="width:50%">
+  <figcaption>Figure 1 - Series-Parallel Circuits</figcaption>
+</figure> 
 
-By definition a series-parallel circuit is a circuit whose topology is
-neither only series nor parallel, but can still be *compressed* into a
-single resistance i.e. the resistances in the circuit can have an
-overall equivalent resistance in series with the voltage source as shown
-in the figure below:
+In the figure above, the circuit on the left (a) consists of two series circuits/branches connected in parallel. Whereas the circuit on the right (b), consists of two parallel circuits connected in series. Both circuits have a series-parallel topology.
 
-![](../_static/images/parallel_series_circuits/psorcomplex.png){.align-center
-width="100.0%"}
+By definition a series-parallel circuit is a circuit whose topology is neither only series nor parallel, but can still be *compressed* into a single resistance i.e. the resistances in the circuit can have an overall equivalent resistance in series with the voltage source as shown in the figure below:
 
-Because circuits (a) and (b) can be \'compressed\' into a single
-equivalent resistance, they are both classified as **series-parallel
-circuits**. Notice that due to resistor R6, circuit (c) cannot be
-compressed into a single equivalent resistance. It is therefore
-classified as a **complex circuit**. The techniques that will be
-introduced in this lesson will focus only on series-parallel circuits.
+<!-- ![](../_static/images/parallel_series_circuits/psorcomplex.png){.align-center
+width="100.0%"} -->
+
+ <figure style="text-align:center">
+  <img src="images/images/parallel_series_circuits/psorcomplex.png)" alt="Figure 2 - Series-Parallel vs Complex Circuits" style="width:50%">
+  <figcaption>Figure 2 - Series-Parallel vs Complex Circuits</figcaption>
+</figure> 
+
+Because circuits (a) and (b) can be \'compressed\' into a single equivalent resistance, they are both classified as **series-parallel
+circuits**. Notice that due to resistor R6, circuit (c) cannot be compressed into a single equivalent resistance. It is therefore
+classified as a **complex circuit**. The techniques that will be introduced in this lesson will focus only on series-parallel circuits.
 
 ## Equivalent circuits
 
-Analyzing series-parallel circuits involves compressing the circuit into
-a series of equivalent circuits all the way until one equivalent
-resistance is left. From these equivalent circuits crucial node voltages
-and current (such as the total current $I_T$ and node voltage $V_A$ in
-the figures shown below) can be extracted. With these values known, the
-circuit can be expanded back into its original form for further
-analysis. This process of analyzing a circuit by compressing it and
-expanding it, is referred to by the teacher as the **accordion** circuit
-analysis approach. But before examining this analysis technique in
-detail, the student needs to be comfortable with finding equivalent
-circuits.
+Analyzing series-parallel circuits involves 'compressing' the circuit into a series of equivalent circuits all the way until one equivalent resistance is left. From these equivalent circuits, crucial node voltages and current (such as the total current $I_T$ and node voltage $V_A$ in the figures shown below) can be extracted. With these values known, the circuit can be expanded back into its original form for further analysis. This process of analyzing a circuit by compressing it and expanding it, is referred to by the teacher as the **accordion** circuit analysis approach. But before examining this analysis technique in detail, the student needs to be comfortable with finding equivalent circuits.
 
-In the figure below the resistances of a series-parallel circuit are
-compressed in several stages until only one equivalent resistance is
-left. The process is illustrated relatively well in the figure\"
+In the figure below the resistances of a series-parallel circuit are compressed in several stages until only one equivalent resistance is
+left. The process is illustrated relatively well in the figure below:
 
-![](../_static/images/parallel_series_circuits/eqcirc01.png){.align-center
-width="120.0%"}
+<!--  ![](../_static/images/parallel_series_circuits/eqcirc01.png){.align-center
+width="120.0%"} -->
+
+ <figure style="text-align:center">
+  <img src="images/images/parallel_series_circuits/eqcirc01.png)" alt="Figure 3 - Equivalent circuits ex01" style="width:50%">
+  <figcaption>Figure 3 - Equivalent circuits ex01</figcaption>
+</figure> 
 
 First it is important to note that **each branch in a series-parallel
 circuit (or a parallel circuit for that matter) can be treated as a
