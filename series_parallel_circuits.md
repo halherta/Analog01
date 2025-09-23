@@ -50,7 +50,7 @@ series circuit**. This means that the equivalent resistance of the branch contai
 similar manner, the equivalent resistance of the branch containing resistors R4 and R5 is $R_{EQ_2} = R_4 + R_5$. We can then further
 compress these two equivalent resistances since they are in parallel: $R_{EQ_3} = R_{EQ_1} // R_{EQ_2}$. Finally since $R_{EQ_3}$ is now in series with $R_1$, They can be both added together in to the total equivalent resistance:
 
-$$R_{EQ_4} = R_1 + R_{EQ_3} = R_1 + ((R_2 + R_3)//(R_4+R_5))$$
+$$R_{EQ_4} = R_1 + R_{EQ_3} = R_1 + ((R_2 + R_3) \parallel (R_4+R_5))$$
 
 ### Example 1
 
@@ -89,73 +89,70 @@ Calculate $R_{EQ_1}$, $R_{EQ_2}$, $R_{EQ_3}$ and $R_{EQ_4}$.
 
 #### Solution
 
-$$R_{EQ_1} = R_2 // R_4 = 2.2k\Omega // 3.3k\Omega = \frac{1}{ \frac{1}{3.3k\Omega} + \frac{1}{2.2k\Omega}} = 1320\Omega$$
-$$R_{EQ_2} = R_3 // R_5 = 4.7k\Omega // 1k\Omega = \frac{1}{ \frac{1}{4.7k\Omega} + \frac{1}{1k\Omega}} = 824.561\Omega$$
-$$R_{EQ_3} = (R_2 // R_4) + (R_3 // R_5) = 1320\Omega + 824.561\Omega =  2144.561\Omega$$
-$$R_{EQ_4} = R_1 + (R_2 // R_4) + (R_3 // R_5) = 1k\Omega + 2144.561\Omega = 3144.561\Omega$$
+$$R_{EQ_1} = R_2 \parallel R_4 = 2.2k\Omega \parallel 3.3k\Omega = \frac{1}{ \frac{1}{3.3k\Omega} + \frac{1}{2.2k\Omega}} = 1320\Omega$$
+$$R_{EQ_2} = R_3 \parallel R_5 = 4.7k\Omega \parallel 1k\Omega = \frac{1}{ \frac{1}{4.7k\Omega} + \frac{1}{1k\Omega}} = 824.561\Omega$$
+$$R_{EQ_3} = (R_2 \parallel R_4) + (R_3 \parallel R_5) = 1320\Omega + 824.561\Omega =  2144.561\Omega$$
+$$R_{EQ_4} = R_1 + (R_2 \parallel R_4) + (R_3 \parallel R_5) = 1k\Omega + 2144.561\Omega = 3144.561\Omega$$
 
 ## Analyzing Series-Parallel Circuits
 
-Analyzing series-parallel circuits involves compressing the circuit into
-a series of equivalent circuits all the way until one equivalent
-resistance is left. From these equivalent circuits crucial node voltages
-and current (such as the total current $I_T$ and node voltage $V_A$ in
-the figures shown below) can be extracted. With these values known, the
-circuit can be expanded back into its original form for further
-analysis. This process of analyzing a circuit by compressing it and
-expanding it, is referred to by the teacher as the **accordion** circuit
-analysis approach.
+Analyzing series-parallel circuits involves compressing the circuit into a series of equivalent circuits all the way until one equivalent
+resistance is left. From these equivalent circuits crucial node voltages and current (such as the total current $I_T$ and node voltage $V_A$ in the figures shown below) can be extracted. With these values known, the circuit can be expanded back into its original form for further analysis. This process of analyzing a circuit by compressing it and expanding it, is referred to by the teacher as the **accordion** circuit analysis approach.
 
-It is also important to remember that each branch in a series-parallel
-circuit can be analyzed as an independent series circuit whose branch
-voltage is the supply voltage.
+It is also important to remember that each branch in a series-parallel circuit can be analyzed as an independent series circuit whose branch voltage is the supply voltage.
 
 ### Example 3
 
 Assuming $V_S = 10V$ in the figure shown below, calculate:
 
-a.  $R_3 // R_4$
-b.  Total equivalent resistance $R_T$
-c.  $V_A$ & $V_{R_3 // R_4}$
-d.  $I_T$
-e.  $I_{R_3}$ and $I_{R_4}$
-f.  $V_{R_1}$ and $V_{R_2}$
-g.  Verify KCL i.e. $I_T = I_{R_3} + I_{R_4}$
-h.  Verify KVL i.e. $V_S = V_{R_1} + V_A$
+1.  $R_3 \parallel R_4$
+2.  Total equivalent resistance $R_T$
+3.  $V_A$ & $V_{R_3 \parallel R_4}$
+4.  $I_T$
+5.  $I_{R_3}$ and $I_{R_4}$
+6.  $V_{R_1}$ and $V_{R_2}$
+7.  Verify KCL i.e. $I_T = I_{R_3} + I_{R_4}$
+8.  Verify KVL i.e. $V_S = V_{R_1} + V_A$
 
-![](../_static/images/parallel_series_circuits/ex3_01.png){.align-center
-width="50.0%"}
+<!-- ![](../_static/images/parallel_series_circuits/ex3_01.png){.align-center
+width="50.0%"} -->
 
-```{=html}
-<button onclick="toggle_element('ex43')">Solution</button>
+ <figure style="text-align:center">
+  <img src="images/parallel_series_circuits/ex3_01.png" alt="Figure 5 - Example 3" style="width:50%">
+  <figcaption>Figure 5 - Example 3</figcaption>
+</figure> 
 
-<div id="ex43" style="display: none;"><br>
-   <p> The first step to derive various equivalent circuits: </p>
+#### Solution
+The first step to derive various equivalent circuits:
 
-   <figure>
+   <!-- <figure>
     <img src="../_static/images/parallel_series_circuits/ex3_02.png" alt="alternate text" width="100%">
-  </figure>
+  </figure> -->
 
-  <p>a. $$ R_3 // R_4 = \frac{1}{ \frac{1}{R_3} + \frac{1}{R_4}} =  \frac{1}{ \frac{1}{6.6k\Omega} + \frac{1}{6.6k\Omega}} = 3.3k\Omega $$</p>
-  <p>b. $$ R_T = R_1 + R_3 // R_4 + R_2 = 2.2k\Omega + 3.3k\Omega + 4.7k\Omega = 10.2k\Omega$$ </p>
-  <p>c. $$ V_A = V_S \cdot \frac{(R_3//R_4) + R_2}{R_T} =  10V \cdot \frac{8k\Omega}{10.2k\Omega} = 7.843V$$ </p>
-        $$ V_{R_3 // R_4} = V_S \cdot \frac{(R_3//R_4)}{R_T} =  10V \cdot \frac{3.3k\Omega}{10.2k\Omega} = 3.235V$$ </p>
-  <p>d. $$ I_T = \frac{V_S}{R_T} = \frac{10V}{10.2k\Omega} = 0.980mA $$</p>
-  <p>e. Now that V<sub>R3//R4</sub> is known, calculating the branch currents is straight forward:
-        $$ I_{R_3} =  \frac{V_{R_3 // R_4} }{R_3} = \frac{3.235V}{6.6k\Omega} = 0.490mA $$
-        $$ I_{R_4} =  \frac{V_{R_3 // R_4} }{R_4} = \frac{3.235V}{6.6k\Omega} = 0.490mA $$ </p>
-  <p>f. $$ V_{R_1} = V_S \cdot \frac{R_1}{R_T} = 10V \cdot \frac{2.2k\Omega}{10.2k\Omega} = 2.157V $$
-        $$ V_{R_2} = V_S \cdot \frac{R_2}{R_T} = 10V \cdot \frac{4.7k\Omega}{10.2k\Omega} = 4.608V $$</p>
-  <p>g. $$ I_{R_3} + I_{R_4} = 0.490mA + 0.490mA = 0.980mA \equiv I_T$$ Therefore, KCL is verified. </p>
-  <p>h. $$ V_{R_1} + V_{R_3 // R_4} + V_{R_2} = 2.157V + 3.235V + 4.608V = 10V \equiv V_S$$ Therefore, KVL is verified.</p>
-  </div>
-<br><br>
-```
+  <figure style="text-align:center">
+  <img src="images/parallel_series_circuits/ex3_02.png" alt="Figure 5 - Example 3 II" style="width:50%">
+  <figcaption>Figure 5 - Example 3 II </figcaption>
+</figure>  
+
+\
+1. $R_3 \parallel R_4 = \frac{1}{ \frac{1}{R_3} + \frac{1}{R_4}} =  \frac{1}{ \frac{1}{6.6k\Omega} + \frac{1}{6.6k\Omega}} = 3.3k\Omega$
+2. $R_T = R_1 + R_3 \parallel R_4 + R_2 = 2.2k\Omega + 3.3k\Omega + 4.7k\Omega = 10.2k\Omega$
+3. $V_A = V_S \cdot \frac{(R_3 \parallel R_4) + R_2}{R_T} =  10V \cdot \frac{8k\Omega}{10.2k\Omega} = 7.843V$
+4. $V_{R_3 \parallel R_4} = V_S \cdot \frac{(R_3 \parallel R_4)}{R_T} =  10V \cdot \frac{3.3k\Omega}{10.2k\Omega} = 3.235V$
+5. $I_T = \frac{V_S}{R_T} = \frac{10V}{10.2k\Omega} = 0.980mA$
+6. Now that $V_{R3 \parallel R4} is known, calculating the branch currents is straight forward:
+        $$I_{R_3} =  \frac{V_{R_3 \parallel R_4} }{R_3} = \frac{3.235V}{6.6k\Omega} = 0.490mA$$
+        $$I_{R_4} =  \frac{V_{R_3 \parallel R_4} }{R_4} = \frac{3.235V}{6.6k\Omega} = 0.490mA$$ 
+f. $V_{R_1} = V_S \cdot \frac{R_1}{R_T} = 10V \cdot \frac{2.2k\Omega}{10.2k\Omega} = 2.157V$
+        $$ V_{R_2} = V_S \cdot \frac{R_2}{R_T} = 10V \cdot \frac{4.7k\Omega}{10.2k\Omega} = 4.608V$$
+g. $I_{R_3} + I_{R_4} = 0.490mA + 0.490mA = 0.980mA \equiv I_T$ Therefore, KCL is verified. 
+h. $V_{R_1} + V_{R_3 \parallel R_4} + V_{R_2} = 2.157V + 3.235V + 4.608V = 10V \equiv V_S$. Therefore, KVL is verified.
+
 ### Example 4
 
 Assuming $V_S = 10V$ in the figure shown below, calculate:
 
-a.  $R_1 // R_2$ & $(R_3 + R_4) // R_5$
+a.  $R_1 \parallel R_2$ & $(R_3 + R_4) \parallel R_5$
 b.  Total equivalent resistance $R_T$
 c.  $V_A$
 d.  $I_T$
@@ -177,14 +174,14 @@ width="50.0%"}
     <img src="../_static/images/parallel_series_circuits/ex4_02.png" alt="alternate text" height="100%">
   </figure>
 
-  <p>a. $$ R_1 // R_2 = \frac{1}{ \frac{1}{R_1} + \frac{1}{R_2}} =  \frac{1}{ \frac{1}{2.2k\Omega} + \frac{1}{3.3k\Omega}} = 1.32k\Omega $$
-        $$ (R_3 + R_4) // R_5 = \frac{1}{ \frac{1}{R_3 + R_4 } + \frac{1}{R_5}} =  \frac{1}{ \frac{1}{3.2k\Omega} + \frac{1}{4.7k\Omega}} = 1903.797\Omega $$</p>
-  <p>b. $$ R_T =  R_1 // R_2 +  ((R_3 + R_4) // R_5) = 1.32k\Omega + 1903.797\Omega = 3223.797\Omega$$</p>
-  <p>c. $$ V_A = V_S \cdot \frac{(R_3 + R_4) // R_5}{R_T} = 10V \cdot \frac{1903.797\Omega}{3223.797\Omega} = 5.905V $$</p>
+  <p>a. $$ R_1 \parallel R_2 = \frac{1}{ \frac{1}{R_1} + \frac{1}{R_2}} =  \frac{1}{ \frac{1}{2.2k\Omega} + \frac{1}{3.3k\Omega}} = 1.32k\Omega $$
+        $$ (R_3 + R_4) \parallel R_5 = \frac{1}{ \frac{1}{R_3 + R_4 } + \frac{1}{R_5}} =  \frac{1}{ \frac{1}{3.2k\Omega} + \frac{1}{4.7k\Omega}} = 1903.797\Omega $$</p>
+  <p>b. $$ R_T =  R_1 \parallel R_2 +  ((R_3 + R_4) \parallel R_5) = 1.32k\Omega + 1903.797\Omega = 3223.797\Omega$$</p>
+  <p>c. $$ V_A = V_S \cdot \frac{(R_3 + R_4) \parallel R_5}{R_T} = 10V \cdot \frac{1903.797\Omega}{3223.797\Omega} = 5.905V $$</p>
   <p>d. $$ I_T = \frac{V_S}{R_T} = \frac{10V}{3223.797\Omega} = 3.102mA $$ </p>
   <p>e. $$ I_{R_3} = \frac{V_A}{R_3 + R_4} = \frac{5.905V}{3.2k\Omega} = 1.845mA$$
         $$ I_{R_5} = \frac{V_A}{R_5} = \frac{5.905V}{4.7k\Omega} = 1.256mA$$</p>
-  <p>f. $$ V_{R_1} = V_{R_2} = V_{R_1 // R_2} = V_S \cdot \frac{R_1 // R_2}{R_T} = 10V \cdot \frac{1.32k\Omega}{3223.797\Omega} = 4.095V$$
+  <p>f. $$ V_{R_1} = V_{R_2} = V_{R_1 \parallel R_2} = V_S \cdot \frac{R_1 \parallel R_2}{R_T} = 10V \cdot \frac{1.32k\Omega}{3223.797\Omega} = 4.095V$$
         $$ V_{R_5} = V_A = 5.905V $$ </p>
   <p>g. $$ I_{R_3} + I_{R_5} =  1.845mA + 1.256mA = 3.101mA \equiv I_T $$ Therefore, KCL is verified.</p>
   <p>h. $$ V_S = V_{R_1} + V_A = 4.095V + 5.905V = 10V \equiv V_S$$ Therefore KVL is verified. </p>
