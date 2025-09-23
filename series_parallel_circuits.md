@@ -24,7 +24,7 @@ width="100.0%"} -->
   <figcaption>Figure 2 - Series-Parallel vs Complex Circuits</figcaption>
 </figure> 
 
-
+\
 Because circuits (a) and (b) can be \'compressed\' into a single equivalent resistance, they are both classified as **series-parallel
 circuits**. Notice that due to resistor R6, circuit (c) cannot be compressed into a single equivalent resistance. It is therefore
 classified as a **complex circuit**. The techniques that will be introduced in this lesson will focus only on series-parallel circuits.
@@ -44,17 +44,11 @@ width="120.0%"} -->
   <figcaption>Figure 3 - Equivalent circuits ex01</figcaption>
 </figure> 
 
-
-First it is important to note that **each branch in a series-parallel
-circuit (or a parallel circuit for that matter) can be treated as a
-series circuit**. This means that the equivalent resistance of the
-branch containing resistors R2 and R3 is $R_{EQ_1} = R_2 + R_3$. In a
-similar manner, the equivalent resistance of the branch containing
-resistors R4 and R5 is $R_{EQ_2} = R_4 + R_5$. We can then further
-compress these two equivalent resistances since they are in parallel:
-$R_{EQ_3} = R_{EQ_1} // R_{EQ_2}$. Finally since $R_{EQ_3}$ is now in
-series with $R_1$, They can be both added together in to the total
-equivalent resistance:
+\
+First it is important to note that **each branch in a series-parallel circuit (or a parallel circuit for that matter) can be treated as a
+series circuit**. This means that the equivalent resistance of the branch containing resistors R2 and R3 is $R_{EQ_1} = R_2 + R_3$. In a
+similar manner, the equivalent resistance of the branch containing resistors R4 and R5 is $R_{EQ_2} = R_4 + R_5$. We can then further
+compress these two equivalent resistances since they are in parallel: $R_{EQ_3} = R_{EQ_1} // R_{EQ_2}$. Finally since $R_{EQ_3}$ is now in series with $R_1$, They can be both added together in to the total equivalent resistance:
 
 $$R_{EQ_4} = R_1 + R_{EQ_3} = R_1 + ((R_2 + R_3)//(R_4+R_5))$$
 
@@ -65,31 +59,29 @@ $R_3 = 4.7k\Omega$, $R_4 = 3.3k\Omega$ & $R_5 = 1k\Omega$.
 
 Calculate $R_{EQ_1}$, $R_{EQ_2}$, $R_{EQ_3}$ and $R_{EQ_4}$.
 
-```{=html}
-<button onclick="toggle_element('ex41')">Solution</button>
+#### Solution
 
-<div id="ex41" style="display: none;"><br>
-   <p> $$R_{EQ_1} = R_2 + R_3 = 2.2k\Omega + 4.7k\Omega = 6.9k\Omega$$
-       $$R_{EQ_2} = R_4 + R_5 = 3.3k\Omega + 1k\Omega = 4.3k\Omega$$
-       $$R_{EQ_3} = (R_2 + R_3) // (R_4 + R_5) = 6.9k\Omega // 4.3k\Omega = \frac{1}{ \frac{1}{6.9k\Omega} + \frac{1}{4.3k\Omega}} = 2649.107\Omega$$
-       $$R_{EQ_4} = R_1 + ((R_2 + R_3) // (R_4 + R_5)) = 1k\Omega + 2649.107\Omega = 3649.107\Omega$$</p>
-</div>
-<br><br>
-```
-In the series-parallel circuits shown in the two preceding figure, the
-total current $I_T$ is identical in all four equivalent circuits
-(a)-(d). Also the location of the node voltage $V_A$ is the same in
-circuits (a)-(c) but then disappears in circuit (d). This is because the
-location of the node voltage $V_A$ is sandwiched between $R_1$ and
-$R_{EQ_3}$ and as such is somewhere inside the equivalent resistance
-$R_{EQ_4}$.
+$$R_{EQ_1} = R_2 + R_3 = 2.2k\Omega + 4.7k\Omega = 6.9k\Omega$$
+$$R_{EQ_2} = R_4 + R_5 = 3.3k\Omega + 1k\Omega = 4.3k\Omega$$
+$$R_{EQ_3} = (R_2 + R_3) // (R_4 + R_5) = 6.9k\Omega // 4.3k\Omega = \frac{1}{ \frac{1}{6.9k\Omega} + \frac{1}{4.3k\Omega}} = 2649.107\Omega$$
+$$R_{EQ_4} = R_1 + ((R_2 + R_3) // (R_4 + R_5)) = 1k\Omega + 2649.107\Omega = 3649.107\Omega$$
+
+
+In the series-parallel circuits shown in the two preceding figure, the total current $I_T$ is identical in all four equivalent circuits
+(a)-(d). Also the location of the node voltage $V_A$ is the same in circuits (a)-(c) but then disappears in circuit (d). This is because the location of the node voltage $V_A$ is sandwiched between $R_1$ and $R_{EQ_3}$ and as such is somewhere inside the equivalent resistance $R_{EQ_4}$.
 
 The series of equivalent circuits for a second series-parallel circuit
 is shown below.
 
-![](../_static/images/parallel_series_circuits/eqcirc02.png){.align-center
-width="120.0%"}
+<!-- ![](../_static/images/parallel_series_circuits/eqcirc02.png){.align-center
+width="120.0%"} -->
 
+ <figure style="text-align:center">
+  <img src="images/parallel_series_circuits/eqcirc02.png" alt="Figure 4 - Equivalent circuits ex02" style="width:50%">
+  <figcaption>Figure 4 - Equivalent circuits ex02</figcaption>
+</figure> 
+
+\
 ### Example 2
 
 In the figure above assume that $R_1 = 1k\Omega$, $R_2 = 2.2k\Omega$,
