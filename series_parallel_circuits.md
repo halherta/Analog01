@@ -7,7 +7,7 @@ notes. As its name implies, the series-parallel circuit topology consists of com
 width="100.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/images/parallel_series_circuits/ps.png" alt="Figure 1 - Series-Parallel Circuits" style="width:50%">
+  <img src="images/parallel_series_circuits/ps.png" alt="Figure 1 - Series-Parallel Circuits" style="width:50%">
   <figcaption>Figure 1 - Series-Parallel Circuits</figcaption>
 </figure> 
 
@@ -19,7 +19,7 @@ By definition a series-parallel circuit is a circuit whose topology is neither o
 width="100.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/images/parallel_series_circuits/psorcomplex.png)" alt="Figure 2 - Series-Parallel vs Complex Circuits" style="width:50%">
+  <img src="images/parallel_series_circuits/psorcomplex.png)" alt="Figure 2 - Series-Parallel vs Complex Circuits" style="width:50%">
   <figcaption>Figure 2 - Series-Parallel vs Complex Circuits</figcaption>
 </figure> 
 
@@ -38,7 +38,7 @@ left. The process is illustrated relatively well in the figure below:
 width="120.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/images/parallel_series_circuits/eqcirc01.png)" alt="Figure 3 - Equivalent circuits ex01" style="width:50%">
+  <img src="images/parallel_series_circuits/eqcirc01.png)" alt="Figure 3 - Equivalent circuits ex01" style="width:50%">
   <figcaption>Figure 3 - Equivalent circuits ex01</figcaption>
 </figure> 
 
