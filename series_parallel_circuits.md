@@ -140,7 +140,7 @@ The first step to derive various equivalent circuits:
 3. $V_A = V_S \cdot \frac{(R_3 \parallel R_4) + R_2}{R_T} =  10V \cdot \frac{8k\Omega}{10.2k\Omega} = 7.843V$
 4. $V_{R_3 \parallel R_4} = V_S \cdot \frac{(R_3 \parallel R_4)}{R_T} =  10V \cdot \frac{3.3k\Omega}{10.2k\Omega} = 3.235V$
 5. $I_T = \frac{V_S}{R_T} = \frac{10V}{10.2k\Omega} = 0.980mA$
-6. Now that $V_{R3 \parallel R4} is known, calculating the branch currents is straight forward:
+6. Now that $V_{R3 \parallel R4}$ is known, calculating the branch currents is straight forward:
         $$I_{R_3} =  \frac{V_{R_3 \parallel R_4} }{R_3} = \frac{3.235V}{6.6k\Omega} = 0.490mA$$
         $$I_{R_4} =  \frac{V_{R_3 \parallel R_4} }{R_4} = \frac{3.235V}{6.6k\Omega} = 0.490mA$$ 
 f. $V_{R_1} = V_S \cdot \frac{R_1}{R_T} = 10V \cdot \frac{2.2k\Omega}{10.2k\Omega} = 2.157V$
