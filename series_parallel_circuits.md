@@ -63,8 +63,8 @@ Calculate $R_{EQ_1}$, $R_{EQ_2}$, $R_{EQ_3}$ and $R_{EQ_4}$.
 
 $$R_{EQ_1} = R_2 + R_3 = 2.2k\Omega + 4.7k\Omega = 6.9k\Omega$$
 $$R_{EQ_2} = R_4 + R_5 = 3.3k\Omega + 1k\Omega = 4.3k\Omega$$
-$$R_{EQ_3} = (R_2 + R_3) // (R_4 + R_5) = 6.9k\Omega // 4.3k\Omega = \frac{1}{ \frac{1}{6.9k\Omega} + \frac{1}{4.3k\Omega}} = 2649.107\Omega$$
-$$R_{EQ_4} = R_1 + ((R_2 + R_3) // (R_4 + R_5)) = 1k\Omega + 2649.107\Omega = 3649.107\Omega$$
+$$R_{EQ_3} = (R_2 + R_3) \parallel (R_4 + R_5) = 6.9k\Omega \parallel 4.3k\Omega = \frac{1}{ \frac{1}{6.9k\Omega} + \frac{1}{4.3k\Omega}} = 2649.107\Omega$$
+$$R_{EQ_4} = R_1 + ((R_2 + R_3) \parallel (R_4 + R_5)) = 1k\Omega + 2649.107\Omega = 3649.107\Omega$$
 
 
 In the series-parallel circuits shown in the two preceding figure, the total current $I_T$ is identical in all four equivalent circuits
