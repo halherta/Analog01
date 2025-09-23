@@ -161,14 +161,14 @@ The first step to derive various equivalent circuits:
 
 Assuming $V_S = 10V$ in the figure shown below, calculate:
 
-a.  $R_1 \parallel R_2$ & $(R_3 + R_4) \parallel R_5$
-b.  Total equivalent resistance $R_T$
-c.  $V_A$
-d.  $I_T$
-e.  $I_{R_3}$ and $I_{R_5}$
-f.  $V_{R_1}$ and $V_{R_5}$
-g.  Verify KCL i.e. $I_T = I_{R_3} + I_{R_5}$
-h.  Verify KVL i.e. $V_S = V_{R_1} + V_A$
+1.  $R_1 \parallel R_2$ & $(R_3 + R_4) \parallel R_5$
+2.  Total equivalent resistance $R_T$
+3.  $V_A$
+4.  $I_T$
+5.  $I_{R_3}$ and $I_{R_5}$
+6.  $V_{R_1}$ and $V_{R_5}$
+7.  Verify KCL i.e. $I_T = I_{R_3} + I_{R_5}$
+8.  Verify KVL i.e. $V_S = V_{R_1} + V_A$
 
 ![](../_static/images/parallel_series_circuits/ex4_01.png){.align-center
 width="50.0%"}
