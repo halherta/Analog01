@@ -10,7 +10,7 @@ width="100.0%"} -->
   <img src="images/parallel_series_circuits/ps.png" alt="Figure 1 - Series-Parallel Circuits" style="width:50%">
   <figcaption>Figure 1 - Series-Parallel Circuits</figcaption>
 </figure> 
-
+<br>
 
 In the figure above, the circuit on the left (a) consists of two series circuits/branches connected in parallel. Whereas the circuit on the right (b), consists of two parallel circuits connected in series. Both circuits have a series-parallel topology.
 
