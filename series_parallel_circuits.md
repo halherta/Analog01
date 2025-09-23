@@ -143,12 +143,17 @@ The first step to derive various equivalent circuits:
 
    $I_{R_4} =  \frac{V_{R_3 \parallel R_4} }{R_4} = \frac{3.235V}{6.6k\Omega} = 0.490mA$
 
-f. $V_{R_1} = V_S \cdot \frac{R_1}{R_T} = 10V \cdot \frac{2.2k\Omega}{10.2k\Omega} = 2.157V$
+7. $V_{R_1} = V_S \cdot \frac{R_1}{R_T} = 10V \cdot \frac{2.2k\Omega}{10.2k\Omega} = 2.157V$
         
    $V_{R_2} = V_S \cdot \frac{R_2}{R_T} = 10V \cdot \frac{4.7k\Omega}{10.2k\Omega} = 4.608V$
    
-g. $I_{R_3} + I_{R_4} = 0.490mA + 0.490mA = 0.980mA \equiv I_T$ Therefore, KCL is verified. 
-h. $V_{R_1} + V_{R_3 \parallel R_4} + V_{R_2} = 2.157V + 3.235V + 4.608V = 10V \equiv V_S$. Therefore, KVL is verified.
+8. $I_{R_3} + I_{R_4} = 0.490mA + 0.490mA = 0.980mA \equiv I_T$
+
+ Therefore, KCL is verified.
+
+   $V_{R_1} + V_{R_3 \parallel R_4} + V_{R_2} = 2.157V + 3.235V + 4.608V = 10V \equiv V_S$. 
+   
+ Therefore, KVL is verified.
 
 ### Example 4
 
