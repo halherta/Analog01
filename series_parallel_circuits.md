@@ -81,25 +81,19 @@ width="120.0%"} -->
   <figcaption>Figure 4 - Equivalent circuits ex02</figcaption>
 </figure> 
 
-\
+
 ### Example 2
 
-In the figure above assume that $R_1 = 1k\Omega$, $R_2 = 2.2k\Omega$,
-$R_3 = 4.7k\Omega$, $R_4 = 3.3k\Omega$ & $R_5 = 1k\Omega$.
-
+In the figure above assume that $R_1 = 1k\Omega$, $R_2 = 2.2k\Omega$, $R_3 = 4.7k\Omega$, $R_4 = 3.3k\Omega$ & $R_5 = 1k\Omega$.
 Calculate $R_{EQ_1}$, $R_{EQ_2}$, $R_{EQ_3}$ and $R_{EQ_4}$.
 
-```{=html}
-<button onclick="toggle_element('ex42')">Solution</button>
+#### Solution
 
-<div id="ex42" style="display: none;"><br>
-   <p> $$R_{EQ_1} = R_2 // R_4 = 2.2k\Omega // 3.3k\Omega = \frac{1}{ \frac{1}{3.3k\Omega} + \frac{1}{2.2k\Omega}} = 1320\Omega $$
-       $$R_{EQ_2} = R_3 // R_5 = 4.7k\Omega // 1k\Omega = \frac{1}{ \frac{1}{4.7k\Omega} + \frac{1}{1k\Omega}} = 824.561\Omega $$
-       $$R_{EQ_3} = (R_2 // R_4) + (R_3 // R_5) = 1320\Omega + 824.561\Omega =  2144.561\Omega $$
-       $$R_{EQ_4} = R_1 + (R_2 // R_4) + (R_3 // R_5) = 1k\Omega + 2144.561\Omega = 3144.561\Omega$$</p>
-</div>
-<br><br>
-```
+$$R_{EQ_1} = R_2 // R_4 = 2.2k\Omega // 3.3k\Omega = \frac{1}{ \frac{1}{3.3k\Omega} + \frac{1}{2.2k\Omega}} = 1320\Omega$$
+$$R_{EQ_2} = R_3 // R_5 = 4.7k\Omega // 1k\Omega = \frac{1}{ \frac{1}{4.7k\Omega} + \frac{1}{1k\Omega}} = 824.561\Omega$$
+$$R_{EQ_3} = (R_2 // R_4) + (R_3 // R_5) = 1320\Omega + 824.561\Omega =  2144.561\Omega$$
+$$R_{EQ_4} = R_1 + (R_2 // R_4) + (R_3 // R_5) = 1k\Omega + 2144.561\Omega = 3144.561\Omega$$
+
 ## Analyzing Series-Parallel Circuits
 
 Analyzing series-parallel circuits involves compressing the circuit into
