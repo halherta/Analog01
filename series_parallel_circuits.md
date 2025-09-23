@@ -11,7 +11,7 @@ width="100.0%"} -->
   <figcaption>Figure 1 - Series-Parallel Circuits</figcaption>
 </figure> 
 
-<br>
+\
 In the figure above, the circuit on the left (a) consists of two series circuits/branches connected in parallel. Whereas the circuit on the right (b), consists of two parallel circuits connected in series. Both circuits have a series-parallel topology.
 
 By definition a series-parallel circuit is a circuit whose topology is neither only series nor parallel, but can still be *compressed* into a single resistance i.e. the resistances in the circuit can have an overall equivalent resistance in series with the voltage source as shown in the figure below:
