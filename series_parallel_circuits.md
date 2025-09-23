@@ -19,7 +19,7 @@ By definition a series-parallel circuit is a circuit whose topology is neither o
 width="100.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/parallel_series_circuits/psorcomplex.png)" alt="Figure 2 - Series-Parallel vs Complex Circuits" style="width:50%">
+  <img src="images/parallel_series_circuits/psorcomplex.png" alt="Figure 2 - Series-Parallel vs Complex Circuits" style="width:50%">
   <figcaption>Figure 2 - Series-Parallel vs Complex Circuits</figcaption>
 </figure> 
 
@@ -38,7 +38,7 @@ left. The process is illustrated relatively well in the figure below:
 width="120.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/parallel_series_circuits/eqcirc01.png)" alt="Figure 3 - Equivalent circuits ex01" style="width:50%">
+  <img src="images/parallel_series_circuits/eqcirc01.png" alt="Figure 3 - Equivalent circuits ex01" style="width:50%">
   <figcaption>Figure 3 - Equivalent circuits ex01</figcaption>
 </figure> 
 
