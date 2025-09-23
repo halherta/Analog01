@@ -135,23 +135,25 @@ The first step to derive various equivalent circuits:
 1. $R_3 \parallel R_4 = \frac{1}{ \frac{1}{R_3} + \frac{1}{R_4}} =  \frac{1}{ \frac{1}{6.6k\Omega} + \frac{1}{6.6k\Omega}} = 3.3k\Omega$
 2. $R_T = R_1 + R_3 \parallel R_4 + R_2 = 2.2k\Omega + 3.3k\Omega + 4.7k\Omega = 10.2k\Omega$
 3. $V_A = V_S \cdot \frac{(R_3 \parallel R_4) + R_2}{R_T} =  10V \cdot \frac{8k\Omega}{10.2k\Omega} = 7.843V$
-4. $V_{R_3 \parallel R_4} = V_S \cdot \frac{(R_3 \parallel R_4)}{R_T} =  10V \cdot \frac{3.3k\Omega}{10.2k\Omega} = 3.235V$
-5. $I_T = \frac{V_S}{R_T} = \frac{10V}{10.2k\Omega} = 0.980mA$
-6. Now that $V_{R3 \parallel R4}$ is known, calculating the branch currents is straight forward:
+
+   $V_{R_3 \parallel R_4} = V_S \cdot \frac{(R_3 \parallel R_4)}{R_T} =  10V \cdot \frac{3.3k\Omega}{10.2k\Omega} = 3.235V$
+
+4. $I_T = \frac{V_S}{R_T} = \frac{10V}{10.2k\Omega} = 0.980mA$
+5. Now that $V_{R3 \parallel R4}$ is known, calculating the branch currents is straight forward:
 
    $I_{R_3} =  \frac{V_{R_3 \parallel R_4} }{R_3} = \frac{3.235V}{6.6k\Omega} = 0.490mA$
 
    $I_{R_4} =  \frac{V_{R_3 \parallel R_4} }{R_4} = \frac{3.235V}{6.6k\Omega} = 0.490mA$
 
-7. $V_{R_1} = V_S \cdot \frac{R_1}{R_T} = 10V \cdot \frac{2.2k\Omega}{10.2k\Omega} = 2.157V$
+6. $V_{R_1} = V_S \cdot \frac{R_1}{R_T} = 10V \cdot \frac{2.2k\Omega}{10.2k\Omega} = 2.157V$
         
    $V_{R_2} = V_S \cdot \frac{R_2}{R_T} = 10V \cdot \frac{4.7k\Omega}{10.2k\Omega} = 4.608V$
    
-8. $I_{R_3} + I_{R_4} = 0.490mA + 0.490mA = 0.980mA \equiv I_T$
+7. $I_{R_3} + I_{R_4} = 0.490mA + 0.490mA = 0.980mA \equiv I_T$
 
  Therefore, KCL is verified.
 
-   $V_{R_1} + V_{R_3 \parallel R_4} + V_{R_2} = 2.157V + 3.235V + 4.608V = 10V \equiv V_S$. 
+8. $V_{R_1} + V_{R_3 \parallel R_4} + V_{R_2} = 2.157V + 3.235V + 4.608V = 10V \equiv V_S$. 
    
  Therefore, KVL is verified.
 
