@@ -187,7 +187,7 @@ The first step to derive various equivalent circuits:
   </figure> -->
 
 <figure style="text-align:center">
-  <img src="images/parallel_series_circuits/ex4_02.png" alt="Figure 7 - Example 4 PII" style="width:50%">
+  <img src="images/parallel_series_circuits/ex4_02.png" alt="Figure 7 - Example 4 PII" style="width:80%">
   <figcaption>Figure 7 - Example 4 PII  </figcaption>
 </figure>  
 
@@ -216,7 +216,7 @@ The first step to derive various equivalent circuits:
 width="25.0%"} -->
 
 <figure style="text-align:center">
-  <img src="images/parallel_series_circuits/voltdiv.png" alt="Figure 8 - Loaded voltage dividers" style="width:50%">
+  <img src="images/parallel_series_circuits/voltdiv.png" alt="Figure 8 - Loaded voltage dividers" style="width:30%">
   <figcaption>Figure 8 -  Loaded voltage dividers  </figcaption>
 </figure>  
 
