@@ -170,45 +170,58 @@ Assuming $V_S = 10V$ in the figure shown below, calculate:
 7.  Verify KCL i.e. $I_T = I_{R_3} + I_{R_5}$
 8.  Verify KVL i.e. $V_S = V_{R_1} + V_A$
 
-![](../_static/images/parallel_series_circuits/ex4_01.png){.align-center
-width="50.0%"}
+<!-- ![](../_static/images/parallel_series_circuits/ex4_01.png){.align-center
+width="50.0%"} -->
 
-```{=html}
-<button onclick="toggle_element('ex44')">Solution</button>
+<figure style="text-align:center">
+  <img src="images/parallel_series_circuits/ex4_01.png" alt="Figure 6 - Example 4 PI" style="width:50%">
+  <figcaption>Figure 6 - Example 4 PI  </figcaption>
+</figure>  
 
-<div id="ex44" style="display: none;"><br>
-  <p> The first step to derive various equivalent circuits: </p>
+#### Solution
 
-  <figure>
+The first step to derive various equivalent circuits: 
+
+ <!--  <figure>
     <img src="../_static/images/parallel_series_circuits/ex4_02.png" alt="alternate text" height="100%">
-  </figure>
+  </figure> -->
 
-  <p>a. $$ R_1 \parallel R_2 = \frac{1}{ \frac{1}{R_1} + \frac{1}{R_2}} =  \frac{1}{ \frac{1}{2.2k\Omega} + \frac{1}{3.3k\Omega}} = 1.32k\Omega $$
-        $$ (R_3 + R_4) \parallel R_5 = \frac{1}{ \frac{1}{R_3 + R_4 } + \frac{1}{R_5}} =  \frac{1}{ \frac{1}{3.2k\Omega} + \frac{1}{4.7k\Omega}} = 1903.797\Omega $$</p>
-  <p>b. $$ R_T =  R_1 \parallel R_2 +  ((R_3 + R_4) \parallel R_5) = 1.32k\Omega + 1903.797\Omega = 3223.797\Omega$$</p>
-  <p>c. $$ V_A = V_S \cdot \frac{(R_3 + R_4) \parallel R_5}{R_T} = 10V \cdot \frac{1903.797\Omega}{3223.797\Omega} = 5.905V $$</p>
-  <p>d. $$ I_T = \frac{V_S}{R_T} = \frac{10V}{3223.797\Omega} = 3.102mA $$ </p>
-  <p>e. $$ I_{R_3} = \frac{V_A}{R_3 + R_4} = \frac{5.905V}{3.2k\Omega} = 1.845mA$$
-        $$ I_{R_5} = \frac{V_A}{R_5} = \frac{5.905V}{4.7k\Omega} = 1.256mA$$</p>
-  <p>f. $$ V_{R_1} = V_{R_2} = V_{R_1 \parallel R_2} = V_S \cdot \frac{R_1 \parallel R_2}{R_T} = 10V \cdot \frac{1.32k\Omega}{3223.797\Omega} = 4.095V$$
-        $$ V_{R_5} = V_A = 5.905V $$ </p>
-  <p>g. $$ I_{R_3} + I_{R_5} =  1.845mA + 1.256mA = 3.101mA \equiv I_T $$ Therefore, KCL is verified.</p>
-  <p>h. $$ V_S = V_{R_1} + V_A = 4.095V + 5.905V = 10V \equiv V_S$$ Therefore KVL is verified. </p>
+<figure style="text-align:center">
+  <img src="images/parallel_series_circuits/ex4_02.png" alt="Figure 7 - Example 4 PII" style="width:50%">
+  <figcaption>Figure 7 - Example 4 PII  </figcaption>
+</figure>  
 
-</div>
-<br><br>
-```
+1. $R_1 \parallel R_2 = \frac{1}{ \frac{1}{R_1} + \frac{1}{R_2}} =  \frac{1}{ \frac{1}{2.2k\Omega} + \frac{1}{3.3k\Omega}} = 1.32k\Omega$
+   
+   $(R_3 + R_4) \parallel R_5 = \frac{1}{ \frac{1}{R_3 + R_4 } + \frac{1}{R_5}} =  \frac{1}{ \frac{1}{3.2k\Omega} + \frac{1}{4.7k\Omega}} = 1903.797\Omega$
+   
+2. $R_T =  R_1 \parallel R_2 +  ((R_3 + R_4) \parallel R_5) = 1.32k\Omega + 1903.797\Omega = 3223.797\Omega$
+3. $V_A = V_S \cdot \frac{(R_3 + R_4) \parallel R_5}{R_T} = 10V \cdot \frac{1903.797\Omega}{3223.797\Omega} = 5.905V$
+4. $I_T = \frac{V_S}{R_T} = \frac{10V}{3223.797\Omega} = 3.102mA$
+5. $I_{R_3} = \frac{V_A}{R_3 + R_4} = \frac{5.905V}{3.2k\Omega} = 1.845mA$
+   
+   $I_{R_5} = \frac{V_A}{R_5} = \frac{5.905V}{4.7k\Omega} = 1.256mA$
+
+6. $V_{R_1} = V_{R_2} = V_{R_1 \parallel R_2} = V_S \cdot \frac{R_1 \parallel R_2}{R_T} = 10V \cdot \frac{1.32k\Omega}{3223.797\Omega} = 4.095V$
+
+   $V_{R_5} = V_A = 5.905V$
+   
+8. $I_{R_3} + I_{R_5} =  1.845mA + 1.256mA = 3.101mA \equiv I_T $. Therefore, KCL is verified.
+   
+9. $V_S = V_{R_1} + V_A = 4.095V + 5.905V = 10V \equiv V_S$ Therefore KVL is verified.
+
 ## Voltage Divider Loading
 
-![](../_static/images/parallel_series_circuits/voltdiv.png){.align-center
-width="25.0%"}
+<!-- ![](../_static/images/parallel_series_circuits/voltdiv.png){.align-center
+width="25.0%"} -->
 
-Voltage dividers can be used to provide a stable (lower) DC output
-voltage from a stable DC input voltage. Consider the voltage divider
-shown above. This voltage divider outputs a **no load voltage**
-$V_{NL} = 5V$ from a 12V DC source. One can derive the relationship
-between the ratio of the resistors $R_1$ & $R_2$ and the voltages
-$V_{NL}$ & $V_{S}$ using the voltage divider equation.
+<figure style="text-align:center">
+  <img src="images/parallel_series_circuits/voltdiv.png" alt="Figure 8 - Loaded voltage dividers" style="width:50%">
+  <figcaption>Figure 8 -  Loaded voltage dividers  </figcaption>
+</figure>  
+
+Voltage dividers can be used to provide a stable (lower) DC output voltage from a stable DC input voltage. Consider the voltage divider
+shown above. This voltage divider outputs a **no load voltage** $V_{NL} = 5V$ from a 12V DC source. One can derive the relationship between the ratio of the resistors $R_1$ & $R_2$ and the voltages $V_{NL}$ & $V_{S}$ using the voltage divider equation.
 
 $$V_{NL} = V_S \cdot \frac{R_2}{R_1 + R_2}$$
 
@@ -222,7 +235,7 @@ $$\frac{V_{NL}}{V_S} \cdot R_1 = R_2 \cdot \left( 1 - \frac{V_{NL}}{V_S} \right)
 
 $$\frac{V_{NL}}{V_S} \cdot R_1 = R_2 \cdot \left( \frac{V_S - V_{NL}}{V_S} \right)$$
 
-This can be further simplfied to:
+This can be further simplified to:
 
 $$R_1 = R_2 \cdot \left( \frac{V_S - V_{NL} }{V_{NL}} \right)$$
 
