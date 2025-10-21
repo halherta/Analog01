@@ -243,32 +243,30 @@ $$R_2 = R_1 \cdot \left( \frac{V_{NL} }{V_S - V_{NL} } \right)$$
 
 ### Example 5
 
-a.  Assume that you want to build a voltage divider with a $V_S = 12V$
+1.  Assume that you want to build a voltage divider with a $V_S = 12V$
     and $V_{NL} = 5V$. If $R_2=1k\Omega$, calculate the value of $R_1$.
-b.  Assume that you want to build a voltage divider with a $V_S = 12V$
+2.  Assume that you want to build a voltage divider with a $V_S = 12V$
     and $V_{NL} = 5V$. If $R_2=3.3k\Omega$, calculate the value of
     $R_1$.
 
-```{=html}
-<button onclick="toggle_element('ex45')">Solution</button>
+#### Solution
 
-<div id="ex45" style="display: none;"><br>
-<p>a. $$ R_1 = R_2 \cdot \left( \frac{V_S - V_{NL} }{V_{NL}} \right) = 1k\Omega \cdot \left( \frac{12 - 5 }{5} \right) = 1.400k\Omega $$</p>
-<p>b. $$ R_1 = R_2 \cdot \left( \frac{V_S - V_{NL} }{V_{NL}} \right) = 3.3k\Omega \cdot \left( \frac{12 - 5 }{5} \right) = 4.620k\Omega $$</p>
+1. $R_1 = R_2 \cdot \left( \frac{V_S - V_{NL} }{V_{NL}} \right) = 1k\Omega \cdot \left( \frac{12 - 5 }{5} \right) = 1.400k\Omega$
+2. $R_1 = R_2 \cdot \left( \frac{V_S - V_{NL} }{V_{NL}} \right) = 3.3k\Omega \cdot \left( \frac{12 - 5 }{5} \right) = 4.620k\Omega$
 
-<figure >
+<!-- <figure >
   <img src="../_static/images/parallel_series_circuits/ex5.png" alt="alternate text" width="90%" style="text-align: center;display: block;" >
-</figure>
+</figure> --> 
 
-</div>
-<br><br>
-```
-If a load is put across the output terminals of the voltage divider,
-i.e. across $R_2$, a loading effect is exhibited. The resistance of
-$R_2$ is **loaded** due to the parallel resistance $R_L$ which changes
-the overall effective resistance of bottom half of the voltage divider.
-Instead of being $R_2$, the effective resistance of the lower half of
-the voltage divider is now $R_2 // R_L$.
+<figure style="text-align:center">
+  <img src="images/parallel_series_circuits/ex5.png" alt="Figure 9 - Example 5" style="width:30%">
+  <figcaption>Figure 9 - Example 5 </figcaption>
+</figure>  
+
+If a load is put across the output terminals of the voltage divider, i.e. across $R_2$, a loading effect is exhibited. The resistance of
+$R_2$ is **loaded** due to the parallel resistance $R_L$ which changes the overall effective resistance of bottom half of the voltage divider.
+
+Instead of being $R_2$, the effective resistance of the lower half of the voltage divider is now $R_2 // R_L$.
 
 $$R_2 // R_L = \frac{1}{ \frac{1}{5k\Omega} + \frac{1}{10k\Omega}   } = 3.333k\Omega$$
 
@@ -276,15 +274,12 @@ This causes the output voltage to change.
 
 $$V_L = V_S \cdot \frac{R_2 // R_L}{(R_2 // R_L) + R_1 } = 12 \cdot \frac{3.333k\Omega}{3.333k\Omega + 7k\Omega } = 3.871V$$
 
-In the figure below, when putting a load resistor $R_L = 10k\Omega$
-across $R_2$, the overall effective resistance of the lower half of the
-divider becomes 3.33kΩ. This means that the ratio of the upper and lower
-resistances of the voltage divider has changed and that the output
-voltage with the load attached $V_L$ does not equal the no load voltage
-$V_{NL}$ anymore. This phenomenon is called **the loading effect**.
+In the figure below, when putting a load resistor $R_L = 10k\Omega$ across $R_2$, the overall effective resistance of the lower half of the
+divider becomes 3.33kΩ. This means that the ratio of the upper and lower resistances of the voltage divider has changed and that the output
+voltage with the load attached $V_L$ does not equal the no load voltage $V_{NL}$ anymore. This phenomenon is called **the loading effect**.
 
-![](../_static/images/parallel_series_circuits/loadeff.png){.align-center
-width="65.0%"}
+<!-- ![](../_static/images/parallel_series_circuits/loadeff.png){.align-center
+width="65.0%"} -->
 
 **The loading effect can be mitigated by making the value of resistor**
 $R_2$ **lower than** $R_L$ **by approximately 100 times**. Ideally the
