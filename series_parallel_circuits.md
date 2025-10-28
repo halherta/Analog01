@@ -448,8 +448,7 @@ transformations and measuring the voltages across and currents flowing through r
 
 ### Example 7
 
-Convert the delta resistor network shown in the figure below to a wye
-network. Use simulation to Verify that the original circuit (with the
+Convert the delta resistor network shown in the figure below to a wye network. Use simulation to Verify that the original circuit (with the
 delta) and the transformed circuit (wye) are equivalent.
 
 <!-- ![](../_static/images/parallel_series_circuits/ex0701.png){.align-center
@@ -463,8 +462,11 @@ width="60.0%"} -->
 #### Solution
 
 First calculate the values of $R_A$, $R_B$ & $R_C$:
+
     $$R_A = \frac{R_{AB} \cdot R_{AC}}{ R_{AB} + R_{AC} + R_{BC} } = \frac{220 \cdot 100}{ 220 + 100 + 470 } = 27.848\Omega$$
+    
     $$R_B = \frac{R_{AB} \cdot R_{BC}}{ R_{AB} + R_{AC} + R_{BC} } = \frac{220 \cdot 470}{ 220 + 100 + 470 } = 130.886\Omega$$
+    
     $$R_C = \frac{R_{AC} \cdot R_{BC}}{ R_{AB} + R_{AC} + R_{BC} } = \frac{100 \cdot 470}{ 220 + 100 + 470 } = 59.494\Omega$$
 
 The circuit becomes:
@@ -525,8 +527,8 @@ Consider the Wheatstone bridge shown below. If R1 = 50Ω, R2=60Ω and R3=84Ω, w
 
 When the bridge is balanced, 
 
-           $$ \frac{R_1}{R_3} = \frac{R_2}{R_4}$$
+           $$\frac{R_1}{R_3} = \frac{R_2}{R_4}$$
     
 Therefore 
       
-           $$ R_4 = R_2 \cdot \frac{R_3}{R_1} = 60\Omega \cdot \frac{84\Omega}{50\Omega} = 100.800\Omega $$
+           $$R_4 = R_2 \cdot \frac{R_3}{R_1} = 60\Omega \cdot \frac{84\Omega}{50\Omega} = 100.800\Omega$$
