@@ -415,8 +415,8 @@ $$R_{AC} = \frac{R_A \cdot R_B + R_A \cdot R_C + R_B \cdot R_C}{R_B}$$
 
 Consider the unbalanced bridge circuit shown in the figure below:
 
-![](../_static/images/parallel_series_circuits/dy01.png){.align-center
-width="40.0%"}
+<!-- ![](../_static/images/parallel_series_circuits/dy01.png){.align-center
+width="40.0%"} -->
 
 <figure style="text-align:center">
   <img src="images/parallel_series_circuits/dy01.png" alt="Figure 15 - Delta to Wye conversion 01" style="width:40%">
