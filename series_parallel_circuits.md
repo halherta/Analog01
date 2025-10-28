@@ -266,20 +266,25 @@ $$R_2 = R_1 \cdot \left( \frac{V_{NL} }{V_S - V_{NL} } \right)$$
 If a load is put across the output terminals of the voltage divider, i.e. across $R_2$, a loading effect is exhibited. The resistance of
 $R_2$ is **loaded** due to the parallel resistance $R_L$ which changes the overall effective resistance of bottom half of the voltage divider.
 
-Instead of being $R_2$, the effective resistance of the lower half of the voltage divider is now $R_2 // R_L$.
+Instead of being $R_2$, the effective resistance of the lower half of the voltage divider is now $R_2 \parallel  R_L$.
 
-$$R_2 // R_L = \frac{1}{ \frac{1}{5k\Omega} + \frac{1}{10k\Omega}   } = 3.333k\Omega$$
+$$R_2 \parallel  R_L = \frac{1}{ \frac{1}{5k\Omega} + \frac{1}{10k\Omega}   } = 3.333k\Omega$$
 
 This causes the output voltage to change.
 
-$$V_L = V_S \cdot \frac{R_2 // R_L}{(R_2 // R_L) + R_1 } = 12 \cdot \frac{3.333k\Omega}{3.333k\Omega + 7k\Omega } = 3.871V$$
+$$V_L = V_S \cdot \frac{R_2 \parallel  R_L}{(R_2 \parallel  R_L) + R_1 } = 12 \cdot \frac{3.333k\Omega}{3.333k\Omega + 7k\Omega } = 3.871V$$
 
 In the figure below, when putting a load resistor $R_L = 10k\Omega$ across $R_2$, the overall effective resistance of the lower half of the
-divider becomes 3.33kΩ. This means that the ratio of the upper and lower resistances of the voltage divider has changed and that the output
-voltage with the load attached $V_L$ does not equal the no load voltage $V_{NL}$ anymore. This phenomenon is called **the loading effect**.
+divider becomes 3.33kΩ. This means that the ratio of the upper to lower resistances of the voltage divider has changed, and that the output
+voltage with the load attached, $V_L$, does not equal the no-load voltage $V_{NL}$ anymore. This phenomenon is called **the loading effect**.
 
 <!-- ![](../_static/images/parallel_series_circuits/loadeff.png){.align-center
 width="65.0%"} -->
+
+<figure style="text-align:center">
+  <img src="images/parallel_series_circuits/loadeff.png" alt="Figure 10 - Loading Effect" style="width:65%">
+  <figcaption>Figure 10 - Loading Effect </figcaption>
+</figure>  
 
 **The loading effect can be mitigated by making the value of resistor**
 $R_2$ **lower than** $R_L$ **by approximately 100 times**. Ideally the
@@ -301,12 +306,12 @@ $$R_2 = \frac{R_L}{100} = \frac{10000\Omega}{100}=100\Omega$$$$R_1 = R_2 \cdot \
 With this modification the equivalent resistance $R_2 // R_L$ is almost
 equivalent to $R_2$:
 
-$$R_2 // R_L = \frac{1}{ \frac{1}{100\Omega} + \frac{1}{10k\Omega}   } = 99.010\Omega$$
+$$R_2 \parallel  R_L = \frac{1}{ \frac{1}{100\Omega} + \frac{1}{10k\Omega}   } = 99.010\Omega$$
 
-Because $R_2 // R_L$ is almost equivalent to $R_2$, $V_L$ becomes almost
+Because $R_2 \parallel  R_L$ is almost equivalent to $R_2$, $V_L$ becomes almost
 equivalent to $V_NL$ :
 
-$$V_L = V_S \cdot \frac{R_2 // R_L}{(R_2 // R_L) + R_1 } = 12 \cdot \frac{99.010\Omega}{99.010\Omega + 140\Omega } = 4.971V$$
+$$V_L = V_S \cdot \frac{R_2 \parallel  R_L}{(R_2 \parallel  R_L) + R_1 } = 12 \cdot \frac{99.010\Omega}{99.010\Omega + 140\Omega } = 4.971V$$
 
 ![](../_static/images/parallel_series_circuits/loadeffmit.png){.align-center
 width="65.0%"}
@@ -314,7 +319,7 @@ width="65.0%"}
 In this scenario the loading effect is minimized because $R_2$ was
 chosen to be 100 times smaller than $R_L$ which in turn causes:
 
-$$R_2 // R_L \approxeq R_2$$
+$$R_2 \parallel  R_L \approxeq R_2$$
 
 And when $R_1$ is selected to maintain the ratio of $R_2$ to $R_1$
 
@@ -351,8 +356,8 @@ c.  Calculate the bleeder current flowing across $R_2$ and the power
    <img src="../_static/images/parallel_series_circuits/ex06_01.png" alt="alternate text" width="30%" style="text-align: center;display: block;" >
  </figure>
 
- <p>b. First calculate: $$R_2 // R_L = \frac{1}{ \frac{1}{500\Omega} + \frac{1}{50k\Omega}   } = 495.050\Omega$$
-       Next:  $$V_L = V_S \cdot \frac{R_2 // R_L}{(R_2 // R_L) + R_1 } = 10 \cdot \frac{495.050\Omega}{495.050\Omega + 1166.667\Omega } = 2.980V $$</p>
+ <p>b. First calculate: $$R_2 \parallel  R_L = \frac{1}{ \frac{1}{500\Omega} + \frac{1}{50k\Omega}   } = 495.050\Omega$$
+       Next:  $$V_L = V_S \cdot \frac{R_2 \parallel  R_L}{(R_2 // R_L) + R_1 } = 10 \cdot \frac{495.050\Omega}{495.050\Omega + 1166.667\Omega } = 2.980V $$</p>
 
  <figure >
    <img src="../_static/images/parallel_series_circuits/ex06_02.png" alt="alternate text" width="90%" style="text-align: center;display: block;" >
@@ -428,9 +433,7 @@ transformations and measuring the voltages across and currents flowing
 through resistors $R_4$ & $R_5$. This can be done in the circuit
 simulation below by pressing the **DC** button.
 
-```{=html}
-<iframe src="../_static/circuit-sandbox/index.html?value=%5B%5B%22v%22%2C%5B64%2C72%2C0%5D%2C%7B%22name%22%3A%22VS_1%22%2C%22value%22%3A%22dc(10)%22%2C%22_json_%22%3A0%7D%2C%5B%225%22%2C%220%22%5D%5D%2C%5B%22r%22%2C%5B112%2C40%2C0%5D%2C%7B%22name%22%3A%22R1(RAB)%22%2C%22r%22%3A%2212%22%2C%22_json_%22%3A1%7D%2C%5B%225%22%2C%22B%22%5D%5D%2C%5B%22r%22%2C%5B112%2C128%2C0%5D%2C%7B%22name%22%3A%22R4_1%22%2C%22r%22%3A%2218%22%2C%22_json_%22%3A2%7D%2C%5B%226%22%2C%220%22%5D%5D%2C%5B%22a%22%2C%5B112%2C104%2C1%5D%2C%7B%22color%22%3A%22magenta%22%2C%22offset%22%3A%220%22%2C%22_json_%22%3A3%7D%2C%5B%22B%22%2C%226%22%5D%5D%2C%5B%22g%22%2C%5B64%2C192%2C0%5D%2C%7B%22_json_%22%3A4%7D%2C%5B%220%22%5D%5D%2C%5B%22w%22%2C%5B64%2C72%2C64%2C24%5D%5D%2C%5B%22w%22%2C%5B64%2C120%2C64%2C192%5D%5D%2C%5B%22w%22%2C%5B112%2C88%2C112%2C96%5D%5D%2C%5B%22w%22%2C%5B112%2C104%2C112%2C96%5D%5D%2C%5B%22w%22%2C%5B112%2C120%2C112%2C128%5D%5D%2C%5B%22L%22%2C%5B112%2C88%2C0%5D%2C%7B%22label%22%3A%22B%22%2C%22_json_%22%3A10%7D%2C%5B%22B%22%5D%5D%2C%5B%22r%22%2C%5B200%2C40%2C0%5D%2C%7B%22name%22%3A%22R2(RAC)%22%2C%22r%22%3A%2218%22%2C%22_json_%22%3A11%7D%2C%5B%225%22%2C%22C%22%5D%5D%2C%5B%22r%22%2C%5B184%2C96%2C1%5D%2C%7B%22name%22%3A%22R3(RBC)%22%2C%22r%22%3A%226%22%2C%22_json_%22%3A12%7D%2C%5B%22C%22%2C%22B%22%5D%5D%2C%5B%22r%22%2C%5B200%2C128%2C0%5D%2C%7B%22name%22%3A%22R5_1%22%2C%22r%22%3A%2212%22%2C%22_json_%22%3A13%7D%2C%5B%224%22%2C%220%22%5D%5D%2C%5B%22a%22%2C%5B200%2C104%2C1%5D%2C%7B%22color%22%3A%22magenta%22%2C%22offset%22%3A%220%22%2C%22_json_%22%3A14%7D%2C%5B%22C%22%2C%224%22%5D%5D%2C%5B%22w%22%2C%5B184%2C96%2C200%2C96%5D%5D%2C%5B%22w%22%2C%5B200%2C88%2C200%2C96%5D%5D%2C%5B%22w%22%2C%5B200%2C104%2C200%2C96%5D%5D%2C%5B%22w%22%2C%5B200%2C120%2C200%2C128%5D%5D%2C%5B%22w%22%2C%5B112%2C96%2C136%2C96%5D%5D%2C%5B%22L%22%2C%5B200%2C88%2C0%5D%2C%7B%22label%22%3A%22C%22%2C%22_json_%22%3A20%7D%2C%5B%22C%22%5D%5D%2C%5B%22w%22%2C%5B64%2C24%2C160%2C24%5D%5D%2C%5B%22w%22%2C%5B160%2C24%2C160%2C40%5D%5D%2C%5B%22w%22%2C%5B112%2C40%2C160%2C40%5D%5D%2C%5B%22w%22%2C%5B200%2C40%2C160%2C40%5D%5D%2C%5B%22w%22%2C%5B64%2C192%2C160%2C192%5D%5D%2C%5B%22w%22%2C%5B160%2C192%2C160%2C176%5D%5D%2C%5B%22w%22%2C%5B112%2C176%2C160%2C176%5D%5D%2C%5B%22w%22%2C%5B200%2C176%2C160%2C176%5D%5D%2C%5B%22v%22%2C%5B272%2C72%2C0%5D%2C%7B%22name%22%3A%22VS_2%22%2C%22value%22%3A%22dc(10)%22%2C%22_json_%22%3A29%7D%2C%5B%22A%22%2C%220%22%5D%5D%2C%5B%22r%22%2C%5B336%2C64%2C0%5D%2C%7B%22name%22%3A%22RB%22%2C%22r%22%3A%222%22%2C%22_json_%22%3A30%7D%2C%5B%221%22%2C%22B%22%5D%5D%2C%5B%22a%22%2C%5B336%2C128%2C1%5D%2C%7B%22color%22%3A%22magenta%22%2C%22offset%22%3A%220%22%2C%22_json_%22%3A31%7D%2C%5B%22B%22%2C%223%22%5D%5D%2C%5B%22r%22%2C%5B336%2C160%2C0%5D%2C%7B%22name%22%3A%22R4_2%22%2C%22r%22%3A%2218%22%2C%22_json_%22%3A32%7D%2C%5B%223%22%2C%220%22%5D%5D%2C%5B%22g%22%2C%5B272%2C216%2C0%5D%2C%7B%22_json_%22%3A33%7D%2C%5B%220%22%5D%5D%2C%5B%22L%22%2C%5B336%2C112%2C0%5D%2C%7B%22label%22%3A%22B%22%2C%22_json_%22%3A34%7D%2C%5B%22B%22%5D%5D%2C%5B%22w%22%2C%5B336%2C112%2C336%2C128%5D%5D%2C%5B%22w%22%2C%5B336%2C144%2C336%2C160%5D%5D%2C%5B%22w%22%2C%5B336%2C208%2C336%2C216%5D%5D%2C%5B%22w%22%2C%5B272%2C216%2C336%2C216%5D%5D%2C%5B%22w%22%2C%5B272%2C120%2C272%2C216%5D%5D%2C%5B%22w%22%2C%5B272%2C72%2C272%2C8%5D%5D%2C%5B%22r%22%2C%5B400%2C112%2C2%5D%2C%7B%22name%22%3A%22RC%22%2C%22r%22%3A%223%22%2C%22_json_%22%3A41%7D%2C%5B%22C%22%2C%221%22%5D%5D%2C%5B%22a%22%2C%5B400%2C128%2C1%5D%2C%7B%22color%22%3A%22magenta%22%2C%22offset%22%3A%220%22%2C%22_json_%22%3A42%7D%2C%5B%22C%22%2C%222%22%5D%5D%2C%5B%22r%22%2C%5B400%2C160%2C0%5D%2C%7B%22name%22%3A%22R5_2%22%2C%22r%22%3A%2212%22%2C%22_json_%22%3A43%7D%2C%5B%222%22%2C%220%22%5D%5D%2C%5B%22L%22%2C%5B400%2C112%2C0%5D%2C%7B%22label%22%3A%22C%22%2C%22_json_%22%3A44%7D%2C%5B%22C%22%5D%5D%2C%5B%22w%22%2C%5B400%2C112%2C400%2C128%5D%5D%2C%5B%22w%22%2C%5B400%2C144%2C400%2C160%5D%5D%2C%5B%22w%22%2C%5B400%2C208%2C400%2C216%5D%5D%2C%5B%22r%22%2C%5B368%2C16%2C0%5D%2C%7B%22name%22%3A%22RA%22%2C%22r%22%3A%226%22%2C%22_json_%22%3A48%7D%2C%5B%22A%22%2C%221%22%5D%5D%2C%5B%22w%22%2C%5B272%2C8%2C368%2C8%5D%5D%2C%5B%22w%22%2C%5B368%2C8%2C368%2C16%5D%5D%2C%5B%22w%22%2C%5B336%2C64%2C368%2C64%5D%5D%2C%5B%22w%22%2C%5B400%2C64%2C368%2C64%5D%5D%2C%5B%22L%22%2C%5B368%2C8%2C0%5D%2C%7B%22label%22%3A%22A%22%2C%22_json_%22%3A53%7D%2C%5B%22A%22%5D%5D%2C%5B%22w%22%2C%5B400%2C216%2C336%2C216%5D%5D%2C%5B%22view%22%2C-9.375%2C-56.25%2C1.28%2C%2250%22%2C%2210%22%2C%221G%22%2Cnull%2C%22100%22%2C%220.01%22%2C%221000%22%5D%5D" height="550" width="740" frameBorder="0"></iframe>
-```
+
 ### Example 7
 
 Convert the delta resistor network shown in the figure below to a wye
@@ -455,10 +458,7 @@ width="60.0%"}
  </figure>
  </p>
 
-</div>
-<iframe src="../_static/circuit-sandbox/index.html?value=%5B%5B%22v%22%2C%5B56%2C24%2C0%5D%2C%7B%22name%22%3A%22VS1%22%2C%22value%22%3A%22dc(6)%22%2C%22_json_%22%3A0%7D%2C%5B%22A%22%2C%22B%22%5D%5D%2C%5B%22r%22%2C%5B128%2C24%2C0%5D%2C%7B%22name%22%3A%22RAB%22%2C%22r%22%3A%22220%22%2C%22_json_%22%3A1%7D%2C%5B%22A%22%2C%22B%22%5D%5D%2C%5B%22r%22%2C%5B200%2C24%2C1%5D%2C%7B%22name%22%3A%22RAC%22%2C%22r%22%3A%22100%22%2C%22_json_%22%3A2%7D%2C%5B%22C%22%2C%22A%22%5D%5D%2C%5B%22r%22%2C%5B224%2C24%2C0%5D%2C%7B%22name%22%3A%22RBC%22%2C%22r%22%3A%22470%22%2C%22_json_%22%3A3%7D%2C%5B%22C%22%2C%22B%22%5D%5D%2C%5B%22r%22%2C%5B288%2C24%2C0%5D%2C%7B%22name%22%3A%22RL1%22%2C%22r%22%3A%22100%22%2C%22_json_%22%3A4%7D%2C%5B%225%22%2C%22B%22%5D%5D%2C%5B%22g%22%2C%5B56%2C80%2C0%5D%2C%7B%22_json_%22%3A5%7D%2C%5B%22B%22%5D%5D%2C%5B%22a%22%2C%5B256%2C24%2C0%5D%2C%7B%22color%22%3A%22magenta%22%2C%22offset%22%3A%220%22%2C%22_json_%22%3A6%7D%2C%5B%22C%22%2C%225%22%5D%5D%2C%5B%22w%22%2C%5B56%2C24%2C128%2C24%5D%5D%2C%5B%22w%22%2C%5B128%2C24%2C152%2C24%5D%5D%2C%5B%22w%22%2C%5B200%2C24%2C224%2C24%5D%5D%2C%5B%22w%22%2C%5B224%2C24%2C256%2C24%5D%5D%2C%5B%22w%22%2C%5B56%2C72%2C128%2C72%5D%5D%2C%5B%22w%22%2C%5B128%2C72%2C224%2C72%5D%5D%2C%5B%22w%22%2C%5B56%2C80%2C56%2C72%5D%5D%2C%5B%22L%22%2C%5B128%2C72%2C1%5D%2C%7B%22label%22%3A%22B%22%2C%22_json_%22%3A14%7D%2C%5B%22B%22%5D%5D%2C%5B%22L%22%2C%5B128%2C24%2C3%5D%2C%7B%22label%22%3A%22A%22%2C%22_json_%22%3A15%7D%2C%5B%22A%22%5D%5D%2C%5B%22L%22%2C%5B224%2C24%2C3%5D%2C%7B%22label%22%3A%22C%22%2C%22_json_%22%3A16%7D%2C%5B%22C%22%5D%5D%2C%5B%22v%22%2C%5B56%2C136%2C0%5D%2C%7B%22name%22%3A%22VS2%22%2C%22value%22%3A%22dc(6)%22%2C%22_json_%22%3A17%7D%2C%5B%224%22%2C%220%22%5D%5D%2C%5B%22g%22%2C%5B56%2C192%2C0%5D%2C%7B%22_json_%22%3A18%7D%2C%5B%220%22%5D%5D%2C%5B%22r%22%2C%5B144%2C136%2C1%5D%2C%7B%22name%22%3A%22RA%22%2C%22r%22%3A%2227.848%22%2C%22_json_%22%3A19%7D%2C%5B%223%22%2C%224%22%5D%5D%2C%5B%22r%22%2C%5B160%2C136%2C0%5D%2C%7B%22name%22%3A%22RB%22%2C%22r%22%3A%22130.886%22%2C%22_json_%22%3A20%7D%2C%5B%223%22%2C%220%22%5D%5D%2C%5B%22r%22%2C%5B224%2C136%2C1%5D%2C%7B%22name%22%3A%22RC%22%2C%22r%22%3A%2259.494%22%2C%22_json_%22%3A21%7D%2C%5B%222%22%2C%223%22%5D%5D%2C%5B%22r%22%2C%5B288%2C136%2C0%5D%2C%7B%22name%22%3A%22RL2%22%2C%22r%22%3A%22100%22%2C%22_json_%22%3A22%7D%2C%5B%221%22%2C%220%22%5D%5D%2C%5B%22a%22%2C%5B248%2C136%2C0%5D%2C%7B%22color%22%3A%22magenta%22%2C%22offset%22%3A%220%22%2C%22_json_%22%3A23%7D%2C%5B%222%22%2C%221%22%5D%5D%2C%5B%22w%22%2C%5B144%2C136%2C160%2C136%5D%5D%2C%5B%22w%22%2C%5B160%2C136%2C176%2C136%5D%5D%2C%5B%22w%22%2C%5B56%2C184%2C56%2C192%5D%5D%2C%5B%22w%22%2C%5B56%2C184%2C160%2C184%5D%5D%2C%5B%22w%22%2C%5B272%2C24%2C288%2C24%5D%5D%2C%5B%22w%22%2C%5B224%2C72%2C288%2C72%5D%5D%2C%5B%22w%22%2C%5B264%2C136%2C288%2C136%5D%5D%2C%5B%22w%22%2C%5B160%2C184%2C288%2C184%5D%5D%2C%5B%22w%22%2C%5B56%2C136%2C96%2C136%5D%5D%2C%5B%22w%22%2C%5B224%2C136%2C248%2C136%5D%5D%2C%5B%22view%22%2C-37.5%2C-25%2C1.6%2C%2250%22%2C%2210%22%2C%221G%22%2Cnull%2C%22100%22%2C%220.01%22%2C%221000%22%5D%5D" height="550" width="740" frameBorder="0"> </iframe>
-<br><br>
-```
+
 ## Wheatstone Bridge
 
 ![](../_static/images/parallel_series_circuits/wt.png){.align-center
