@@ -7,7 +7,7 @@ notes. As its name implies, the series-parallel circuit topology consists of com
 width="100.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/parallel_series_circuits/ps.png" alt="Figure 1 - Series-Parallel Circuits" style="width:70%">
+  <img src="images/parallel_series_circuits/ps.png" alt="Figure 1 - Series-Parallel Circuits" style="width:100.0%">
   <figcaption>Figure 1 - Series-Parallel Circuits</figcaption>
 </figure> 
 
@@ -20,7 +20,7 @@ By definition a series-parallel circuit is a circuit whose topology is neither o
 width="100.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/parallel_series_circuits/psorcomplex.png" alt="Figure 2 - Series-Parallel vs Complex Circuits" style="width:80%">
+  <img src="images/parallel_series_circuits/psorcomplex.png" alt="Figure 2 - Series-Parallel vs Complex Circuits" style="width:100%">
   <figcaption>Figure 2 - Series-Parallel vs Complex Circuits</figcaption>
 </figure> 
 
@@ -40,7 +40,7 @@ left. The process is illustrated relatively well in the figure below:
 width="120.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/parallel_series_circuits/eqcirc01.png" alt="Figure 3 - Equivalent circuits ex01" style="width:90%">
+  <img src="images/parallel_series_circuits/eqcirc01.png" alt="Figure 3 - Equivalent circuits ex01" style="width:120%">
   <figcaption>Figure 3 - Equivalent circuits ex01</figcaption>
 </figure> 
 
@@ -74,7 +74,7 @@ is shown below.
 width="120.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/parallel_series_circuits/eqcirc02.png" alt="Figure 4 - Equivalent circuits ex02" style="width:50%">
+  <img src="images/parallel_series_circuits/eqcirc02.png" alt="Figure 4 - Equivalent circuits ex02" style="width:120%">
   <figcaption>Figure 4 - Equivalent circuits ex02</figcaption>
 </figure> 
 
@@ -127,7 +127,7 @@ The first step to derive various equivalent circuits:
   </figure> -->
 
   <figure style="text-align:center">
-  <img src="images/parallel_series_circuits/ex3_02.png" alt="Figure 5 - Example 3 II" style="width:50%">
+  <img src="images/parallel_series_circuits/ex3_02.png" alt="Figure 5 - Example 3 II" style="width:100%">
   <figcaption>Figure 5 - Example 3 II </figcaption>
 </figure>  
 
@@ -187,7 +187,7 @@ The first step to derive various equivalent circuits:
   </figure> -->
 
 <figure style="text-align:center">
-  <img src="images/parallel_series_circuits/ex4_02.png" alt="Figure 7 - Example 4 PII" style="width:80%">
+  <img src="images/parallel_series_circuits/ex4_02.png" alt="Figure 7 - Example 4 PII" style="width:100%">
   <figcaption>Figure 7 - Example 4 PII  </figcaption>
 </figure>  
 
@@ -259,7 +259,7 @@ $$R_2 = R_1 \cdot \left( \frac{V_{NL} }{V_S - V_{NL} } \right)$$
 </figure> --> 
 
 <figure style="text-align:center">
-  <img src="images/parallel_series_circuits/ex5.png" alt="Figure 9 - Example 5" style="width:30%">
+  <img src="images/parallel_series_circuits/ex5.png" alt="Figure 9 - Example 5" style="width:90%">
   <figcaption>Figure 9 - Example 5 </figcaption>
 </figure>  
 
@@ -286,25 +286,17 @@ width="65.0%"} -->
   <figcaption>Figure 10 - Loading Effect </figcaption>
 </figure>  
 
-**The loading effect can be mitigated by making the value of resistor**
-$R_2$ **lower than** $R_L$ **by approximately 100 times**. Ideally the
-lower $R_2$ is, the lower the loading effect will be. Having said that,
-the smaller the resistance of $R_2$, the more current will **bleed**
-through it. The designer must pay attention to how much current passes
-through $R_2$ and ensure that the power dissipated by $R_2$ does not
-exceed its power rating. The current flowing through $R_2$ is sometimes
-referred to as **the bleeder current** $I_B$ and the resistor $R_2$ can
-be referred to as **the bleeder resistor** $R_B$.
+**The loading effect can be mitigated by making the value of resistor** $R_2$ **lower than** $R_L$ **by approximately 10 to 100 times**. Ideally the lower $R_2$ is, the lower the loading effect will be. Having said that, the smaller the resistance of $R_2$, the more current will **bleed**
+through it. The designer must pay attention to how much current passes through $R_2$ and ensure that the power dissipated by $R_2$ does not
+exceed its power rating. As a rule of thumb, you want to keep $R_2 \ge 100\Omega$. The current flowing through $R_2$ is sometimes referred to as **the bleeder current** $I_B$, and the resistor $R_2$ can be referred to as **the bleeder resistor** $R_B$.
 
-To mitigate the loading effect in this scenario, make $R_2$ 100 times
-lower than $R_L$ i.e. $R_2=100\Omega$. The value of resistor $R_1$ will
-also have to change accordingly to maintain the ratio between $R_2$ &
-$R_1$:
+To mitigate the loading effect in this scenario, make $R_2$ 10 to 100 times lower than $R_L$ i.e. $R_2=100\Omega$. The value of resistor $R_1$ will also have to change accordingly to maintain the ratio between $R_2$ & $R_1$:
 
-$$R_2 = \frac{R_L}{100} = \frac{10000\Omega}{100}=100\Omega$$$$R_1 = R_2 \cdot \left( \frac{V_S - V_{NL} }{V_{NL}} \right) = 100\Omega \cdot \left( \frac{12 - 5 }{5} \right) = 140\Omega$$
+$$R_2 = \frac{R_L}{100} = \frac{10000\Omega}{100}=100\Omega$$
 
-With this modification the equivalent resistance $R_2 // R_L$ is almost
-equivalent to $R_2$:
+$$R_1 = R_2 \cdot \left( \frac{V_S - V_{NL} }{V_{NL}} \right) = 100\Omega \cdot \left( \frac{12 - 5 }{5} \right) = 140\Omega$$
+
+With this modification the equivalent resistance $R_2 \parallel R_L$ is almost equivalent to $R_2$:
 
 $$R_2 \parallel  R_L = \frac{1}{ \frac{1}{100\Omega} + \frac{1}{10k\Omega}   } = 99.010\Omega$$
 
@@ -313,11 +305,15 @@ equivalent to $V_NL$ :
 
 $$V_L = V_S \cdot \frac{R_2 \parallel  R_L}{(R_2 \parallel  R_L) + R_1 } = 12 \cdot \frac{99.010\Omega}{99.010\Omega + 140\Omega } = 4.971V$$
 
-![](../_static/images/parallel_series_circuits/loadeffmit.png){.align-center
-width="65.0%"}
+<!-- ![](../_static/images/parallel_series_circuits/loadeffmit.png){.align-center
+width="65.0%"} -->
 
-In this scenario the loading effect is minimized because $R_2$ was
-chosen to be 100 times smaller than $R_L$ which in turn causes:
+<figure style="text-align:center">
+  <img src="images/parallel_series_circuits/loadeffmit.png" alt="Figure 11 - Loading Effect Mitigated" style="width:65%">
+  <figcaption>Figure 11 - Loading Effect Mitigated </figcaption>
+</figure>  
+
+In this scenario, the loading effect is minimized because $R_2$ was chosen to be 100 times smaller than $R_L$, which in turn causes:
 
 $$R_2 \parallel  R_L \approxeq R_2$$
 
@@ -325,51 +321,70 @@ And when $R_1$ is selected to maintain the ratio of $R_2$ to $R_1$
 
 $$V_L \approxeq V_{NL}$$
 
-In a similar manner, to minimize the loading effect between circuit
-blocks connected together, one must make the input resistance of each
-circuit block as large as possible (ideally infinite), and make the
-output resistance of each circuit block as small as possible (ideally
-0). Electronic components such as operational amplifiers and buffers
-typically have input resistances in the 10s of MegaOhms, and output
+In a similar manner, to minimize the loading effect between circuit blocks connected together, one must make the input resistance of each
+circuit block as large as possible (ideally infinite), and make the output resistance of each circuit block as small as possible (ideally
+0). Electronic components such as operational amplifiers and buffers typically have input resistances in the 10s of MegaOhms, and output
 resistances in the 10s of Ohms.
 
-![](../_static/images/parallel_series_circuits/amp.png){.align-center
-width="65.0%"}
+<!-- ![](../_static/images/parallel_series_circuits/amp.png){.align-center
+width="65.0%"} -->
+
+<figure style="text-align:center">
+  <img src="images/parallel_series_circuits/loadeffmit.png" alt="Figure 12 - Mitigating the loading effect with Amplifiers" style="width:65%">
+  <figcaption>Figure 12 - Mitigating the loading effect with Amplifiers</figcaption>
+</figure>  
 
 ### Example 6
 
-a.  Design a voltage divider whose $V_S$ = 10V and $V_{NL}=3V$. The
+1.  Design a voltage divider whose $V_S$ = 10V and $V_{NL}=3V$. The
     voltage divider must be able to deliver almost 3V to a load resistor
     $R_L=50k\Omega$.
-b.  Calculate $V_L$ to verify that it is very close to $V_{NL}$.
-c.  Calculate the bleeder current flowing across $R_2$ and the power
+2.  Calculate $V_L$ to verify that it is very close to $V_{NL}$.
+3.  Calculate the bleeder current flowing across $R_2$ and the power
     dissipated in that resistor.
 
-```{=html}
-<button onclick="toggle_element('ex46')">Solution</button>
+#### Solution
 
-<div id="ex46" style="display: none;"><br>
-<p>a. Start by ensuring that $$ R_2 = \frac{R_L}{100} = \frac{50000\Omega}{100}=500\Omega$$
-      Next solve for $$ R_1 =  R_2 \cdot \left( \frac{V_S - V_{NL} }{V_{NL}} \right) = 500\Omega \cdot \left( \frac{10 - 3 }{3} \right) = 1166.667\Omega $$   </p>
 
- <figure >
+1. Start by ensuring that:
+
+            $$ R_2 = \frac{R_L}{100} = \frac{50000\Omega}{100}=500\Omega$$
+
+   Next solve for:
+
+            $$ R_1 =  R_2 \cdot \left( \frac{V_S - V_{NL} }{V_{NL}} \right) = 500\Omega \cdot \left( \frac{10 - 3 }{3} \right) = 1166.667\Omega $$   
+
+ <!-- <figure >
    <img src="../_static/images/parallel_series_circuits/ex06_01.png" alt="alternate text" width="30%" style="text-align: center;display: block;" >
- </figure>
+ </figure> -->
 
- <p>b. First calculate: $$R_2 \parallel  R_L = \frac{1}{ \frac{1}{500\Omega} + \frac{1}{50k\Omega}   } = 495.050\Omega$$
-       Next:  $$V_L = V_S \cdot \frac{R_2 \parallel  R_L}{(R_2 // R_L) + R_1 } = 10 \cdot \frac{495.050\Omega}{495.050\Omega + 1166.667\Omega } = 2.980V $$</p>
+ <figure style="text-align:center">
+  <img src="images/parallel_series_circuits/ex06_01.png" alt="Figure 13 - Example 6 part I" style="width:30%">
+  <figcaption>Figure 13 - Example 6 part I</figcaption>
+</figure>  
 
- <figure >
+2. First calculate:
+
+       $$R_2 \parallel  R_L = \frac{1}{ \frac{1}{500\Omega} + \frac{1}{50k\Omega}   } = 495.050\Omega$$
+
+   Next:
+
+      $$V_L = V_S \cdot \frac{R_2 \parallel  R_L}{(R_2 // R_L) + R_1 } = 10 \cdot \frac{495.050\Omega}{495.050\Omega + 1166.667\Omega } = 2.980V $$
+
+<!-- <figure >
    <img src="../_static/images/parallel_series_circuits/ex06_02.png" alt="alternate text" width="90%" style="text-align: center;display: block;" >
- </figure>
+ </figure> -->
 
- <p>c. $$ I_B = I_{R_2} =\frac{V_{R_2}}{R_2} = \frac{V_L}{R_2} = \frac{2.980}{500} = 5.960mA  $$
-       $$ P_{R_2} = I^2_{R_2} \cdot R_2 =  5.960mA^2 \cdot 500 = 17.761mW $$
-  </p>
+ 
+ <figure style="text-align:center">
+  <img src="images/parallel_series_circuits/ex06_02.png" alt="Figure 13 - Example 6 part II" style="width:90%">
+  <figcaption>Figure 13 - Example 6 part II</figcaption>
+</figure>  
 
-</div>
-<br><br>
-```
+c. $I_B = I_{R_2} =\frac{V_{R_2}}{R_2} = \frac{V_L}{R_2} = \frac{2.980}{500} = 5.960mA$
+       
+   $P_{R_2} = I^2_{R_2} \cdot R_2 =  5.960mA^2 \cdot 500 = 17.761mW$
+  
 ## Delta-Wye and Wye-Delta Conversions
 
 In some circuits, resistors are connected together to form a three
