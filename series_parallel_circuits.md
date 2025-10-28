@@ -368,7 +368,7 @@ width="65.0%"} -->
  </figure> -->
 
  
- <figure style="text-align:center">
+<figure style="text-align:center">
   <img src="images/parallel_series_circuits/ex06_02.png" alt="Figure 13 - Example 6 part II" style="width:90%">
   <figcaption>Figure 13 - Example 6 part II</figcaption>
 </figure>  
@@ -385,15 +385,17 @@ terminal network. Two such networks exist:
 -   **Delta** (or **Pi**) configuration
 -   **Wye** (or **Tee**) configuration
 
-![](../_static/images/parallel_series_circuits/three-terminal-network-diagram.jpg){.align-center
-width="70.0%"}
+<!-- ![](../_static/images/parallel_series_circuits/three-terminal-network-diagram.jpg){.align-center
+width="70.0%"} -->
 
-Both configurations are shown in the schematic above. Both
-configurations can be converted to the other. This technique can be used
-to simplify circuits with a complex topology (such as an unbalanced
-bridge circuit) to a series-parallel topology. It can also be used to
-transform series-parallel circuits into simpler series-parallel
-circuits.
+<figure style="text-align:center">
+  <img src="images/parallel_series_circuits/three-terminal-network-diagram.jpg" alt="Figure 14-three terminal network diagram" style="width:70%">
+  <figcaption>Figure 14 - three terminal network diagram</figcaption>
+</figure>  
+
+Both configurations are shown in the schematic above. Both configurations can be converted to the other. This technique can be used
+to simplify circuits with a complex topology (such as an unbalanced bridge circuit) to a series-parallel topology. It can also be used to
+transform series-parallel circuits into simpler series-parallel circuits.
 
 To convert a **Delta** network to a **Wye** network:
 
@@ -416,14 +418,15 @@ Consider the unbalanced bridge circuit shown in the figure below:
 ![](../_static/images/parallel_series_circuits/dy01.png){.align-center
 width="40.0%"}
 
-This circuit has a complex topology that cannot be easily simplified
-with the techniques covered so far. However notice how resistors $R_1$,
-$R_2$ and $R_3$ form a delta (inverted). Resistors $R_3$, $R_4$ and
-$R_5$ form another delta. In order to simplify the circuit, transform
-the inverted delta (consisting of $R_1$, $R_2$ and $R_3$) to it\'s wye
-equivalent as shown below. $R_1$ becomes $R_AB$, $R_2$ becomes $R_AC$ &
-$R_3$ becomes $R_BC$. Now convert the delta resistances R_AB, R_BC and
-R_AC to the wye resistances R_A, R_B and R_C:
+<figure style="text-align:center">
+  <img src="images/parallel_series_circuits/dy01.png" alt="Figure 15 - Delta to Wye conversion 01" style="width:40%">
+  <figcaption>Figure 15 - Delta to Wye conversion 01</figcaption>
+</figure>  
+
+This circuit has a complex topology that cannot be easily simplified with the techniques covered so far. However notice how resistors $R_1$,
+$R_2$ and $R_3$ form a delta (inverted). Resistors $R_3$, $R_4$ and $R_5$ form another delta. In order to simplify the circuit, transform
+the inverted delta (consisting of $R_1$, $R_2$ and $R_3$) to it\'s wye equivalent as shown below. $R_1$ becomes $R_AB$, $R_2$ becomes $R_AC$ &
+$R_3$ becomes $R_BC$. Now convert the delta resistances R_AB, R_BC and R_AC to the wye resistances R_A, R_B and R_C:
 
 $$R_A = \frac{R_{AB} \cdot R_{AC}}{ R_{AB} + R_{AC} + R_{BC} } = \frac{12 \cdot 18}{ 12 + 18 + 6 } = 6\Omega$$
 
@@ -431,15 +434,17 @@ $$R_B = \frac{R_{AB} \cdot R_{BC}}{ R_{AB} + R_{AC} + R_{BC} } = \frac{12 \cdot 
 
 $$R_C = \frac{R_{AC} \cdot R_{BC}}{ R_{AB} + R_{AC} + R_{BC} } = \frac{18 \cdot 6}{ 12 + 18 + 6 } = 3\Omega$$
 
-![](../_static/images/parallel_series_circuits/dy02.png){.align-center
-width="100.0%"}
+<!-- ![](../_static/images/parallel_series_circuits/dy02.png){.align-center
+width="100.0%"} -->
 
-One can quickly verify that the circuits shown above are equivalent, by
-simulating the circuits with and without the delta-to-wye
-transformations and measuring the voltages across and currents flowing
-through resistors $R_4$ & $R_5$. This can be done in the circuit
-simulation below by pressing the **DC** button.
+<figure style="text-align:center">
+  <img src="images/parallel_series_circuits/dy02.png" alt="Figure 16 - Delta to Wye conversion 02" style="width:100%">
+  <figcaption>Figure 16 - Delta to Wye conversion 02</figcaption>
+</figure>  
 
+
+One can quickly verify that the circuits shown above are equivalent, by simulating the circuits with and without the delta-to-wye
+transformations and measuring the voltages across and currents flowing through resistors $R_4$ & $R_5$. 
 
 ### Example 7
 
@@ -447,43 +452,52 @@ Convert the delta resistor network shown in the figure below to a wye
 network. Use simulation to Verify that the original circuit (with the
 delta) and the transformed circuit (wye) are equivalent.
 
-![](../_static/images/parallel_series_circuits/ex0701.png){.align-center
-width="60.0%"}
+<!-- ![](../_static/images/parallel_series_circuits/ex0701.png){.align-center
+width="60.0%"} -->
 
-```{=html}
-<button onclick="toggle_element('ex47')">Solution</button>
+<figure style="text-align:center">
+  <img src="images/parallel_series_circuits/ex0701.png" alt="Figure 17 - Example 7 Part I" style="width:60%">
+  <figcaption>Figure 17 - Example 7 Part I</figcaption>
+</figure>  
 
-<div id="ex47" style="display: none;"><br>
- <p> First calculate the values of R<sub>A</sub>, R<sub>B</sub> & R<sub>C</sub>:
+#### Solution
+
+First calculate the values of $R_A$, $R_B$ & $R_C$:
     $$R_A = \frac{R_{AB} \cdot R_{AC}}{ R_{AB} + R_{AC} + R_{BC} } = \frac{220 \cdot 100}{ 220 + 100 + 470 } = 27.848\Omega$$
     $$R_B = \frac{R_{AB} \cdot R_{BC}}{ R_{AB} + R_{AC} + R_{BC} } = \frac{220 \cdot 470}{ 220 + 100 + 470 } = 130.886\Omega$$
     $$R_C = \frac{R_{AC} \cdot R_{BC}}{ R_{AB} + R_{AC} + R_{BC} } = \frac{100 \cdot 470}{ 220 + 100 + 470 } = 59.494\Omega$$
 
- <p> The circuit becomes:
- <figure >
-   <img src="../_static/images/parallel_series_circuits/ex0702.png" alt="alternate text" width="100%" style="text-align: center;display: block;" >
- </figure>
- </p>
+The circuit becomes:
 
+ <!--<figure >
+   <img src="../_static/images/parallel_series_circuits/ex0702.png" alt="alternate text" width="100%" style="text-align: center;display: block;" >
+ </figure> -->
+ 
+<figure style="text-align:center">
+  <img src="images/parallel_series_circuits/ex0702.png" alt="Figure 18 - Example 7 Part II" style="width:100%">
+  <figcaption>Figure 18 - Example 7 Part II</figcaption>
+</figure>  
 
 ## Wheatstone Bridge
 
-![](../_static/images/parallel_series_circuits/wt.png){.align-center
-width="60.0%"}
+<!-- ![](../_static/images/parallel_series_circuits/wt.png){.align-center
+width="60.0%"} -->
 
-The circuit shown above is known as the **Wheatstone Bridge**. The
-Wheatsone bridge is said to be **Balanced** When $V_A = V_B$. This
+<figure style="text-align:center">
+  <img src="images/parallel_series_circuits/wt.png" alt="Figure 19 - Wheatstone Bridge" style="width:60%">
+  <figcaption>Figure 19 - Wheatstone Bridge</figcaption>
+</figure> 
+
+The circuit shown above is known as the **Wheatstone Bridge**. The Wheatsone bridge is said to be **Balanced** When $V_A = V_B$. This
 happens when:
 
 $$\frac{R_1}{R_3} = \frac{R_2}{R_4}$$
 
-While this result can be deduced intuitively, it can also be proven as
-follows:
+While this result can be deduced intuitively, it can also be proven as follows:
 
 $$V_A - V_B = V_S \cdot \left[ \frac{R_3}{R_1 + R_3} - \frac{R_4}{R_2 + R_4} \right]$$
 
-The bridge is said to be balanced when $V_A - V_B = 0$, which in turn
-means that:
+The bridge is said to be balanced when $V_A - V_B = 0$, which in turn means that:
 
 $$\frac{R_3}{R_1 + R_3} = \frac{R_4}{R_2 + R_4}$$
 
@@ -497,18 +511,22 @@ $$\frac{R_1}{R_3} = \frac{R_2}{R_4}$$
 
 ### Example 8
 
-![](../_static/images/parallel_series_circuits/ex08.png){.align-center
-width="60.0%"}
+<!-- ![](../_static/images/parallel_series_circuits/ex08.png){.align-center
+width="60.0%"} -->
 
-Consider the Wheatstone bridge shown below. If R1 = 50Ω, R2=60Ω and
-R3=84Ω, what value of R4 will balance the bridge i.e. cause VA=VB ?
+<figure style="text-align:center">
+  <img src="images/parallel_series_circuits/ex08.png" alt="Figure 20 - Example 8" style="width:60%">
+  <figcaption>Figure 20 - Example 8</figcaption>
+</figure> 
 
-```{=html}
-<button onclick="toggle_element('ex48')">Solution</button>
+Consider the Wheatstone bridge shown below. If R1 = 50Ω, R2=60Ω and R3=84Ω, what value of R4 will balance the bridge i.e. cause VA=VB ?
 
-<div id="ex48" style="display: none;"><br>
-    When the bridge is balanced, $$ \frac{R_1}{R_3} = \frac{R_2}{R_4}$$
-    Therefore $$ R_4 = R_2 \cdot \frac{R_3}{R_1} = 60\Omega \cdot \frac{84\Omega}{50\Omega} = 100.800\Omega $$
-</div>
-<br><br>
-```
+#### Solution
+
+When the bridge is balanced, 
+
+           $$ \frac{R_1}{R_3} = \frac{R_2}{R_4}$$
+    
+Therefore 
+      
+           $$ R_4 = R_2 \cdot \frac{R_3}{R_1} = 60\Omega \cdot \frac{84\Omega}{50\Omega} = 100.800\Omega $$
