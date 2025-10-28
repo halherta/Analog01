@@ -526,7 +526,9 @@ Consider the Wheatstone bridge shown below. If R1 = 50Ω, R2=60Ω and R3=84Ω, w
 #### Solution
 
 When the bridge is balanced, 
+
            $$\frac{R_1}{R_3} = \frac{R_2}{R_4}$$
     
 Therefore, 
+
            $$R_4 = R_2 \cdot \frac{R_3}{R_1} = 60\Omega \cdot \frac{84\Omega}{50\Omega} = 100.800\Omega$$
