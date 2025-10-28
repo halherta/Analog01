@@ -346,13 +346,9 @@ width="65.0%"} -->
 #### Solution
 
 
-1. Start by ensuring that:
+1. Start by ensuring that: $R_2 = \frac{R_L}{100} = \frac{50000\Omega}{100}=500\Omega$
 
-            $$ R_2 = \frac{R_L}{100} = \frac{50000\Omega}{100}=500\Omega$$
-
-   Next solve for:
-
-            $$ R_1 =  R_2 \cdot \left( \frac{V_S - V_{NL} }{V_{NL}} \right) = 500\Omega \cdot \left( \frac{10 - 3 }{3} \right) = 1166.667\Omega $$   
+   Next solve for: $R_1 =  R_2 \cdot \left( \frac{V_S - V_{NL} }{V_{NL}} \right) = 500\Omega \cdot \left( \frac{10 - 3 }{3} \right) = 1166.667\Omega$   
 
  <!-- <figure >
    <img src="../_static/images/parallel_series_circuits/ex06_01.png" alt="alternate text" width="30%" style="text-align: center;display: block;" >
@@ -363,13 +359,9 @@ width="65.0%"} -->
   <figcaption>Figure 13 - Example 6 part I</figcaption>
 </figure>  
 
-2. First calculate:
+2. First calculate: $R_2 \parallel  R_L = \frac{1}{ \frac{1}{500\Omega} + \frac{1}{50k\Omega}   } = 495.050\Omega$
 
-       $$R_2 \parallel  R_L = \frac{1}{ \frac{1}{500\Omega} + \frac{1}{50k\Omega}   } = 495.050\Omega$$
-
-   Next:
-
-      $$V_L = V_S \cdot \frac{R_2 \parallel  R_L}{(R_2 // R_L) + R_1 } = 10 \cdot \frac{495.050\Omega}{495.050\Omega + 1166.667\Omega } = 2.980V $$
+   Next: $V_L = V_S \cdot \frac{R_2 \parallel  R_L}{(R_2 \parallel R_L) + R_1 } = 10 \cdot \frac{495.050\Omega}{495.050\Omega + 1166.667\Omega } = 2.980V$
 
 <!-- <figure >
    <img src="../_static/images/parallel_series_circuits/ex06_02.png" alt="alternate text" width="90%" style="text-align: center;display: block;" >
