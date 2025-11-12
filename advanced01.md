@@ -60,8 +60,8 @@ Therefore, the Thevenin equivalent circuit is:
 width="50.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced02/thev02.png" alt="Figure 3 - Thevenin Theorem Example 01 p2" style="width:100%">
-  <figcaption>Figure 2 - Thevenin Theorem Example 01 p2</figcaption>
+  <img src="images/advanced01/thev02.png" alt="Figure 3 - Thevenin Theorem Example 01 p2" style="width:100%">
+  <figcaption>Figure 3 - Thevenin Theorem Example 01 p2</figcaption>
 </figure> 
 
 To verify that the Thevenin equivalent is indeed the same as the original circuit, place the same load resistance across the load
