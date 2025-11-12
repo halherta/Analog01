@@ -10,6 +10,11 @@ Thevenin resistor* $R_{TH}$.
 <!-- ![](../_static/images/advanced01/thev00.png){.align-center
 width="75.0%"} -->
 
+ <figure style="text-align:center">
+  <img src="images/advanced01/thev00.png" alt="Figure 1 - Thevenin Theorem" style="width:100%">
+  <figcaption>Figure 1 - Thevenin Theorem</figcaption>
+</figure> 
+
 The procedure to calculate $V_{TH}$ and $R_{TH}$ for a given circuit is
 as follows:
 
@@ -21,11 +26,8 @@ as follows:
        a. Calculate the circuit resistance looking in through output terminals. This resistance is $R_{TH}$.
 
 -   To calculate $V_{TH}$:
-
-    > 1.  Remove the load resistance, leaving an open circuit across the
-    >     output terminals.
-    > 2.  Calculate the voltage across the output terminals. This
-    >     voltage will be $V_{TH}$.
+    1.  Remove the load resistance, leaving an open circuit across the output terminals.
+    2.  Calculate the voltage across the output terminals. This voltage will be $V_{TH}$.
 
 This method is best shown by an example.
 
@@ -36,37 +38,36 @@ schematic.
 
 **Solution**
 
-![](../_static/images/advanced01/thev01.png){.align-center
-width="75.0%"}
+<!-- ![](../_static/images/advanced01/thev01.png){.align-center
+width="75.0%"} -->
 
-To solve for $V_{TH}$ first remove the load resistance. Then calculate
-the voltage across the output terminals. Because the output terminals
-are open, no current flows through $R_3$, therefore there\'s no voltage
-drop across it. This means that the voltage at the output terminals
-($V_{TH}$) is also across $R_2$. In this particular scenario,
+ <figure style="text-align:center">
+  <img src="images/advanced01/thev01.png" alt="Figure 2 - Thevenin Theorem Example 01 p1" style="width:100%">
+  <figcaption>Figure 2 - Thevenin Theorem Example 01 p1</figcaption>
+</figure> 
+
+To solve for $V_{TH}$ first, remove the load resistance. Then calculate the voltage across the output terminals. Because the output terminals are open, no current flows through $R_3$, therefore there's no voltage drop across it. This means that the voltage at the output terminals ($V_{TH}$) is also across $R_2$. In this particular scenario, 
 
 $$V_{TH} = V_S \cdot \frac{R_2}{R_1 + R_2} = 6V \cdot \frac{220 \Omega}{220 \Omega + 560 \Omega} = 1.692V$$
 
-To calculate $R_{TH}$, replace the voltage source with a short, remove
-the load resistance and calculate the resistance of the circuit looking
-into the load terminals
+To calculate $R_{TH}$, replace the voltage source with a short, remove the load resistance and calculate the resistance of the circuit looking into the load terminals
 
 $$R_{TH} = (R1 // R2) + R3 = \frac{R_1 \cdot R_2}{ R_1 + R_2} + R_3 =\frac{560\Omega \cdot 220\Omega}{ 560\Omega + 220\Omega} + 330\Omega = 487.948\Omega$$
 
-Therefore the Thevenin equivalent circuit is:
+Therefore, the Thevenin equivalent circuit is:
 
-![](../_static/images/advanced01/thev02.png){.align-center
-width="50.0%"}
+<!-- ![](../_static/images/advanced01/thev02.png){.align-center
+width="50.0%"} -->
 
-To verify that the Thevenin equivalent is indeed the same as the
-original circuit, place the same load resistance across the load
-terminals of both circuits and calculate $V_{RL}$ and $I_{RL}$. If they
-are the same in both circuits then the circuits are indeed identical.
-This can be easily accomplished with a circuit simulator as shown below:
+ <figure style="text-align:center">
+  <img src="images/advanced02/thev02.png" alt="Figure 3 - Thevenin Theorem Example 01 p2" style="width:100%">
+  <figcaption>Figure 2 - Thevenin Theorem Example 01 p2</figcaption>
+</figure> 
 
-```{=html}
-<iframe src="../_static/circuit-sandbox/index.html?value=%5B%5B%22v%22%2C%5B64%2C32%2C0%5D%2C%7B%22name%22%3A%22VS%22%2C%22value%22%3A%22dc(6)%22%2C%22_json_%22%3A0%7D%2C%5B%227%22%2C%220%22%5D%5D%2C%5B%22r%22%2C%5B144%2C24%2C1%5D%2C%7B%22name%22%3A%22R1%22%2C%22r%22%3A%22560%22%2C%22_json_%22%3A1%7D%2C%5B%226%22%2C%227%22%5D%5D%2C%5B%22r%22%2C%5B216%2C24%2C1%5D%2C%7B%22name%22%3A%22R3%22%2C%22r%22%3A%22330%22%2C%22_json_%22%3A2%7D%2C%5B%222%22%2C%226%22%5D%5D%2C%5B%22r%22%2C%5B152%2C32%2C0%5D%2C%7B%22name%22%3A%22R2%22%2C%22r%22%3A%22220%22%2C%22_json_%22%3A3%7D%2C%5B%226%22%2C%220%22%5D%5D%2C%5B%22r%22%2C%5B240%2C24%2C0%5D%2C%7B%22name%22%3A%22RL1%22%2C%22r%22%3A%22470%22%2C%22_json_%22%3A4%7D%2C%5B%221%22%2C%220%22%5D%5D%2C%5B%22w%22%2C%5B96%2C24%2C64%2C24%5D%5D%2C%5B%22w%22%2C%5B240%2C72%2C240%2C80%5D%5D%2C%5B%22w%22%2C%5B240%2C80%2C152%2C80%5D%5D%2C%5B%22w%22%2C%5B152%2C80%2C64%2C80%5D%5D%2C%5B%22w%22%2C%5B152%2C32%2C152%2C24%5D%5D%2C%5B%22w%22%2C%5B144%2C24%2C152%2C24%5D%5D%2C%5B%22w%22%2C%5B168%2C24%2C152%2C24%5D%5D%2C%5B%22g%22%2C%5B152%2C88%2C0%5D%2C%7B%22_json_%22%3A12%7D%2C%5B%220%22%5D%5D%2C%5B%22w%22%2C%5B152%2C88%2C152%2C80%5D%5D%2C%5B%22w%22%2C%5B64%2C24%2C64%2C32%5D%5D%2C%5B%22v%22%2C%5B64%2C136%2C0%5D%2C%7B%22name%22%3A%22VTH%22%2C%22value%22%3A%22dc(1.692)%22%2C%22_json_%22%3A15%7D%2C%5B%225%22%2C%220%22%5D%5D%2C%5B%22r%22%2C%5B176%2C136%2C1%5D%2C%7B%22name%22%3A%22RTH%22%2C%22r%22%3A%22487.948%22%2C%22_json_%22%3A16%7D%2C%5B%224%22%2C%225%22%5D%5D%2C%5B%22r%22%2C%5B240%2C136%2C0%5D%2C%7B%22name%22%3A%22RL2%22%2C%22r%22%3A%22470%22%2C%22_json_%22%3A17%7D%2C%5B%223%22%2C%220%22%5D%5D%2C%5B%22w%22%2C%5B64%2C136%2C128%2C136%5D%5D%2C%5B%22w%22%2C%5B240%2C184%2C64%2C184%5D%5D%2C%5B%22g%22%2C%5B64%2C184%2C0%5D%2C%7B%22_json_%22%3A20%7D%2C%5B%220%22%5D%5D%2C%5B%22a%22%2C%5B224%2C136%2C0%5D%2C%7B%22color%22%3A%22magenta%22%2C%22offset%22%3A%220%22%2C%22_json_%22%3A21%7D%2C%5B%224%22%2C%223%22%5D%5D%2C%5B%22a%22%2C%5B224%2C24%2C0%5D%2C%7B%22color%22%3A%22magenta%22%2C%22offset%22%3A%220%22%2C%22_json_%22%3A22%7D%2C%5B%222%22%2C%221%22%5D%5D%2C%5B%22w%22%2C%5B216%2C24%2C224%2C24%5D%5D%2C%5B%22w%22%2C%5B176%2C136%2C224%2C136%5D%5D%2C%5B%22view%22%2C0%2C0%2C2%2C%2250%22%2C%2210%22%2C%221G%22%2Cnull%2C%22100%22%2C%220.01%22%2C%221000%22%5D%5D" height="550" width="740" frameBorder="0"></iframe>
-```
+To verify that the Thevenin equivalent is indeed the same as the original circuit, place the same load resistance across the load
+terminals of both circuits and calculate $V_{RL}$ and $I_{RL}$. If they are the same in both circuits, then the circuits are indeed identical. This can be easily accomplished with a circuit simulator  such as LTSpice.
+
+
 ### Example 2
 
 Find the Thevenin equivalent of the circuit shown in the schematic
