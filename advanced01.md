@@ -7,24 +7,18 @@ more voltage and/or current sources and resistances can be replaced by a
 single Thevenin voltage source* $V_{TH}$ *in series with a single
 Thevenin resistor* $R_{TH}$.
 
-![](../_static/images/advanced01/thev00.png){.align-center
-width="75.0%"}
+<!-- ![](../_static/images/advanced01/thev00.png){.align-center
+width="75.0%"} -->
 
 The procedure to calculate $V_{TH}$ and $R_{TH}$ for a given circuit is
 as follows:
 
 -   To calculate $R_{TH}$:
-
-    > 1.  replace all sources with their ideal source resistances
-    >
-    >     > a.  Replace each current source in the circuit with an open
-    >     >     circuit
-    >     > b.  Replace each voltage source in the circuit with a short
-    >     >     circuit
-    >
-    > 2.  Remove the load resistance from the output terminals and
-    >     calculate the circuit resistance looking in through output
-    >     terminals. This resistance is $R_{TH}$.
+    1. replace all sources with their ideal source resistances
+       a.  Replace each current source in the circuit with an open circuit
+       b.  Replace each voltage source in the circuit with a short circuit
+    2.  Remove the load resistance from the output terminals and
+       a. Calculate the circuit resistance looking in through output terminals. This resistance is $R_{TH}$.
 
 -   To calculate $V_{TH}$:
 
