@@ -76,7 +76,7 @@ Find the Thevenin equivalent of the circuit shown in the schematic below.
 width="70.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev03.png" alt="Figure 4 - Thevenin Theorem Example 02 p1" style="width:30%">
+  <img src="images/advanced01/thev03.png" alt="Figure 4 - Thevenin Theorem Example 02 p1" style="width:50%">
   <figcaption>Figure 4 - Thevenin Theorem Example 02 p1</figcaption>
 </figure> 
 
@@ -86,7 +86,7 @@ width="70.0%"} -->
 width="100.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev04.png" alt="Figure 5 - Thevenin Theorem Example 02 p2" style="width:30%">
+  <img src="images/advanced01/thev04.png" alt="Figure 5 - Thevenin Theorem Example 02 p2" style="width:50%">
   <figcaption>Figure 5 - Thevenin Theorem Example 02 p2</figcaption>
 </figure> 
 
@@ -96,7 +96,7 @@ To solve for $V_{TH}$ first remove the load resistance. Then calculate the volta
 width="100.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev05.png" alt="Figure 6 - Thevenin Theorem Example 02 p3" style="width:30%">
+  <img src="images/advanced01/thev05.png" alt="Figure 6 - Thevenin Theorem Example 02 p3" style="width:60%">
   <figcaption>Figure 6 - Thevenin Theorem Example 02 p3</figcaption>
 </figure> 
 
@@ -121,7 +121,7 @@ Therefore the Thevenin equivalent circuit is:
 width="50.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev06.png" alt="Figure 7 - Thevenin Theorem Example 02 p4" style="width:30%">
+  <img src="images/advanced01/thev06.png" alt="Figure 7 - Thevenin Theorem Example 02 p4" style="width:40%">
   <figcaption>Figure 7 - Thevenin Theorem Example 02 p4</figcaption>
 </figure> 
 
@@ -130,54 +130,52 @@ To verify this, simulate both the original and Thevenin equivalent circuits in L
 
 ## Norton\'s theorem
 
-Norton\'s theorem states that *any linear circuit containing one or more
-voltage and/or current sources and resistances can be replaced by a
-single Norton current source* $I_{N}$ *in parallel with a single Norton
-resistor* $R_{N}$.
+Norton\'s theorem states that *any linear circuit containing one or more voltage and/or current sources and resistances can be replaced by a single Norton current source* $I_{N}$ *in parallel with a single Norton resistor* $R_{N}$.
 
-![](../_static/images/advanced01/norton01.png){.align-center
-width="75.0%"}
+<!-- ![](../_static/images/advanced01/norton01.png){.align-center
+width="75.0%"} -->
 
-The procedure to calculate $I_{N}$ and $R_{N}$ for a given circuit is as
-follows:
+ <figure style="text-align:center">
+  <img src="images/advanced01/norton01.png" alt="Figure 8 - Norton Theorem" style="width:40%">
+  <figcaption>Figure 8 - Norton Theorem</figcaption>
+</figure> 
 
--   The procedure for calculating the Norton resistance $R_{N}$ is
-    basically the same as the procedure for calculating the Thevenin
-    resistance $R_{TH}$ :
+The procedure to calculate $I_{N}$ and $R_{N}$ for a given circuit is as follows:
 
-    > 1.  replace all sources with their ideal source resistances
-    >
-    >     > a.  Replace each current source in the circuit with an open
-    >     >     circuit
-    >     > b.  Replace each voltage source in the circuit with a short
-    >     >     circuit
-    >
-    > 2.  Remove the load resistance from the output terminals and
-    >     calculate the circuit resistance looking in through output
-    >     terminals. This resistance is $R_{TH}$.
+- The procedure for calculating the Norton resistance $R_{N}$ is basically the same as the procedure for calculating the Thevenin resistance $R_{TH}$ :
+  1. Replace all sources with their ideal source resistances
+     a. Replace each current source in the circuit with an open circuit
+     b. Replace each voltage source in the circuit with a short circuit
+  2. Remove the load resistance from the output terminals and calculate the circuit resistance looking in through output terminals. This resistance is $R_{TH}$.
 
--   To calculate $I_{N}$:
-
-    > 1.  Replace the load resistance with a wire (or short).
-    > 2.  Calculate the current flowing through that wire. This current
-    >     is the Norton current $I_{N}$
+- To calculate $I_{N}$:
+  1.  Replace the load resistance with a wire (or short).
+  2.  Calculate the current flowing through that wire. This current is the Norton current $I_{N}$
 
 ### Example 3
 
 Find the Norton equivalent of the circuit shown in the schematic below.
 
-![](../_static/images/advanced01/norton02.png){.align-center
-width="75.0%"}
+<!-- ![](../_static/images/advanced01/norton02.png){.align-center
+width="75.0%"} -->
 
-To solve for $I_{N}$ replace the load resistance with a wire. Then
-calculate the current $I_N$ flowing through that wire.
+ <figure style="text-align:center">
+  <img src="images/advanced01/norton02.png" alt="Figure 9 - Norton Theorem example 3 p1" style="width:75%">
+  <figcaption>Figure 9 - Norton Theorem example 3 p1</figcaption>
+</figure> 
 
-Since this is a series parallel circuit, node voltage $V_A$ must be
-found first. Compress $R_2$ and $R_3$ into a single equivalent
+To solve for $I_{N}$ replace the load resistance with a wire. Then calculate the current $I_N$ flowing through that wire.
+
+Since this is a series parallel circuit, node voltage $V_A$ must be found first. Compress $R_2$ and $R_3$ into a single equivalent
 resistance as shown in the figure below:
 
-![](../_static/images/advanced01/norton03.png){.align-center
-width="75.0%"}
+<!-- ![](../_static/images/advanced01/norton03.png){.align-center
+width="75.0%"} -->
+
+ <figure style="text-align:center">
+  <img src="images/advanced01/norton03.png" alt="Figure 10 - Norton Theorem example 3 p2" style="width:75%">
+  <figcaption>Figure 10 - Norton Theorem example 3 p2</figcaption>
+</figure> 
 
 $$R_2 // R_3 = \frac{R_2 \cdot R_3}{R_2 + R_3} = \frac{220 \Omega \cdot 330 \Omega }{220 \Omega + 330 \Omega} = 132 \Omega$$
 
@@ -189,42 +187,33 @@ Knowing $V_A$, $I_N$ can be calculated as:
 
 $$I_N = \frac{V_A}{R_3} = \frac{1.145V}{330 \Omega} = 3.470mA$$
 
-To calculate $R_{N}$, replace the voltage source with a short, remove
-the load resistance and calculate the resistance of the circuit looking
-into the load terminals. This is the same procedure as for calculating
-$R_{TH}$, so $R_{N}$ has to be equal to $R_{TH}$ in example 1.
+To calculate $R_{N}$, replace the voltage source with a short, remove the load resistance and calculate the resistance of the circuit looking into the load terminals. This is the same procedure as for calculating $R_{TH}$, so $R_{N}$ has to be equal to $R_{TH}$ in example 1.
 
 > $$R_{N} = (R1 // R2) + R3 = \frac{R_1 \cdot R_2}{ R_1 + R_2} + R_3 =\frac{560\Omega \cdot 220\Omega}{ 560\Omega + 220\Omega} + 330\Omega = 487.948\Omega$$
 
 Therefore the Norton equivalent circuit is:
 
-![](../_static/images/advanced01/norton04.png){.align-center
-width="50.0%"}
+<!-- ![](../_static/images/advanced01/norton04.png){.align-center
+width="50.0%"} -->
 
-To verify that the Norton equivalent is indeed the same as the original
-circuit, place the same load resistance across the load terminals of
-both circuits and calculate $V_{RL}$ and $I_{RL}$. If they are the same
-in both circuits then the circuits are indeed identical. This can be
-easily accomplished with the circuit simulator as shown below:
+ <figure style="text-align:center">
+  <img src="images/advanced01/norton04.png" alt="Figure 11 - Norton Theorem example 3 p3" style="width:50%">
+  <figcaption>Figure 11 - Norton Theorem example 3 p3</figcaption>
+</figure> 
 
-```{=html}
-<iframe src="../_static/circuit-sandbox/index.html?value=%5B%5B%22v%22%2C%5B56%2C40%2C0%5D%2C%7B%22name%22%3A%22VS%22%2C%22value%22%3A%22dc(6)%22%2C%22_json_%22%3A0%7D%2C%5B%226%22%2C%220%22%5D%5D%2C%5B%22r%22%2C%5B136%2C40%2C1%5D%2C%7B%22name%22%3A%22R1%22%2C%22r%22%3A%22560%22%2C%22_json_%22%3A1%7D%2C%5B%225%22%2C%226%22%5D%5D%2C%5B%22r%22%2C%5B152%2C40%2C0%5D%2C%7B%22name%22%3A%22R2%22%2C%22r%22%3A%22220%22%2C%22_json_%22%3A2%7D%2C%5B%225%22%2C%220%22%5D%5D%2C%5B%22r%22%2C%5B224%2C40%2C1%5D%2C%7B%22name%22%3A%22R3%22%2C%22r%22%3A%22330%22%2C%22_json_%22%3A3%7D%2C%5B%224%22%2C%225%22%5D%5D%2C%5B%22r%22%2C%5B256%2C40%2C0%5D%2C%7B%22name%22%3A%22RL1%22%2C%22r%22%3A%221k%22%2C%22_json_%22%3A4%7D%2C%5B%223%22%2C%220%22%5D%5D%2C%5B%22a%22%2C%5B232%2C40%2C0%5D%2C%7B%22color%22%3A%22magenta%22%2C%22offset%22%3A%220%22%2C%22_json_%22%3A5%7D%2C%5B%224%22%2C%223%22%5D%5D%2C%5B%22i%22%2C%5B88%2C168%2C2%5D%2C%7B%22name%22%3A%22IN%22%2C%22value%22%3A%22dc(3.470m)%22%2C%22_json_%22%3A6%7D%2C%5B%220%22%2C%222%22%5D%5D%2C%5B%22r%22%2C%5B144%2C120%2C0%5D%2C%7B%22name%22%3A%22RN%22%2C%22r%22%3A%22487.948%22%2C%22_json_%22%3A7%7D%2C%5B%222%22%2C%220%22%5D%5D%2C%5B%22r%22%2C%5B232%2C120%2C0%5D%2C%7B%22name%22%3A%22RL2%22%2C%22r%22%3A%221k%22%2C%22_json_%22%3A8%7D%2C%5B%221%22%2C%220%22%5D%5D%2C%5B%22g%22%2C%5B136%2C168%2C0%5D%2C%7B%22_json_%22%3A9%7D%2C%5B%220%22%5D%5D%2C%5B%22w%22%2C%5B56%2C40%2C88%2C40%5D%5D%2C%5B%22w%22%2C%5B136%2C40%2C152%2C40%5D%5D%2C%5B%22w%22%2C%5B152%2C40%2C176%2C40%5D%5D%2C%5B%22w%22%2C%5B224%2C40%2C232%2C40%5D%5D%2C%5B%22w%22%2C%5B248%2C40%2C256%2C40%5D%5D%2C%5B%22w%22%2C%5B256%2C88%2C152%2C88%5D%5D%2C%5B%22w%22%2C%5B152%2C88%2C56%2C88%5D%5D%2C%5B%22g%22%2C%5B56%2C88%2C0%5D%2C%7B%22_json_%22%3A17%7D%2C%5B%220%22%5D%5D%2C%5B%22w%22%2C%5B88%2C168%2C136%2C168%5D%5D%2C%5B%22w%22%2C%5B136%2C168%2C144%2C168%5D%5D%2C%5B%22w%22%2C%5B88%2C120%2C144%2C120%5D%5D%2C%5B%22w%22%2C%5B144%2C168%2C232%2C168%5D%5D%2C%5B%22a%22%2C%5B200%2C120%2C0%5D%2C%7B%22color%22%3A%22magenta%22%2C%22offset%22%3A%220%22%2C%22_json_%22%3A22%7D%2C%5B%222%22%2C%221%22%5D%5D%2C%5B%22w%22%2C%5B144%2C120%2C200%2C120%5D%5D%2C%5B%22w%22%2C%5B216%2C120%2C232%2C120%5D%5D%2C%5B%22view%22%2C0%2C0%2C2%2C%2250%22%2C%2210%22%2C%221G%22%2Cnull%2C%22100%22%2C%220.01%22%2C%221000%22%5D%5D" height="550" width="740" frameBorder="0"></iframe>
-```
+To verify that the Norton equivalent is indeed the same as the original circuit, place the same load resistance across the load terminals of both circuits and calculate $V_{RL}$ and $I_{RL}$. If they are the same in both circuits then the circuits are indeed identical. This can be easily accomplished through circuit simulation
+
 ## Converting Thevenin and Norton Equivalent Circuits using Source Conversions
 
-Since Thevenin and Norton equivalent circuits have the same topology as
-practical voltage and current sources respectively, source conversions
-can be performed on either circuit to convert it to the other.
+Since Thevenin and Norton equivalent circuits have the same topology as practical voltage and current sources respectively, source conversions can be performed on either circuit to convert it to the other.
 
-When converting a Thevenin circuit to its equivalent Norton circuit, the
-Norton current and resistance can be calculated as follows:
+When converting a Thevenin circuit to its equivalent Norton circuit, the Norton current and resistance can be calculated as follows:
 
 $$I_N = \frac{V_{TH}}{R_{TH}}$$
 
 $$R_N = R_{TH}$$
 
-When converting a Norton circuit to its equivalent Thevenin circuit, the
-Thevenin voltage and resistance can be calculated as follows:
+When converting a Norton circuit to its equivalent Thevenin circuit, the Thevenin voltage and resistance can be calculated as follows:
 
 $$V_{TH} = I_N \cdot R_N$$
 
@@ -342,9 +331,7 @@ $$V_{A} = V_{A_{V_{S1}}} + V_{A_{V_{S2}}} = 4.798 V + 3.271 V = 8.069 V$$
 
 This result can be easily verified with simulation:
 
-```{=html}
-<iframe src="../_static/circuit-sandbox/index.html?value=%5B%5B%22L%22%2C%5B152%2C32%2C3%5D%2C%7B%22label%22%3A%22VA%22%2C%22_json_%22%3A0%7D%2C%5B%22VA%22%5D%5D%2C%5B%22g%22%2C%5B152%2C88%2C0%5D%2C%7B%22_json_%22%3A1%7D%2C%5B%220%22%5D%5D%2C%5B%22w%22%2C%5B264%2C88%2C152%2C88%5D%5D%2C%5B%22w%22%2C%5B56%2C88%2C152%2C88%5D%5D%2C%5B%22w%22%2C%5B152%2C80%2C152%2C88%5D%5D%2C%5B%22w%22%2C%5B56%2C32%2C56%2C40%5D%5D%2C%5B%22w%22%2C%5B80%2C32%2C56%2C32%5D%5D%2C%5B%22w%22%2C%5B152%2C32%2C128%2C32%5D%5D%2C%5B%22w%22%2C%5B184%2C32%2C152%2C32%5D%5D%2C%5B%22w%22%2C%5B264%2C32%2C264%2C40%5D%5D%2C%5B%22w%22%2C%5B232%2C32%2C264%2C32%5D%5D%2C%5B%22v%22%2C%5B264%2C40%2C0%5D%2C%7B%22name%22%3A%22VS2%22%2C%22value%22%3A%22dc(12)%22%2C%22_json_%22%3A11%7D%2C%5B%222%22%2C%220%22%5D%5D%2C%5B%22r%22%2C%5B152%2C32%2C0%5D%2C%7B%22name%22%3A%22R2%22%2C%22r%22%3A%224.7k%22%2C%22_json_%22%3A12%7D%2C%5B%22VA%22%2C%220%22%5D%5D%2C%5B%22r%22%2C%5B232%2C32%2C1%5D%2C%7B%22name%22%3A%22R3%22%2C%22r%22%3A%222.2k%22%2C%22_json_%22%3A13%7D%2C%5B%222%22%2C%22VA%22%5D%5D%2C%5B%22r%22%2C%5B128%2C32%2C1%5D%2C%7B%22name%22%3A%22R1%22%2C%22r%22%3A%221k%22%2C%22_json_%22%3A14%7D%2C%5B%22VA%22%2C%221%22%5D%5D%2C%5B%22v%22%2C%5B56%2C40%2C0%5D%2C%7B%22name%22%3A%22VS1%22%2C%22value%22%3A%22dc(8)%22%2C%22_json_%22%3A15%7D%2C%5B%221%22%2C%220%22%5D%5D%2C%5B%22view%22%2C-31.999999999999993%2C-69%2C1.5625%2C%2250%22%2C%2210%22%2C%221G%22%2Cnull%2C%22100%22%2C%220.01%22%2C%221000%22%5D%5D" height="550" width="740" frameBorder="0"></iframe>
-```
+
 ### Example 6
 
 Solve for voltage $V_A$ in the circuit shown below:
@@ -387,9 +374,7 @@ $$V_{A} = V_{A_{V_{S1}}} + V_{A_{I_{S1}}} = 1.395 V + 6.140 V = 7.535V$$
 
 This result can be verified with simulation:
 
-```{=html}
-<iframe src="../_static/circuit-sandbox/index.html?value=%5B%5B%22L%22%2C%5B152%2C32%2C3%5D%2C%7B%22label%22%3A%22VA%22%2C%22_json_%22%3A0%7D%2C%5B%22VA%22%5D%5D%2C%5B%22g%22%2C%5B152%2C88%2C0%5D%2C%7B%22_json_%22%3A1%7D%2C%5B%220%22%5D%5D%2C%5B%22w%22%2C%5B264%2C88%2C152%2C88%5D%5D%2C%5B%22w%22%2C%5B56%2C88%2C152%2C88%5D%5D%2C%5B%22w%22%2C%5B152%2C80%2C152%2C88%5D%5D%2C%5B%22w%22%2C%5B56%2C32%2C56%2C40%5D%5D%2C%5B%22w%22%2C%5B80%2C32%2C56%2C32%5D%5D%2C%5B%22w%22%2C%5B152%2C32%2C128%2C32%5D%5D%2C%5B%22w%22%2C%5B184%2C32%2C152%2C32%5D%5D%2C%5B%22w%22%2C%5B264%2C32%2C264%2C40%5D%5D%2C%5B%22w%22%2C%5B232%2C32%2C264%2C32%5D%5D%2C%5B%22r%22%2C%5B152%2C32%2C0%5D%2C%7B%22name%22%3A%22R2%22%2C%22r%22%3A%221k%22%2C%22_json_%22%3A11%7D%2C%5B%22VA%22%2C%220%22%5D%5D%2C%5B%22r%22%2C%5B232%2C32%2C1%5D%2C%7B%22name%22%3A%22R3%22%2C%22r%22%3A%222.2k%22%2C%22_json_%22%3A12%7D%2C%5B%221%22%2C%22VA%22%5D%5D%2C%5B%22r%22%2C%5B128%2C32%2C1%5D%2C%7B%22name%22%3A%22R1%22%2C%22r%22%3A%223.3k%22%2C%22_json_%22%3A13%7D%2C%5B%22VA%22%2C%222%22%5D%5D%2C%5B%22v%22%2C%5B56%2C40%2C0%5D%2C%7B%22name%22%3A%22VS1%22%2C%22value%22%3A%22dc(6)%22%2C%22_json_%22%3A14%7D%2C%5B%222%22%2C%220%22%5D%5D%2C%5B%22i%22%2C%5B264%2C88%2C2%5D%2C%7B%22name%22%3A%22IS1%22%2C%22value%22%3A%22dc(8m)%22%2C%22_json_%22%3A15%7D%2C%5B%220%22%2C%221%22%5D%5D%2C%5B%22view%22%2C-31.999999999999993%2C-69%2C1.5625%2C%2250%22%2C%2210%22%2C%221G%22%2Cnull%2C%22100%22%2C%220.01%22%2C%221000%22%5D%5D" height="550" width="740" frameBorder="0"></iframe>
-```
+
 ### Example 7
 
 Find node voltages $V_A$ & $V_B$ in the circuit shown below:
@@ -465,7 +450,3 @@ $$V_{A} = V_{A_{V_{S1}}} + V_{A_{V_{S2}}} + V_{A_{I_{S1}}} = 4.947V + 0V + -0.66
 $$V_{B} = V_{B_{V_{S1}}} + V_{B_{V_{S2}}} + V_{B_{I_{S1}}} = 0V + 2.725V + 1.199V = 3.924V$$
 
 This result can be verified with simulation:
-
-```{=html}
-<iframe src="../_static/circuit-sandbox/index.html?value=%5B%5B%22v%22%2C%5B40%2C72%2C0%5D%2C%7B%22name%22%3A%22VS1%22%2C%22value%22%3A%22dc(6)%22%2C%22_json_%22%3A0%7D%2C%5B%222%22%2C%220%22%5D%5D%2C%5B%22r%22%2C%5B104%2C56%2C1%5D%2C%7B%22name%22%3A%22R1%22%2C%22r%22%3A%22100%22%2C%22_json_%22%3A1%7D%2C%5B%22VA%22%2C%222%22%5D%5D%2C%5B%22i%22%2C%5B120%2C56%2C3%5D%2C%7B%22name%22%3A%22IS1%22%2C%22value%22%3A%22dc(8m)%22%2C%22_json_%22%3A2%7D%2C%5B%22VA%22%2C%22VB%22%5D%5D%2C%5B%22r%22%2C%5B232%2C56%2C1%5D%2C%7B%22name%22%3A%22R4%22%2C%22r%22%3A%22220%22%2C%22_json_%22%3A3%7D%2C%5B%221%22%2C%22VB%22%5D%5D%2C%5B%22r%22%2C%5B176%2C72%2C0%5D%2C%7B%22name%22%3A%22R3%22%2C%22r%22%3A%22470%22%2C%22_json_%22%3A4%7D%2C%5B%22VB%22%2C%220%22%5D%5D%2C%5B%22r%22%2C%5B112%2C72%2C0%5D%2C%7B%22name%22%3A%22R2%22%2C%22r%22%3A%22470%22%2C%22_json_%22%3A5%7D%2C%5B%22VA%22%2C%220%22%5D%5D%2C%5B%22L%22%2C%5B176%2C56%2C3%5D%2C%7B%22label%22%3A%22VB%22%2C%22_json_%22%3A6%7D%2C%5B%22VB%22%5D%5D%2C%5B%22L%22%2C%5B112%2C56%2C3%5D%2C%7B%22label%22%3A%22VA%22%2C%22_json_%22%3A7%7D%2C%5B%22VA%22%5D%5D%2C%5B%22v%22%2C%5B248%2C72%2C0%5D%2C%7B%22name%22%3A%22VS2%22%2C%22value%22%3A%22dc(4)%22%2C%22_json_%22%3A8%7D%2C%5B%221%22%2C%220%22%5D%5D%2C%5B%22g%22%2C%5B176%2C136%2C0%5D%2C%7B%22_json_%22%3A9%7D%2C%5B%220%22%5D%5D%2C%5B%22w%22%2C%5B248%2C72%2C248%2C56%5D%5D%2C%5B%22w%22%2C%5B248%2C56%2C232%2C56%5D%5D%2C%5B%22w%22%2C%5B184%2C56%2C176%2C56%5D%5D%2C%5B%22w%22%2C%5B176%2C56%2C168%2C56%5D%5D%2C%5B%22w%22%2C%5B120%2C56%2C112%2C56%5D%5D%2C%5B%22w%22%2C%5B112%2C56%2C104%2C56%5D%5D%2C%5B%22w%22%2C%5B56%2C56%2C40%2C56%5D%5D%2C%5B%22w%22%2C%5B40%2C56%2C40%2C72%5D%5D%2C%5B%22w%22%2C%5B112%2C56%2C112%2C72%5D%5D%2C%5B%22w%22%2C%5B176%2C56%2C176%2C72%5D%5D%2C%5B%22w%22%2C%5B40%2C120%2C40%2C128%5D%5D%2C%5B%22w%22%2C%5B248%2C128%2C248%2C120%5D%5D%2C%5B%22w%22%2C%5B176%2C120%2C176%2C128%5D%5D%2C%5B%22w%22%2C%5B248%2C128%2C176%2C128%5D%5D%2C%5B%22w%22%2C%5B176%2C128%2C176%2C136%5D%5D%2C%5B%22w%22%2C%5B112%2C120%2C112%2C128%5D%5D%2C%5B%22w%22%2C%5B40%2C128%2C112%2C128%5D%5D%2C%5B%22w%22%2C%5B176%2C128%2C112%2C128%5D%5D%2C%5B%22view%22%2C0%2C0%2C2%2C%2250%22%2C%2210%22%2C%221G%22%2Cnull%2C%22100%22%2C%220.01%22%2C%221000%22%5D%5D" height="550" width="740" frameBorder="0"></iframe>
-```
