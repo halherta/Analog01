@@ -11,7 +11,7 @@ Thevenin resistor* $R_{TH}$.
 width="75.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev00.png" alt="Figure 1 - Thevenin Theorem" style="width:100%">
+  <img src="images/advanced01/thev00.png" alt="Figure 1 - Thevenin Theorem" style="width:60%">
   <figcaption>Figure 1 - Thevenin Theorem</figcaption>
 </figure> 
 
@@ -42,7 +42,7 @@ schematic.
 width="75.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev01.png" alt="Figure 2 - Thevenin Theorem Example 01 p1" style="width:100%">
+  <img src="images/advanced01/thev01.png" alt="Figure 2 - Thevenin Theorem Example 01 p1" style="width:60%">
   <figcaption>Figure 2 - Thevenin Theorem Example 01 p1</figcaption>
 </figure> 
 
@@ -60,7 +60,7 @@ Therefore, the Thevenin equivalent circuit is:
 width="50.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev02.png" alt="Figure 3 - Thevenin Theorem Example 01 p2" style="width:100%">
+  <img src="images/advanced01/thev02.png" alt="Figure 3 - Thevenin Theorem Example 01 p2" style="width:30%">
   <figcaption>Figure 3 - Thevenin Theorem Example 01 p2</figcaption>
 </figure> 
 
