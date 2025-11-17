@@ -70,62 +70,64 @@ terminals of both circuits and calculate $V_{RL}$ and $I_{RL}$. If they are the 
 
 ### Example 2
 
-Find the Thevenin equivalent of the circuit shown in the schematic
-below.
+Find the Thevenin equivalent of the circuit shown in the schematic below.
 
-![](../_static/images/advanced01/thev03.png){.align-center
-width="70.0%"}
+<!-- ![](../_static/images/advanced01/thev03.png){.align-center
+width="70.0%"} -->
+
+ <figure style="text-align:center">
+  <img src="images/advanced01/thev03.png" alt="Figure 4 - Thevenin Theorem Example 02 p1" style="width:30%">
+  <figcaption>Figure 4 - Thevenin Theorem Example 02 p1</figcaption>
+</figure> 
 
 **Solution**
 
-![](../_static/images/advanced01/thev04.png){.align-center
-width="100.0%"}
+<!-- ![](../_static/images/advanced01/thev04.png){.align-center
+width="100.0%"} -->
 
-To solve for $V_{TH}$ first remove the load resistance. Then calculate
-the voltage across the output terminals. Because the output terminals
-are open, no current flows through $R_5$, therefore there\'s no voltage
-drop across it. This means that the voltage at the output terminals
-($V_{TH}$) is also across $R_4$. In this particular scenario, In order
-to calculate $V_{TH}$, $V_{A}$ will have to be calculated first.
+ <figure style="text-align:center">
+  <img src="images/advanced01/thev04.png" alt="Figure 5 - Thevenin Theorem Example 02 p2" style="width:30%">
+  <figcaption>Figure 5 - Thevenin Theorem Example 02 p2</figcaption>
+</figure> 
 
-![](../_static/images/advanced01/thev05.png){.align-center
-width="100.0%"}
+To solve for $V_{TH}$ first remove the load resistance. Then calculate the voltage across the output terminals. Because the output terminals are open, no current flows through $R_5$, therefore there\'s no voltage drop across it. This means that the voltage at the output terminals ($V_{TH}$) is also across $R_4$. In this particular scenario, In order to calculate $V_{TH}$, $V_{A}$ will have to be calculated first.
 
-To solve for $V_{A}$, find the equivalent resistance of resistances
-$R_2$, $R_3$ & $R_4$, compressing the circuit into a series circuit;
-then use a voltage divider to solve for $V_A$
+<!-- ![](../_static/images/advanced01/thev05.png){.align-center
+width="100.0%"} -->
+
+ <figure style="text-align:center">
+  <img src="images/advanced01/thev05.png" alt="Figure 6 - Thevenin Theorem Example 02 p3" style="width:30%">
+  <figcaption>Figure 6 - Thevenin Theorem Example 02 p3</figcaption>
+</figure> 
+
+To solve for $V_{A}$, find the equivalent resistance of resistances $R_2$, $R_3$ & $R_4$, compressing the circuit into a series circuit; then use a voltage divider to solve for $V_A$
 
 $$R_{{EQ}_1} = R_2 // (R_3 + R_4) = \frac{ 330 \cdot 1430}{ 330 + 1430 } = 268.125\Omega$$
 
 $$V_A = V_{S1} \cdot \frac{  R_{{EQ}_1}}{  R_{{EQ}_1} + R_1} = 6V \cdot \frac{268.125\Omega}{268.125\Omega + 100\Omega} =  4.370V$$
 
-Since the branch containing resistors $R_3$ & $R_4$ is in parallel with
-$R_2$ it can be modeled as an independent series circuit with a voltage
-source of $V_A$. Another voltage divider can be then used to solve for
-$V_{TH}$\`:
+Since the branch containing resistors $R_3$ & $R_4$ is in parallel with $R_2$ it can be modeled as an independent series circuit with a voltage source of $V_A$. Another voltage divider can be then used to solve for $V_{TH}$\:
 
 $$V_{TH} = V_A \cdot \frac{R_4}{R_3 + R_4} = 4.370V \cdot \frac{870\Omega}{560\Omega + 870\Omega} = 2.659V$$
 
-Solving for $R_{TH}$ involves replacing the voltage source with a short
-circuit, removing the load resistor and calculating the overall
+Solving for $R_{TH}$ involves replacing the voltage source with a short circuit, removing the load resistor and calculating the overall
 equivalent resistance of the circuit looking into the output terminals.
 
 $$R_{TH} = (((R_1 // R_2) + R_3) // R4) + R_5 = 1367.659\Omega$$
 
 Therefore the Thevenin equivalent circuit is:
 
-![](../_static/images/advanced01/thev06.png){.align-center
-width="50.0%"}
+<!-- ![](../_static/images/advanced01/thev06.png){.align-center
+width="50.0%"} -->
 
-To verify this, simulate both the original and Thevenin equivalent
-circuits; setting the load resistance in both circuits to the same
-value, say 1kΩ, then take note of the voltage across the load $V_{RL}$
-and the current passing through the load $I_{RL}$. They should be the
-same in both circuits.
+ <figure style="text-align:center">
+  <img src="images/advanced01/thev06.png" alt="Figure 7 - Thevenin Theorem Example 02 p4" style="width:30%">
+  <figcaption>Figure 7 - Thevenin Theorem Example 02 p4</figcaption>
+</figure> 
 
-```{=html}
-<iframe src="../_static/circuit-sandbox/index.html?value=%5B%5B%22v%22%2C%5B40%2C24%2C0%5D%2C%7B%22name%22%3A%22VS1%22%2C%22value%22%3A%22dc(6)%22%2C%22_json_%22%3A0%7D%2C%5B%226%22%2C%220%22%5D%5D%2C%5B%22r%22%2C%5B104%2C24%2C1%5D%2C%7B%22name%22%3A%22R1%22%2C%22r%22%3A%22100%22%2C%22_json_%22%3A1%7D%2C%5B%22VA%22%2C%226%22%5D%5D%2C%5B%22r%22%2C%5B112%2C24%2C0%5D%2C%7B%22name%22%3A%22R2%22%2C%22r%22%3A%22330%22%2C%22_json_%22%3A2%7D%2C%5B%22VA%22%2C%220%22%5D%5D%2C%5B%22r%22%2C%5B168%2C24%2C1%5D%2C%7B%22name%22%3A%22R3%22%2C%22r%22%3A%22560%22%2C%22_json_%22%3A3%7D%2C%5B%22VB%22%2C%22VA%22%5D%5D%2C%5B%22r%22%2C%5B176%2C24%2C0%5D%2C%7B%22name%22%3A%22R4%22%2C%22r%22%3A%22870%22%2C%22_json_%22%3A4%7D%2C%5B%22VB%22%2C%220%22%5D%5D%2C%5B%22r%22%2C%5B232%2C24%2C1%5D%2C%7B%22name%22%3A%22R5%22%2C%22r%22%3A%221k%22%2C%22_json_%22%3A5%7D%2C%5B%224%22%2C%22VB%22%5D%5D%2C%5B%22r%22%2C%5B264%2C24%2C0%5D%2C%7B%22name%22%3A%22RL1%22%2C%22r%22%3A%221k%22%2C%22_json_%22%3A6%7D%2C%5B%223%22%2C%220%22%5D%5D%2C%5B%22w%22%2C%5B40%2C24%2C56%2C24%5D%5D%2C%5B%22w%22%2C%5B40%2C72%2C112%2C72%5D%5D%2C%5B%22w%22%2C%5B104%2C24%2C112%2C24%5D%5D%2C%5B%22w%22%2C%5B120%2C24%2C112%2C24%5D%5D%2C%5B%22w%22%2C%5B168%2C24%2C176%2C24%5D%5D%2C%5B%22w%22%2C%5B184%2C24%2C176%2C24%5D%5D%2C%5B%22w%22%2C%5B176%2C72%2C112%2C72%5D%5D%2C%5B%22g%22%2C%5B112%2C80%2C0%5D%2C%7B%22_json_%22%3A14%7D%2C%5B%220%22%5D%5D%2C%5B%22w%22%2C%5B112%2C80%2C112%2C72%5D%5D%2C%5B%22v%22%2C%5B40%2C120%2C0%5D%2C%7B%22name%22%3A%22VTH%22%2C%22value%22%3A%22dc(2.659)%22%2C%22_json_%22%3A16%7D%2C%5B%225%22%2C%220%22%5D%5D%2C%5B%22r%22%2C%5B104%2C112%2C1%5D%2C%7B%22name%22%3A%22RTH%22%2C%22r%22%3A%221367.659%22%2C%22_json_%22%3A17%7D%2C%5B%222%22%2C%225%22%5D%5D%2C%5B%22r%22%2C%5B136%2C168%2C2%5D%2C%7B%22name%22%3A%22RL2%22%2C%22r%22%3A%221k%22%2C%22_json_%22%3A18%7D%2C%5B%220%22%2C%221%22%5D%5D%2C%5B%22g%22%2C%5B40%2C176%2C0%5D%2C%7B%22_json_%22%3A19%7D%2C%5B%220%22%5D%5D%2C%5B%22w%22%2C%5B40%2C120%2C40%2C112%5D%5D%2C%5B%22w%22%2C%5B56%2C112%2C40%2C112%5D%5D%2C%5B%22w%22%2C%5B136%2C112%2C136%2C120%5D%5D%2C%5B%22w%22%2C%5B40%2C176%2C136%2C176%5D%5D%2C%5B%22w%22%2C%5B136%2C168%2C136%2C176%5D%5D%2C%5B%22w%22%2C%5B40%2C168%2C40%2C176%5D%5D%2C%5B%22L%22%2C%5B112%2C24%2C3%5D%2C%7B%22label%22%3A%22VA%22%2C%22_json_%22%3A26%7D%2C%5B%22VA%22%5D%5D%2C%5B%22L%22%2C%5B176%2C24%2C3%5D%2C%7B%22label%22%3A%22VB%22%2C%22_json_%22%3A27%7D%2C%5B%22VB%22%5D%5D%2C%5B%22a%22%2C%5B232%2C24%2C0%5D%2C%7B%22color%22%3A%22magenta%22%2C%22offset%22%3A%220%22%2C%22_json_%22%3A28%7D%2C%5B%224%22%2C%223%22%5D%5D%2C%5B%22a%22%2C%5B112%2C112%2C0%5D%2C%7B%22color%22%3A%22magenta%22%2C%22offset%22%3A%220%22%2C%22_json_%22%3A29%7D%2C%5B%222%22%2C%221%22%5D%5D%2C%5B%22w%22%2C%5B248%2C24%2C264%2C24%5D%5D%2C%5B%22w%22%2C%5B176%2C72%2C264%2C72%5D%5D%2C%5B%22w%22%2C%5B104%2C112%2C112%2C112%5D%5D%2C%5B%22w%22%2C%5B128%2C112%2C136%2C112%5D%5D%2C%5B%22view%22%2C0%2C0%2C2%2C%2250%22%2C%2210%22%2C%221G%22%2Cnull%2C%22100%22%2C%220.01%22%2C%221000%22%5D%5D" height="550" width="740" frameBorder="0"></iframe>
-```
+To verify this, simulate both the original and Thevenin equivalent circuits in LTSPice; setting the load resistance in both circuits to the same value, say 1kΩ, then take note of the voltage across the load $V_{RL}$ and the current passing through the load $I_{RL}$. They should be the same in both circuits.
+
+
 ## Norton\'s theorem
 
 Norton\'s theorem states that *any linear circuit containing one or more
