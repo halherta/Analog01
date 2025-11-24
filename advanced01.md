@@ -102,7 +102,7 @@ width="100.0%"} -->
 
 To solve for $V_{A}$, find the equivalent resistance of resistances $R_2$, $R_3$ & $R_4$, compressing the circuit into a series circuit; then use a voltage divider to solve for $V_A$
 
-$$R_{{EQ}_1} = R_2 // (R_3 + R_4) = \frac{ 330 \cdot 1430}{ 330 + 1430 } = 268.125\Omega$$
+$$R_{{EQ}_1} = R_2 \parallel (R_3 + R_4) = \frac{ 330 \cdot 1430}{ 330 + 1430 } = 268.125\Omega$$
 
 $$V_A = V_{S1} \cdot \frac{  R_{{EQ}_1}}{  R_{{EQ}_1} + R_1} = 6V \cdot \frac{268.125\Omega}{268.125\Omega + 100\Omega} =  4.370V$$
 
@@ -113,7 +113,7 @@ $$V_{TH} = V_A \cdot \frac{R_4}{R_3 + R_4} = 4.370V \cdot \frac{870\Omega}{560\O
 Solving for $R_{TH}$ involves replacing the voltage source with a short circuit, removing the load resistor and calculating the overall
 equivalent resistance of the circuit looking into the output terminals.
 
-$$R_{TH} = (((R_1 // R_2) + R_3) // R4) + R_5 = 1367.659\Omega$$
+$$R_{TH} = (((R_1 \parallel R_2) + R_3) // R4) + R_5 = 1367.659\Omega$$
 
 Therefore the Thevenin equivalent circuit is:
 
@@ -177,11 +177,11 @@ width="75.0%"} -->
   <figcaption>Figure 10 - Norton Theorem example 3 p2</figcaption>
 </figure> 
 
-$$R_2 // R_3 = \frac{R_2 \cdot R_3}{R_2 + R_3} = \frac{220 \Omega \cdot 330 \Omega }{220 \Omega + 330 \Omega} = 132 \Omega$$
+$$R_2 \parallel R_3 = \frac{R_2 \cdot R_3}{R_2 + R_3} = \frac{220 \Omega \cdot 330 \Omega }{220 \Omega + 330 \Omega} = 132 \Omega$$
 
 $V_A$ can now be calculated using a simple voltage divider:
 
-$$V_A = V_S \cdot \frac{R_2 // R_3}{ (R_2 // R_3)  + R_1} = 6 \cdot \frac{132 \Omega}{ (132 \Omega)  + 560 \Omega } = 1.145V$$
+$$V_A = V_S \cdot \frac{R_2 \parallel R_3}{ (R_2 \parallel R_3)  + R_1} = 6 \cdot \frac{132 \Omega}{ (132 \Omega)  + 560 \Omega } = 1.145V$$
 
 Knowing $V_A$, $I_N$ can be calculated as:
 
@@ -189,7 +189,7 @@ $$I_N = \frac{V_A}{R_3} = \frac{1.145V}{330 \Omega} = 3.470mA$$
 
 To calculate $R_{N}$, replace the voltage source with a short, remove the load resistance and calculate the resistance of the circuit looking into the load terminals. This is the same procedure as for calculating $R_{TH}$, so $R_{N}$ has to be equal to $R_{TH}$ in example 1.
 
-> $$R_{N} = (R1 // R2) + R3 = \frac{R_1 \cdot R_2}{ R_1 + R_2} + R_3 =\frac{560\Omega \cdot 220\Omega}{ 560\Omega + 220\Omega} + 330\Omega = 487.948\Omega$$
+> $$R_{N} = (R1 \parallel R2) + R3 = \frac{R_1 \cdot R_2}{ R_1 + R_2} + R_3 =\frac{560\Omega \cdot 220\Omega}{ 560\Omega + 220\Omega} + 330\Omega = 487.948\Omega$$
 
 Therefore the Norton equivalent circuit is:
 
@@ -306,17 +306,17 @@ The first step is replace $V_{S2}$ with a short and analyze the circuit with onl
 $V_{A_{V_{S1}}}$. Because $V_{S2}$ is replaced with a short, resistors $R_2$ and $R_3$ are in parallel. They can be compressed into a single
 equivalent resistance $R_2 // R_3$, which reduces the circuit to a series circuit. Now $V_{A_{V_{S1}}}$ is simply the voltage across $R_2 /parallel R_3$ and can be calculated with a simple voltage divider.
 
-$$R_2 // R_3 = \frac{R_2 \cdot R_3}{ R_2 + R_3} = \frac{4.7k\Omega \cdot 2.2k\Omega }{ 4.7k\Omega  + 2.2k\Omega} = 1498.551 \Omega$$
+$$R_2 \parallel R_3 = \frac{R_2 \cdot R_3}{ R_2 + R_3} = \frac{4.7k\Omega \cdot 2.2k\Omega }{ 4.7k\Omega  + 2.2k\Omega} = 1498.551 \Omega$$
 
-$$V_{A_{V_{S1}}} = V_{S1} \cdot \frac{R_2 // R_3}{\left(R_2 // R_3 \right) + R_1}  =  8V \cdot \frac{1498.551 \Omega}{1498.551 \Omega + 1k\Omega} = 4.798 V$$
+$$V_{A_{V_{S1}}} = V_{S1} \cdot \frac{R_2 \parallel R_3}{\left(R_2 \parallel R_3 \right) + R_1}  =  8V \cdot \frac{1498.551 \Omega}{1498.551 \Omega + 1k\Omega} = 4.798 V$$
 
 Next replace $V_{S1}$ with a short and analyze the circuit with only $V_{S2}$ to determine $V_A$ due to only $V_{S2}$ : $V_{A_{V_{S2}}}$.
 Because $V_{S1}$ is replaced with a short, resistors $R_1$ and $R_2$ are in parallel. They can be compressed into a single equivalent resistance
 $R_1 // R_2$, which reduces the circuit to a series circuit. Now $V_{A_{V_{S2}}}$ is simply the voltage across $R_1 // R_2$ and can be calculated with a simple voltage divider.
 
-$$R_1 // R_2 = \frac{R_1 \cdot R_3}{ R_1 + R_3} = \frac{1k\Omega \cdot 4.7k\Omega }{ 1k\Omega  + 4.7k\Omega} = 824.561 \Omega$$
+$$R_1 \parallel R_2 = \frac{R_1 \cdot R_3}{ R_1 + R_3} = \frac{1k\Omega \cdot 4.7k\Omega }{ 1k\Omega  + 4.7k\Omega} = 824.561 \Omega$$
 
-$$V_{A_{V_{S2}}} = V_{S2} \cdot \frac{R_1 // R_2}{\left(R_1 // R_2 \right) + R_3}  =  12V \cdot \frac{824.561 \Omega}{824.561 \Omega + 2.2k\Omega} = 3.271 V$$
+$$V_{A_{V_{S2}}} = V_{S2} \cdot \frac{R_1 \parallel R_2}{\left(R_1 \parallel R_2 \right) + R_3}  =  12V \cdot \frac{824.561 \Omega}{824.561 \Omega + 2.2k\Omega} = 3.271 V$$
 
 Now to solve for the true $V_A$ in the original circuit with both power sources $V_{S1}$ and $V_{S2}$ :
 
@@ -333,8 +333,8 @@ Solve for voltage $V_A$ in the circuit shown below:
 width="50.0%"} -->
 
 <figure style="text-align:center">
-  <img src="images/advanced01/super03.png" alt="Figure 16 - Superposition Example 6" style="width:50%">
-  <figcaption>Figure 16 - Superposition Example 6</figcaption>
+  <img src="images/advanced01/super03.png" alt="Figure 16 - Superposition Example 6 p1" style="width:50%">
+  <figcaption>Figure 16 - Superposition Example 6 p1</figcaption>
 </figure> 
 
 **Solution**
@@ -342,31 +342,26 @@ width="50.0%"} -->
 ![](../_static/images/advanced01/super04.png){.align-center
 width="85.0%"}
 
-The first step is replace $I_{S1}$ with an **open** and analyze the
-circuit with only $V_{S1}$ to determine $V_A$ due to only $V_{S1}$ :
-$V_{A_{V_{S1}}}$. Because $I_{S1}$ is replaced with an open, resistor
-$R_3$ has no current flowing through it nor voltage drop across it and
-can be discarded leaving a simple series circuit with only $V_{S1}$,
-$R_1$ and $R_2$. $V_{A_{V_{S1}}}$ is simply the voltage across $R_2$ and
-can be calculated with a simple voltage divider.
+<figure style="text-align:center">
+  <img src="images/advanced01/super04.png" alt="Figure 17 - Superposition Example 6 p2" style="width:50%">
+  <figcaption>Figure 17 - Superposition Example 6 p2</figcaption>
+</figure> 
+
+The first step is replace $I_{S1}$ with an **open** and analyze the circuit with only $V_{S1}$ to determine $V_A$ due to only $V_{S1}$ : $V_{A_{V_{S1}}}$. Because $I_{S1}$ is replaced with an open, resistor $R_3$ has no current flowing through it nor voltage drop across it and can be discarded leaving a simple series circuit with only $V_{S1}$,
+$R_1$ and $R_2$. $V_{A_{V_{S1}}}$ is simply the voltage across $R_2$ and can be calculated with a simple voltage divider.
 
 $$V_{A_{V_{S1}}} = V_{S1} \cdot \frac{R_2}{R_2 + R_1}  =  6V \cdot \frac{1k\Omega}{3.3k\Omega + 1k\Omega} = 1.395 V$$
 
-Next replace $V_{S1}$ with a short and analyze the circuit with only
-$I_{S1}$ to determine $V_A$ due to only $1_{S1}$ : $V_{A_{I_{S1}}}$.
-Because $V_{S1}$ is replaced with a short, resistors $R_1$ and $R_2$ are
-in parallel. They can be compressed into a single equivalent resistance
-$R_1 // R_2$, which reduces the circuit to a series circuit with a
-current $I_{S1}$ flowing through all components. $V_{A_{I_{S1}}}$ is the
-voltage across $R_1 // R_2$ and can be calculated via Ohm\'s law i.e.
-multiplying current $I_{S1}$ with resistance $R_1 // R_2$.
+Next replace $V_{S1}$ with a short and analyze the circuit with only $I_{S1}$ to determine $V_A$ due to only $1_{S1}$ : $V_{A_{I_{S1}}}$.
+Because $V_{S1}$ is replaced with a short, resistors $R_1$ and $R_2$ are in parallel. They can be compressed into a single equivalent resistance
+$R_1 // R_2$, which reduces the circuit to a series circuit with a current $I_{S1}$ flowing through all components. $V_{A_{I_{S1}}}$ is the
+voltage across $R_1 // R_2$ and can be calculated via Ohm\'s law i.e. multiplying current $I_{S1}$ with resistance $R_1 // R_2$.
 
-$$R_1 // R_2 = \frac{R_1 \cdot R_2}{ R_1 + R_2} = \frac{3.3k\Omega \cdot 1k\Omega }{ 3.3k\Omega  + 1k\Omega} = 767.442 \Omega$$
+$$R_1 \parallel R_2 = \frac{R_1 \cdot R_2}{ R_1 + R_2} = \frac{3.3k\Omega \cdot 1k\Omega }{ 3.3k\Omega  + 1k\Omega} = 767.442 \Omega$$
 
-$$V_{A_{I_{S1}}} = I_{S1} \cdot (R_1 // R_2)  =  8mA \cdot 767.442 \Omega = 6.140 V$$
+$$V_{A_{I_{S1}}} = I_{S1} \cdot (R_1 \parallel R_2)  =  8mA \cdot 767.442 \Omega = 6.140 V$$
 
-Now to solve for the true $V_A$ in the original circuit with both power
-sources $V_{S1}$ and $V_{S2}$ :
+Now to solve for the true $V_A$ in the original circuit with both power sources $V_{S1}$ and $V_{S2}$ :
 
 $$V_{A} = V_{A_{V_{S1}}} + V_{A_{I_{S1}}} = 1.395 V + 6.140 V = 7.535V$$
 
@@ -377,8 +372,13 @@ This result can be verified with simulation:
 
 Find node voltages $V_A$ & $V_B$ in the circuit shown below:
 
-![](../_static/images/advanced01/super05.png){.align-center
-width="60.0%"}
+<!-- ![](../_static/images/advanced01/super05.png){.align-center
+width="60.0%"} -->
+
+<figure style="text-align:center">
+  <img src="images/advanced01/super05.png" alt="Figure 18 - Superposition Example 7 p1" style="width:60%">
+  <figcaption>Figure 18 - Superposition Example 7 p1</figcaption>
+</figure> 
 
 **Solution**
 
@@ -386,65 +386,66 @@ First replace $V_{S2}$ with a short $I_{S1}$ with and open to analyze
 the circuit with voltage source $V_{S1}$. Now find $V_{A_{V_{S1}}}$ and
 $V_{B_{V_{S1}}}$. The circuit is now broken into two simpler circuits.
 
-![](../_static/images/advanced01/super06.png){.align-center
-width="60.0%"}
+<!-- ![](../_static/images/advanced01/super06.png){.align-center
+width="60.0%"} -->
 
-The one on the right (with branches containing resistors $R_3$ and
-$R_4$) has no power source in it and therefore:
+<figure style="text-align:center">
+  <img src="images/advanced01/super06.png" alt="Figure 19 - Superposition Example 7 p2" style="width:60%">
+  <figcaption>Figure 19 - Superposition Example 7 p2</figcaption>
+</figure> 
+
+The one on the right (with branches containing resistors $R_3$ and $R_4$) has no power source in it and therefore:
 
 $$V_{B_{V_{S1}}} = 0V$$
 
-The circuit on the left is a simple series circuit. $V_{A_{V_{S1}}}$ can
-be found with a simple voltage divider:
+The circuit on the left is a simple series circuit. $V_{A_{V_{S1}}}$ can be found with a simple voltage divider:
 
 $$V_{A_{V_{S1}}} = V_{S1} \cdot \frac{R_2}{R_1 + R_2} = 6V \cdot \frac{470\Omega}{100\Omega + 470\Omega} = 4.947V$$
 
-Next replace $V_{S1}$ with a short $I_{S1}$ with and open to analyze the
-circuit with voltage source $V_{S2}$. Now find $V_{A_{V_{S2}}}$ and
-$V_{B_{V_{S2}}}$. The circuit is again broken into two simpler circuits.
+Next replace $V_{S1}$ with a short $I_{S1}$ with and open to analyze the circuit with voltage source $V_{S2}$. Now find $V_{A_{V_{S2}}}$ and $V_{B_{V_{S2}}}$. The circuit is again broken into two simpler circuits.
 
-![](../_static/images/advanced01/super07.png){.align-center
-width="60.0%"}
+<!-- ![](../_static/images/advanced01/super07.png){.align-center
+width="60.0%"} -->
 
-The one on the left (with branches containing resistors $R_1$ and $R_1$)
-has no power source in it and therefore:
+<figure style="text-align:center">
+  <img src="images/advanced01/super07.png" alt="Figure 20 - Superposition Example 7 p3" style="width:60%">
+  <figcaption>Figure 20 - Superposition Example 7 p3</figcaption>
+</figure> 
+
+The one on the left (with branches containing resistors $R_1$ and $R_1$) has no power source in it and therefore:
 
 $$V_{A_{V_{S2}}} = 0V$$
 
-The circuit on the right is a simple series circuit. $V_{B_{V_{S2}}}$
-can be found with a simple voltage divider:
+The circuit on the right is a simple series circuit. $V_{B_{V_{S2}}}$ can be found with a simple voltage divider:
 
 $$V_{B_{V_{S2}}} = V_{S2} \cdot \frac{R_3}{R_3 + R_4} = 4V \cdot \frac{470\Omega}{470\Omega + 220\Omega} = 2.725V$$
 
-Finally replace both $V_{S1}$ and $V_{S2}$ with shorts $I_{S1}$ to
-analyze the circuit with current source $I_{S1}$. Now find
-$V_{A_{I_{S1}}}$ and $V_{B_{I_{S1}}}$.
+Finally replace both $V_{S1}$ and $V_{S2}$ with shorts $I_{S1}$ to analyze the circuit with current source $I_{S1}$. Now find $V_{A_{I_{S1}}}$ and $V_{B_{I_{S1}}}$.
 
-![](../_static/images/advanced01/super08.png){.align-center
-width="90.0%"}
+<!-- ![](../_static/images/advanced01/super08.png){.align-center
+width="90.0%"} -->
 
-First notice that resistors $R_1$ and $R_2$ are in parallel and that
-resistors $R_3$ and $R_4$ are also in parallel. Finding their equivalent
-resistances $R_1 // R_2$ & $R_3 // R_4$ we get:
+<figure style="text-align:center">
+  <img src="images/advanced01/super08.png" alt="Figure 21 - Superposition Example 7 p4" style="width:90%">
+  <figcaption>Figure 21 - Superposition Example 7 p4</figcaption>
+</figure> 
 
-$$R_1 // R_2 = \frac{R_1 \cdot R_2}{R_1 + R_2} = \frac{100\Omega \cdot 470\Omega }{ 100\Omega  + 470\Omega} = 82.456 \Omega$$
+First notice that resistors $R_1$ and $R_2$ are in parallel and that resistors $R_3$ and $R_4$ are also in parallel. Finding their equivalent resistances $R_1 \parallel R_2$ & $R_3 \parallel R_4$ we get:
 
-$$R_3 // R_4 = \frac{R_3 \cdot R_4}{R_3 + R_4} = \frac{470\Omega \cdot 220\Omega }{ 470\Omega  + 220\Omega} = 149.855 \Omega$$
+$$R_1 \parallel R_2 = \frac{R_1 \cdot R_2}{R_1 + R_2} = \frac{100\Omega \cdot 470\Omega }{ 100\Omega  + 470\Omega} = 82.456 \Omega$$
 
-Compressing these parallel resistances, reduces the circuit to a series
-circuit. However take note of the position of the reference ground
-terminal. Note how the node voltage $V_{A_{I_{S1}}}$ is below the ground
-point implying that it is a negative voltage.
+$$R_3 \parallel R_4 = \frac{R_3 \cdot R_4}{R_3 + R_4} = \frac{470\Omega \cdot 220\Omega }{ 470\Omega  + 220\Omega} = 149.855 \Omega$$
 
-$$V_{B_{I_{S1}}} = I_{S1} * (R_3 // R_4) = 8mA \cdot 149.855 \Omega = 1.199V$$
+Compressing these parallel resistances, reduces the circuit to a series circuit. However take note of the position of the reference ground terminal. Note how the node voltage $V_{A_{I_{S1}}}$ is below the ground point implying that it is a negative voltage.
 
-$$V_{A_{I_{S1}}} = -I_{S1} * (R_3 // R_4) = -8mA \cdot 82.456 \Omega = -0.660V$$
+$$V_{B_{I_{S1}}} = I_{S1} * (R_3 \parallel R_4) = 8mA \cdot 149.855 \Omega = 1.199V$$
 
-Now to solve for the true $V_A$ and $V_B$ in the original circuit with
-all power sources $V_{S1}$, $V_{S2}$ and $I_{S1}$ :
+$$V_{A_{I_{S1}}} = -I_{S1} * (R_3 \parallel R_4) = -8mA \cdot 82.456 \Omega = -0.660V$$
+
+Now to solve for the true $V_A$ and $V_B$ in the original circuit with all power sources $V_{S1}$, $V_{S2}$ and $I_{S1}$ :
 
 $$V_{A} = V_{A_{V_{S1}}} + V_{A_{V_{S2}}} + V_{A_{I_{S1}}} = 4.947V + 0V + -0.660V = 4.287V$$
 
 $$V_{B} = V_{B_{V_{S1}}} + V_{B_{V_{S2}}} + V_{B_{I_{S1}}} = 0V + 2.725V + 1.199V = 3.924V$$
 
-This result can be verified with simulation:
+This result can be verified with simulation.
