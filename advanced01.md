@@ -11,7 +11,7 @@ Thevenin resistor* $R_{TH}$.
 width="75.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev00.png" alt="Figure 1 - Thevenin Theorem" style="width:60%">
+  <img src="images/advanced01/thev00.png" alt="Figure 1 - Thevenin Theorem" style="width:75%">
   <figcaption>Figure 1 - Thevenin Theorem</figcaption>
 </figure> 
 
@@ -42,7 +42,7 @@ schematic.
 width="75.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev01.png" alt="Figure 2 - Thevenin Theorem Example 01 p1" style="width:60%">
+  <img src="images/advanced01/thev01.png" alt="Figure 2 - Thevenin Theorem Example 01 p1" style="width:75%">
   <figcaption>Figure 2 - Thevenin Theorem Example 01 p1</figcaption>
 </figure> 
 
@@ -60,7 +60,7 @@ Therefore, the Thevenin equivalent circuit is:
 width="50.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev02.png" alt="Figure 3 - Thevenin Theorem Example 01 p2" style="width:30%">
+  <img src="images/advanced01/thev02.png" alt="Figure 3 - Thevenin Theorem Example 01 p2" style="width:50%">
   <figcaption>Figure 3 - Thevenin Theorem Example 01 p2</figcaption>
 </figure> 
 
@@ -76,7 +76,7 @@ Find the Thevenin equivalent of the circuit shown in the schematic below.
 width="70.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev03.png" alt="Figure 4 - Thevenin Theorem Example 02 p1" style="width:50%">
+  <img src="images/advanced01/thev03.png" alt="Figure 4 - Thevenin Theorem Example 02 p1" style="width:70%">
   <figcaption>Figure 4 - Thevenin Theorem Example 02 p1</figcaption>
 </figure> 
 
@@ -86,7 +86,7 @@ width="70.0%"} -->
 width="100.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev04.png" alt="Figure 5 - Thevenin Theorem Example 02 p2" style="width:50%">
+  <img src="images/advanced01/thev04.png" alt="Figure 5 - Thevenin Theorem Example 02 p2" style="width:100%">
   <figcaption>Figure 5 - Thevenin Theorem Example 02 p2</figcaption>
 </figure> 
 
@@ -96,7 +96,7 @@ To solve for $V_{TH}$ first remove the load resistance. Then calculate the volta
 width="100.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev05.png" alt="Figure 6 - Thevenin Theorem Example 02 p3" style="width:60%">
+  <img src="images/advanced01/thev05.png" alt="Figure 6 - Thevenin Theorem Example 02 p3" style="width:100%">
   <figcaption>Figure 6 - Thevenin Theorem Example 02 p3</figcaption>
 </figure> 
 
@@ -121,7 +121,7 @@ Therefore the Thevenin equivalent circuit is:
 width="50.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev06.png" alt="Figure 7 - Thevenin Theorem Example 02 p4" style="width:40%">
+  <img src="images/advanced01/thev06.png" alt="Figure 7 - Thevenin Theorem Example 02 p4" style="width:50%">
   <figcaption>Figure 7 - Thevenin Theorem Example 02 p4</figcaption>
 </figure> 
 
@@ -136,7 +136,7 @@ Norton\'s theorem states that *any linear circuit containing one or more voltage
 width="75.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/norton01.png" alt="Figure 8 - Norton Theorem" style="width:40%">
+  <img src="images/advanced01/norton01.png" alt="Figure 8 - Norton Theorem" style="width:75.0%">
   <figcaption>Figure 8 - Norton Theorem</figcaption>
 </figure> 
 
@@ -219,23 +219,29 @@ $$V_{TH} = I_N \cdot R_N$$
 
 $$R_{TH} = R_{N}$$
 
-![](../_static/images/advanced01/source_conv01.png){.align-center
-width="50.0%"}
+<!-- ![](../_static/images/advanced01/source_conv01.png){.align-center
+width="50.0%"} -->
+
+<figure style="text-align:center">
+  <img src="images/advanced01/source_conv01.png" alt="Figure 12 - Source conversions" style="width:50%">
+  <figcaption>Figure 12 - Source conversions</figcaption>
+</figure> 
+
 
 ### Example 4
 
-In examples 1 and 3, the Thevenin and Norton equivalent circuits where
-derived independently.
+In examples 1 and 3, the Thevenin and Norton equivalent circuits were derived independently.
 
-a.  Convert the independently derived Thevenin equivalent circuit to a
-    Norton equivalent circuit using source conversions. Is it identical
-    to the independently derived Norton circuit?
-b.  Convert the independently derived Norton equivalent circuit to a
-    Thevenin equivalent circuit using source conversions. Is it
-    identical to the independently derived Thevenin circuit?
+a.  Convert the independently derived Thevenin equivalent circuit to a Norton equivalent circuit using source conversions. Is it identical to the independently derived Norton circuit?
+b.  Convert the independently derived Norton equivalent circuit to a Thevenin equivalent circuit using source conversions. Is it identical to the independently derived Thevenin circuit?
 
-![](../_static/images/advanced01/source_conv02.png){.align-center
-width="50.0%"}
+<!-- ![](../_static/images/advanced01/source_conv02.png){.align-center
+width="50.0%"} -->
+
+<figure style="text-align:center">
+  <img src="images/advanced01/source_conv02.png" alt="Figure 13 - Source conversions EX4 p1" style="width:50%">
+  <figcaption>Figure 13 - Source conversions EX4 p1</figcaption>
+</figure> 
 
 **Solution**
 
@@ -245,8 +251,7 @@ $$I_N = \frac{V_{TH}}{R_{TH}} =  \frac{1.692V}{487.948\Omega} = 3.468mA$$
 
 $$R_N = R_{TH} = 487.948\Omega$$
 
-The Norton current $I_N$ and Norton resistance $R_N$ derived from source
-converting the Thevenin circuit are equivalent to the Norton current
+The Norton current $I_N$ and Norton resistance $R_N$ derived from source converting the Thevenin circuit are equivalent to the Norton current
 $I_N$ and Norton resistance $R_N$ values derived independently.
 
 b.  Converting a Norton circuit to its equivalent Thevenin circuit:
@@ -255,39 +260,31 @@ $$V_{TH} = I_N \cdot R_N  = 3.470mA \cdot 487.948\Omega = 1.701V$$
 
 $$R_{TH} = R_{N} = 487.948\Omega$$
 
-The Norton current $I_N$ and Norton resistance $R_N$ derived from source
-converting the Thevenin circuit are equivalent to the Norton current
+The Norton current $I_N$ and Norton resistance $R_N$ derived from source converting the Thevenin circuit are equivalent to the Norton current
 $I_N$ and Norton resistance $R_N$ values derived independently.
 
 ## The Principle of Superposition
 
-The principle of superposition is typically used to help analyze
-circuits with two or more power sources. This principle states: *The
-total current in any part of a linear circuit equals the algebraic sum
-of the currents produced by each source separately.*
+The principle of superposition is typically used to help analyze circuits with two or more power sources. This principle states: *The total current in any part of a linear circuit equals the algebraic sum of the currents produced by each source separately.*
 
-To solve a circuit using superposition, the first step is to turn off or
-suppress all but one power source.
+To solve a circuit using superposition, the first step is to turn off or suppress all but one power source.
 
--   To suppress a voltage source, replace it with a short circuit (ideal
-    source resistance).
--   To suppress a current source, replace it with an open circuit (ideal
-    source resistance).
+-   To suppress a voltage source, replace it with a short circuit (ideal source resistance).
+-   To suppress a current source, replace it with an open circuit (ideal source resistance).
 
-Then analyze the resulting simpler circuits. Repeat for all inputs. The
-final result is the sum of individual results.
+Then analyze the resulting simpler circuits. Repeat for all inputs. The final result is the sum of individual results.
 
 Consider the circuit with two voltage sources shown in the figure below:
 
-![](../_static/images/advanced01/super01.png){.align-center
-width="50.0%"}
+<!-- ![](../_static/images/advanced01/super01.png){.align-center
+width="50.0%"} -->
 
-To solve for $V_A$, first replace $V_{S2}$ with a short and analyze the
-circuit with only supply $V_{S1}$, to solve for $V_{A_{V_{S1}}}$. Then
-replace $V_{S1}$ with a short and analyze the circuit again with only
-supply $V_{S2}$ to solve for $V_{A_{V_{S2}}}$. Finally add (or
-superpose) $V_{A_{V_{S1}}}$ and $V_{A_{V_{S2}}}$ to solve for $V_A$ in
-the original circuit.
+<figure style="text-align:center">
+  <img src="images/advanced01/super01.png" alt="Figure 14 - Superposition" style="width:50%">
+  <figcaption>Figure 14 - Superposition</figcaption>
+</figure> 
+
+To solve for $V_A$, first replace $V_{S2}$ with a short and analyze the circuit with only supply $V_{S1}$, to solve for $V_{A_{V_{S1}}}$. Then replace $V_{S1}$ with a short and analyze the circuit again with only supply $V_{S2}$ to solve for $V_{A_{V_{S2}}}$. Finally, add (or superpose) $V_{A_{V_{S1}}}$ and $V_{A_{V_{S2}}}$ to solve for $V_A$ in the original circuit.
 
 $$V_{A} = V_{A_{V_{S1}}} + V_{A_{V_{S2}}}$$
 
@@ -297,47 +294,48 @@ Find the node voltage $V_A$ in the circuit shown above:
 
 **Solution**
 
-![](../_static/images/advanced01/super02.png){.align-center
-width="85.0%"}
+<!-- ![](../_static/images/advanced01/super02.png){.align-center
+width="85.0%"} --->
 
-The first step is replace $V_{S2}$ with a short and analyze the circuit
-with only $V_{S1}$ to determine $V_A$ due to only $V_{S1}$ :
-$V_{A_{V_{S1}}}$. Because $V_{S2}$ is replaced with a short, resistors
-$R_2$ and $R_3$ are in parallel. They can be compressed into a single
-equivalent resistance $R_2 // R_3$, which reduces the circuit to a
-series circuit. Now $V_{A_{V_{S1}}}$ is simply the voltage across
-$R_2 // R_3$ and can be calculated with a simple voltage divider.
+<figure style="text-align:center">
+  <img src="images/advanced01/super02.png" alt="Figure 15 - Superposition Example 5" style="width:85%">
+  <figcaption>Figure 15 - Superposition Example 5</figcaption>
+</figure> 
+
+The first step is replace $V_{S2}$ with a short and analyze the circuit with only $V_{S1}$ to determine $V_A$ due to only $V_{S1}$ :
+$V_{A_{V_{S1}}}$. Because $V_{S2}$ is replaced with a short, resistors $R_2$ and $R_3$ are in parallel. They can be compressed into a single
+equivalent resistance $R_2 // R_3$, which reduces the circuit to a series circuit. Now $V_{A_{V_{S1}}}$ is simply the voltage across $R_2 /parallel R_3$ and can be calculated with a simple voltage divider.
 
 $$R_2 // R_3 = \frac{R_2 \cdot R_3}{ R_2 + R_3} = \frac{4.7k\Omega \cdot 2.2k\Omega }{ 4.7k\Omega  + 2.2k\Omega} = 1498.551 \Omega$$
 
 $$V_{A_{V_{S1}}} = V_{S1} \cdot \frac{R_2 // R_3}{\left(R_2 // R_3 \right) + R_1}  =  8V \cdot \frac{1498.551 \Omega}{1498.551 \Omega + 1k\Omega} = 4.798 V$$
 
-Next replace $V_{S1}$ with a short and analyze the circuit with only
-$V_{S2}$ to determine $V_A$ due to only $V_{S2}$ : $V_{A_{V_{S2}}}$.
-Because $V_{S1}$ is replaced with a short, resistors $R_1$ and $R_2$ are
-in parallel. They can be compressed into a single equivalent resistance
-$R_1 // R_2$, which reduces the circuit to a series circuit. Now
-$V_{A_{V_{S2}}}$ is simply the voltage across $R_1 // R_2$ and can be
-calculated with a simple voltage divider.
+Next replace $V_{S1}$ with a short and analyze the circuit with only $V_{S2}$ to determine $V_A$ due to only $V_{S2}$ : $V_{A_{V_{S2}}}$.
+Because $V_{S1}$ is replaced with a short, resistors $R_1$ and $R_2$ are in parallel. They can be compressed into a single equivalent resistance
+$R_1 // R_2$, which reduces the circuit to a series circuit. Now $V_{A_{V_{S2}}}$ is simply the voltage across $R_1 // R_2$ and can be calculated with a simple voltage divider.
 
 $$R_1 // R_2 = \frac{R_1 \cdot R_3}{ R_1 + R_3} = \frac{1k\Omega \cdot 4.7k\Omega }{ 1k\Omega  + 4.7k\Omega} = 824.561 \Omega$$
 
 $$V_{A_{V_{S2}}} = V_{S2} \cdot \frac{R_1 // R_2}{\left(R_1 // R_2 \right) + R_3}  =  12V \cdot \frac{824.561 \Omega}{824.561 \Omega + 2.2k\Omega} = 3.271 V$$
 
-Now to solve for the true $V_A$ in the original circuit with both power
-sources $V_{S1}$ and $V_{S2}$ :
+Now to solve for the true $V_A$ in the original circuit with both power sources $V_{S1}$ and $V_{S2}$ :
 
 $$V_{A} = V_{A_{V_{S1}}} + V_{A_{V_{S2}}} = 4.798 V + 3.271 V = 8.069 V$$
 
-This result can be easily verified with simulation:
+This result can be easily verified with simulation.
 
 
 ### Example 6
 
 Solve for voltage $V_A$ in the circuit shown below:
 
-![](../_static/images/advanced01/super03.png){.align-center
-width="50.0%"}
+<!-- ![](../_static/images/advanced01/super03.png){.align-center
+width="50.0%"} -->
+
+<figure style="text-align:center">
+  <img src="images/advanced01/super03.png" alt="Figure 16 - Superposition Example 6" style="width:50%">
+  <figcaption>Figure 16 - Superposition Example 6</figcaption>
+</figure> 
 
 **Solution**
 
