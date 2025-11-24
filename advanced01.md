@@ -11,7 +11,7 @@ Thevenin resistor* $R_{TH}$.
 width="75.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev00.png" alt="Figure 1 - Thevenin Theorem" style="width:75%">
+  <img src="images/advanced01/thev00.png" alt="Figure 1 - Thevenin Theorem" style="width:50%">
   <figcaption>Figure 1 - Thevenin Theorem</figcaption>
 </figure> 
 
@@ -42,7 +42,7 @@ schematic.
 width="75.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev01.png" alt="Figure 2 - Thevenin Theorem Example 01 p1" style="width:75%">
+  <img src="images/advanced01/thev01.png" alt="Figure 2 - Thevenin Theorem Example 01 p1" style="width:50%">
   <figcaption>Figure 2 - Thevenin Theorem Example 01 p1</figcaption>
 </figure> 
 
@@ -60,7 +60,7 @@ Therefore, the Thevenin equivalent circuit is:
 width="50.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev02.png" alt="Figure 3 - Thevenin Theorem Example 01 p2" style="width:50%">
+  <img src="images/advanced01/thev02.png" alt="Figure 3 - Thevenin Theorem Example 01 p2" style="width:30%">
   <figcaption>Figure 3 - Thevenin Theorem Example 01 p2</figcaption>
 </figure> 
 
@@ -76,7 +76,7 @@ Find the Thevenin equivalent of the circuit shown in the schematic below.
 width="70.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev03.png" alt="Figure 4 - Thevenin Theorem Example 02 p1" style="width:70%">
+  <img src="images/advanced01/thev03.png" alt="Figure 4 - Thevenin Theorem Example 02 p1" style="width:40%">
   <figcaption>Figure 4 - Thevenin Theorem Example 02 p1</figcaption>
 </figure> 
 
@@ -86,7 +86,7 @@ width="70.0%"} -->
 width="100.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev04.png" alt="Figure 5 - Thevenin Theorem Example 02 p2" style="width:100%">
+  <img src="images/advanced01/thev04.png" alt="Figure 5 - Thevenin Theorem Example 02 p2" style="width:80%">
   <figcaption>Figure 5 - Thevenin Theorem Example 02 p2</figcaption>
 </figure> 
 
@@ -96,7 +96,7 @@ To solve for $V_{TH}$ first remove the load resistance. Then calculate the volta
 width="100.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev05.png" alt="Figure 6 - Thevenin Theorem Example 02 p3" style="width:100%">
+  <img src="images/advanced01/thev05.png" alt="Figure 6 - Thevenin Theorem Example 02 p3" style="width:80%">
   <figcaption>Figure 6 - Thevenin Theorem Example 02 p3</figcaption>
 </figure> 
 
@@ -121,7 +121,7 @@ Therefore the Thevenin equivalent circuit is:
 width="50.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/thev06.png" alt="Figure 7 - Thevenin Theorem Example 02 p4" style="width:50%">
+  <img src="images/advanced01/thev06.png" alt="Figure 7 - Thevenin Theorem Example 02 p4" style="width:30%">
   <figcaption>Figure 7 - Thevenin Theorem Example 02 p4</figcaption>
 </figure> 
 
@@ -197,7 +197,7 @@ Therefore the Norton equivalent circuit is:
 width="50.0%"} -->
 
  <figure style="text-align:center">
-  <img src="images/advanced01/norton04.png" alt="Figure 11 - Norton Theorem example 3 p3" style="width:50%">
+  <img src="images/advanced01/norton04.png" alt="Figure 11 - Norton Theorem example 3 p3" style="width:30%">
   <figcaption>Figure 11 - Norton Theorem example 3 p3</figcaption>
 </figure> 
 
@@ -223,7 +223,7 @@ $$R_{TH} = R_{N}$$
 width="50.0%"} -->
 
 <figure style="text-align:center">
-  <img src="images/advanced01/source_conv01.png" alt="Figure 12 - Source conversions" style="width:50%">
+  <img src="images/advanced01/source_conv01.png" alt="Figure 12 - Source conversions" style="width:60%">
   <figcaption>Figure 12 - Source conversions</figcaption>
 </figure> 
 
@@ -339,11 +339,11 @@ width="50.0%"} -->
 
 **Solution**
 
-![](../_static/images/advanced01/super04.png){.align-center
-width="85.0%"}
+<!-- ![](../_static/images/advanced01/super04.png){.align-center
+width="85.0%"} -->
 
 <figure style="text-align:center">
-  <img src="images/advanced01/super04.png" alt="Figure 17 - Superposition Example 6 p2" style="width:50%">
+  <img src="images/advanced01/super04.png" alt="Figure 17 - Superposition Example 6 p2" style="width:70%">
   <figcaption>Figure 17 - Superposition Example 6 p2</figcaption>
 </figure> 
 
@@ -426,7 +426,7 @@ Finally replace both $V_{S1}$ and $V_{S2}$ with shorts $I_{S1}$ to analyze the c
 width="90.0%"} -->
 
 <figure style="text-align:center">
-  <img src="images/advanced01/super08.png" alt="Figure 21 - Superposition Example 7 p4" style="width:90%">
+  <img src="images/advanced01/super08.png" alt="Figure 21 - Superposition Example 7 p4" style="width:75%">
   <figcaption>Figure 21 - Superposition Example 7 p4</figcaption>
 </figure> 
 
