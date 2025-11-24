@@ -52,7 +52,7 @@ $$V_{TH} = V_S \cdot \frac{R_2}{R_1 + R_2} = 6V \cdot \frac{220 \Omega}{220 \Ome
 
 To calculate $R_{TH}$, replace the voltage source with a short, remove the load resistance and calculate the resistance of the circuit looking into the load terminals
 
-$$R_{TH} = (R1 // R2) + R3 = \frac{R_1 \cdot R_2}{ R_1 + R_2} + R_3 =\frac{560\Omega \cdot 220\Omega}{ 560\Omega + 220\Omega} + 330\Omega = 487.948\Omega$$
+$$R_{TH} = (R1 \parallel R2) + R3 = \frac{R_1 \cdot R_2}{ R_1 + R_2} + R_3 =\frac{560\Omega \cdot 220\Omega}{ 560\Omega + 220\Omega} + 330\Omega = 487.948\Omega$$
 
 Therefore, the Thevenin equivalent circuit is:
 
